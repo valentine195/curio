@@ -1,7 +1,7 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: curio-backend
+  name: curio-server
   namespace: curio
   annotations:
     cert-manager.io/cluster-issuer: "letsencrypt-prod"          
@@ -17,8 +17,8 @@ spec:
       paths:
       - path: /
         pathType: Prefix
-        backend: 
+        server: 
           service:
-            name: curio-backend
+            name: curio-server
             port: 
                 number: 80
