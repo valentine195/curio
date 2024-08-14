@@ -17,7 +17,7 @@ spec:
       paths:
       - path: /
         pathType: Prefix
-        server: 
+        backend: 
           service:
             name: curio-server
             port: 
