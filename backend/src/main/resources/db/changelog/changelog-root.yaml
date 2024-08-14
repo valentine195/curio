@@ -1,0 +1,50 @@
+databaseChangeLog:
+    - changeSet:
+          id: "1"
+          author: Jeremy Valentine
+          changes:
+              - createTable:
+                    tableName: items
+                    columns:
+                        - column:
+                              name: id
+                              type: UUID
+                              constraints:
+                                  primaryKey: true
+                                  nullable: false
+                        - column:
+                              name: museum
+                              type: UUID
+                              constraints:
+                                  nullable: false
+                        - column:
+                              name: title
+                              type: varchar
+                              constraints:
+                                  nullable: false
+                        - column:
+                              name: sub_unit
+                              type: varchar
+                        - column:
+                              name: thumbnail
+                              type: varchar
+              - createTable:
+                    tableName: museums
+                    columns:
+                        - column:
+                              name: id
+                              type: UUID
+                              constraints:
+                                  primaryKey: true
+                                  nullable: false
+                        - column:
+                              name: name
+                              type: varchar
+                              constraints:
+                                  nullable: false
+              - addForeignKeyConstraint:
+                    baseTableName: items
+                    baseColumnNames: museum
+                    referencedTableName: museums
+                    referencedColumnNames: id
+                    constraintName: fk_item_museum

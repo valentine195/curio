@@ -1,0 +1,24 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-CurioApplication<curio>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.javalent.curio.CurioApplication",
+            "projectName": "curio",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-CurioApplication<openapi-spring>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.javalent.curio.CurioApplication",
+            "projectName": "openapi-spring",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}

@@ -10,4 +10,4 @@ FROM nginx:latest
 COPY nginx.conf /etc/nginx/nginx.conf
 COPY --from=build /app/dist /usr/share/nginx/html
 
-LABEL org.opencontainers.image.source https://github.com/valentine195/website
+LABEL org.opencontainers.image.source=https://github.com/valentine195/curio

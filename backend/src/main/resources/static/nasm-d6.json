@@ -1,0 +1,2914 @@
+[
+    {
+        "id": "ld1-1643400021979-1643400022292-0",
+        "version": "",
+        "unitCode": "NASM",
+        "linkedId": "",
+        "type": "edanmdm",
+        "content": {
+            "descriptiveNonRepeating": {
+                "record_ID": "nasm_A19480151000",
+                "online_media": {
+                    "mediaCount": 7,
+                    "media": [
+                        {
+                            "thumbnail": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-2892742D702B2_001-000001",
+                            "idsId": "NASM-2892742D702B2_001-000001",
+                            "usage": { "access": "CC0" },
+                            "guid": "http://n2t.net/ark:/65665/gf4d7dcf708-a680-40a1-b76c-024a52153e62",
+                            "type": "Images",
+                            "content": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-2892742D702B2_001-000001",
+                            "resources": [
+                                {
+                                    "width": 3648,
+                                    "height": 3648,
+                                    "label": "High-resolution JPEG",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-2892742D702B2_001-000001.jpg",
+                                    "dimensions": "3648x3648"
+                                },
+                                {
+                                    "label": "Screen Image",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-2892742D702B2_001-000001_screen"
+                                },
+                                {
+                                    "label": "Thumbnail Image",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-2892742D702B2_001-000001_thumb"
+                                }
+                            ]
+                        },
+                        {
+                            "thumbnail": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-2892742D702B2_002-000001",
+                            "idsId": "NASM-2892742D702B2_002-000001",
+                            "usage": { "access": "CC0" },
+                            "guid": "http://n2t.net/ark:/65665/gf43dda55c9-1666-4645-88f5-27721183c0cb",
+                            "type": "Images",
+                            "content": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-2892742D702B2_002-000001",
+                            "resources": [
+                                {
+                                    "width": 3648,
+                                    "height": 3648,
+                                    "label": "High-resolution JPEG",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-2892742D702B2_002-000001.jpg",
+                                    "dimensions": "3648x3648"
+                                },
+                                {
+                                    "label": "Screen Image",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-2892742D702B2_002-000001_screen"
+                                },
+                                {
+                                    "label": "Thumbnail Image",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-2892742D702B2_002-000001_thumb"
+                                }
+                            ]
+                        },
+                        {
+                            "thumbnail": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-2892742D702B2_003-000001",
+                            "idsId": "NASM-2892742D702B2_003-000001",
+                            "usage": { "access": "CC0" },
+                            "guid": "http://n2t.net/ark:/65665/gf4f625e770-288b-4cf6-ae8a-890cc59e677e",
+                            "type": "Images",
+                            "content": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-2892742D702B2_003-000001",
+                            "resources": [
+                                {
+                                    "width": 5472,
+                                    "height": 3648,
+                                    "label": "High-resolution JPEG",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-2892742D702B2_003-000001.jpg",
+                                    "dimensions": "5472x3648"
+                                },
+                                {
+                                    "label": "Screen Image",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-2892742D702B2_003-000001_screen"
+                                },
+                                {
+                                    "label": "Thumbnail Image",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-2892742D702B2_003-000001_thumb"
+                                }
+                            ]
+                        },
+                        {
+                            "thumbnail": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-2892742D702B2_004-000001",
+                            "idsId": "NASM-2892742D702B2_004-000001",
+                            "usage": { "access": "CC0" },
+                            "guid": "http://n2t.net/ark:/65665/gf4d4bb6865-6406-4f0a-9188-4dbe94d808b4",
+                            "type": "Images",
+                            "content": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-2892742D702B2_004-000001",
+                            "resources": [
+                                {
+                                    "width": 3648,
+                                    "height": 3648,
+                                    "label": "High-resolution JPEG",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-2892742D702B2_004-000001.jpg",
+                                    "dimensions": "3648x3648"
+                                },
+                                {
+                                    "label": "Screen Image",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-2892742D702B2_004-000001_screen"
+                                },
+                                {
+                                    "label": "Thumbnail Image",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-2892742D702B2_004-000001_thumb"
+                                }
+                            ]
+                        },
+                        {
+                            "thumbnail": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-2892742D702B2_005-000001",
+                            "idsId": "NASM-2892742D702B2_005-000001",
+                            "usage": { "access": "CC0" },
+                            "guid": "http://n2t.net/ark:/65665/gf4096aa67e-ae79-4ee7-aca7-56c7b499718f",
+                            "type": "Images",
+                            "content": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-2892742D702B2_005-000001",
+                            "resources": [
+                                {
+                                    "width": 3648,
+                                    "height": 3648,
+                                    "label": "High-resolution JPEG",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-2892742D702B2_005-000001.jpg",
+                                    "dimensions": "3648x3648"
+                                },
+                                {
+                                    "label": "Screen Image",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-2892742D702B2_005-000001_screen"
+                                },
+                                {
+                                    "label": "Thumbnail Image",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-2892742D702B2_005-000001_thumb"
+                                }
+                            ]
+                        },
+                        {
+                            "thumbnail": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-2892742D702B2_006-000001",
+                            "idsId": "NASM-2892742D702B2_006-000001",
+                            "usage": { "access": "CC0" },
+                            "guid": "http://n2t.net/ark:/65665/gf457a6b1d5-3c8e-49dc-9611-0e727c3191df",
+                            "type": "Images",
+                            "content": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-2892742D702B2_006-000001",
+                            "resources": [
+                                {
+                                    "width": 3648,
+                                    "height": 3648,
+                                    "label": "High-resolution JPEG",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-2892742D702B2_006-000001.jpg",
+                                    "dimensions": "3648x3648"
+                                },
+                                {
+                                    "label": "Screen Image",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-2892742D702B2_006-000001_screen"
+                                },
+                                {
+                                    "label": "Thumbnail Image",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-2892742D702B2_006-000001_thumb"
+                                }
+                            ]
+                        },
+                        {
+                            "thumbnail": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-2892742D702B2_007-000001",
+                            "idsId": "NASM-2892742D702B2_007-000001",
+                            "usage": { "access": "CC0" },
+                            "guid": "http://n2t.net/ark:/65665/gf4357e3e8d-0a4b-45b9-9ba0-f7ed8547c51c",
+                            "type": "Images",
+                            "content": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-2892742D702B2_007-000001",
+                            "resources": [
+                                {
+                                    "width": 3648,
+                                    "height": 3648,
+                                    "label": "High-resolution JPEG",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-2892742D702B2_007-000001.jpg",
+                                    "dimensions": "3648x3648"
+                                },
+                                {
+                                    "label": "Screen Image",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-2892742D702B2_007-000001_screen"
+                                },
+                                {
+                                    "label": "Thumbnail Image",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-2892742D702B2_007-000001_thumb"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "unit_code": "NASM",
+                "title_sort": "INDICATOR, FUEL QUANTITY, JAPANESE ARMY, TYPE-100",
+                "guid": "http://n2t.net/ark:/65665/nv9dc831b25-5535-47ff-8de4-fa115c732694",
+                "record_link": "http://n2t.net/ark:/65665/nv9dc831b25-5535-47ff-8de4-fa115c732694",
+                "title": {
+                    "label": "Object Name",
+                    "content": "Indicator, Fuel Quantity, Japanese Army, Type-100"
+                },
+                "metadata_usage": { "access": "CC0" },
+                "data_source": "National Air and Space Museum"
+            },
+            "indexedStructured": {
+                "geoLocation": [
+                    { "L2": { "type": "Country", "content": "Japan" } }
+                ],
+                "object_type": ["Engines"],
+                "name": [
+                    "Shinagawa Manufacturing Plant (Shinagawa Seisakusho)"
+                ],
+                "place": ["Japan"],
+                "usage_flag": ["Aviation", "Instruments", "World War II"],
+                "online_media_type": ["Images"]
+            },
+            "freetext": {
+                "setName": [
+                    {
+                        "label": "See more items in",
+                        "content": "National Air and Space Museum Collection"
+                    }
+                ],
+                "identifier": [
+                    { "label": "Inventory Number", "content": "A19480151000" }
+                ],
+                "notes": [
+                    {
+                        "label": "Physical Description",
+                        "content": "Pressure-operated black face w/white nos. 31/4 ins, 0-35 scale"
+                    }
+                ],
+                "creditLine": [
+                    {
+                        "label": "Credit Line",
+                        "content": "Gift of Lt. Kimbrough S. Brown"
+                    }
+                ],
+                "name": [
+                    {
+                        "label": "Manufacturer",
+                        "content": "Shinagawa Manufacturing Plant (Shinagawa Seisakusho)"
+                    }
+                ],
+                "place": [{ "label": "Country of Origin", "content": "Japan" }],
+                "physicalDescription": [
+                    {
+                        "label": "Materials",
+                        "content": "Non Magnetic White Metal Alloy"
+                    },
+                    { "label": "Materials", "content": "Copper Alloy" },
+                    { "label": "Materials", "content": "Paint" },
+                    { "label": "Materials", "content": "Glass" },
+                    {
+                        "label": "Dimensions",
+                        "content": "3-D: 8.6 Ã— 14.4 Ã— 11.6cm (3 3/8 Ã— 5 11/16 Ã— 4 9/16 in.)"
+                    }
+                ],
+                "dataSource": [
+                    {
+                        "label": "Data Source",
+                        "content": "National Air and Space Museum"
+                    }
+                ],
+                "objectRights": [
+                    { "label": "Restrictions \u0026 Rights", "content": "CC0" }
+                ],
+                "objectType": [
+                    {
+                        "label": "Type",
+                        "content": "INSTRUMENTS-Engine \u0026 Fuel"
+                    }
+                ]
+            }
+        },
+        "url": "edanmdm:nasm_A19480151000",
+        "hash": "d640361a903c6ca58779b7e3fc3053bf53e3edb1",
+        "docSignature": "4f6b544e2cb23fa1792496f71ace1325",
+        "timestamp": 1666664365,
+        "lastTimeUpdated": 1653682060,
+        "title": "Indicator, Fuel Quantity, Japanese Army, Type-100"
+    },
+    {
+        "id": "ld1-1643400021979-1643400025064-0",
+        "version": "",
+        "unitCode": "NASM",
+        "linkedId": "",
+        "type": "edanmdm",
+        "content": {
+            "descriptiveNonRepeating": {
+                "record_ID": "nasm_A19690360000",
+                "online_media": {
+                    "mediaCount": 57,
+                    "media": [
+                        {
+                            "thumbnail": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-A19690360000-NASM2018-10037",
+                            "idsId": "NASM-A19690360000-NASM2018-10037",
+                            "usage": { "access": "CC0" },
+                            "guid": "http://n2t.net/ark:/65665/gf42f28e069-30d2-4d99-9f33-61ecb05998ab",
+                            "type": "Images",
+                            "content": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-A19690360000-NASM2018-10037",
+                            "text_equiv": "Black titanium rocket-shaped North American x-15 aircraft hanging in museum",
+                            "resources": [
+                                {
+                                    "label": "High-resolution TIFF",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-A19690360000-NASM2018-10037.tif",
+                                    "width": 8688,
+                                    "height": 5792
+                                },
+                                {
+                                    "width": 8688,
+                                    "height": 5792,
+                                    "label": "High-resolution JPEG",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-A19690360000-NASM2018-10037.jpg",
+                                    "dimensions": "8688x5792"
+                                },
+                                {
+                                    "label": "Screen Image",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-A19690360000-NASM2018-10037_screen"
+                                },
+                                {
+                                    "label": "Thumbnail Image",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-A19690360000-NASM2018-10037_thumb"
+                                }
+                            ]
+                        },
+                        {
+                            "thumbnail": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-A19690360000-NASM2018-10038",
+                            "idsId": "NASM-A19690360000-NASM2018-10038",
+                            "usage": { "access": "CC0" },
+                            "guid": "http://n2t.net/ark:/65665/gf45a7abb21-4bb8-4738-8c4a-301491b0fefd",
+                            "type": "Images",
+                            "content": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-A19690360000-NASM2018-10038",
+                            "text_equiv": "Two circlular indentations on side of rounded nose of black titanium North American x-15\n                aircraft",
+                            "resources": [
+                                {
+                                    "label": "High-resolution TIFF",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-A19690360000-NASM2018-10038.tif",
+                                    "width": 8688,
+                                    "height": 5792
+                                },
+                                {
+                                    "width": 8688,
+                                    "height": 5792,
+                                    "label": "High-resolution JPEG",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-A19690360000-NASM2018-10038.jpg",
+                                    "dimensions": "8688x5792"
+                                },
+                                {
+                                    "label": "Screen Image",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-A19690360000-NASM2018-10038_screen"
+                                },
+                                {
+                                    "label": "Thumbnail Image",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-A19690360000-NASM2018-10038_thumb"
+                                }
+                            ]
+                        },
+                        {
+                            "thumbnail": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-A19690360000-NASM2018-10039",
+                            "idsId": "NASM-A19690360000-NASM2018-10039",
+                            "usage": { "access": "CC0" },
+                            "guid": "http://n2t.net/ark:/65665/gf416ae6533-1d9b-4076-99a0-5791ad74cff3",
+                            "type": "Images",
+                            "content": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-A19690360000-NASM2018-10039",
+                            "text_equiv": "Small bent metal tue sticking out from cockpit of black titanium North American x-15 aircraft",
+                            "resources": [
+                                {
+                                    "label": "High-resolution TIFF",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-A19690360000-NASM2018-10039.tif",
+                                    "width": 8688,
+                                    "height": 5792
+                                },
+                                {
+                                    "width": 8688,
+                                    "height": 5792,
+                                    "label": "High-resolution JPEG",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-A19690360000-NASM2018-10039.jpg",
+                                    "dimensions": "8688x5792"
+                                },
+                                {
+                                    "label": "Screen Image",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-A19690360000-NASM2018-10039_screen"
+                                },
+                                {
+                                    "label": "Thumbnail Image",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-A19690360000-NASM2018-10039_thumb"
+                                }
+                            ]
+                        },
+                        {
+                            "thumbnail": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-A19690360000-NASM2018-10040",
+                            "idsId": "NASM-A19690360000-NASM2018-10040",
+                            "usage": { "access": "CC0" },
+                            "guid": "http://n2t.net/ark:/65665/gf426975189-4a55-4af7-b074-5035ec8466a6",
+                            "type": "Images",
+                            "content": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-A19690360000-NASM2018-10040",
+                            "text_equiv": "\"APU Exhaust\" in white lettering on black titanium North American x-15 aircraft",
+                            "resources": [
+                                {
+                                    "label": "High-resolution TIFF",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-A19690360000-NASM2018-10040.tif",
+                                    "width": 8688,
+                                    "height": 5792
+                                },
+                                {
+                                    "width": 8688,
+                                    "height": 5792,
+                                    "label": "High-resolution JPEG",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-A19690360000-NASM2018-10040.jpg",
+                                    "dimensions": "8688x5792"
+                                },
+                                {
+                                    "label": "Screen Image",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-A19690360000-NASM2018-10040_screen"
+                                },
+                                {
+                                    "label": "Thumbnail Image",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-A19690360000-NASM2018-10040_thumb"
+                                }
+                            ]
+                        },
+                        {
+                            "thumbnail": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-A19690360000-NASM2018-10041",
+                            "idsId": "NASM-A19690360000-NASM2018-10041",
+                            "usage": { "access": "CC0" },
+                            "guid": "http://n2t.net/ark:/65665/gf4b88837c9-fc87-4768-b730-286388114448",
+                            "type": "Images",
+                            "content": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-A19690360000-NASM2018-10041",
+                            "text_equiv": "Red square outline and \"Caution\" in white lettering on black titanium North American x-15\n                aircraft",
+                            "resources": [
+                                {
+                                    "label": "High-resolution TIFF",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-A19690360000-NASM2018-10041.tif",
+                                    "width": 8688,
+                                    "height": 5792
+                                },
+                                {
+                                    "width": 8688,
+                                    "height": 5792,
+                                    "label": "High-resolution JPEG",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-A19690360000-NASM2018-10041.jpg",
+                                    "dimensions": "8688x5792"
+                                },
+                                {
+                                    "label": "Screen Image",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-A19690360000-NASM2018-10041_screen"
+                                },
+                                {
+                                    "label": "Thumbnail Image",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-A19690360000-NASM2018-10041_thumb"
+                                }
+                            ]
+                        },
+                        {
+                            "thumbnail": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-A19690360000-NASM2018-10042",
+                            "idsId": "NASM-A19690360000-NASM2018-10042",
+                            "usage": { "access": "CC0" },
+                            "guid": "http://n2t.net/ark:/65665/gf4bab0d955-6174-447a-b93a-9cc6c2d4fe0c",
+                            "type": "Images",
+                            "content": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-A19690360000-NASM2018-10042",
+                            "text_equiv": "Long rounded bump on side of black titanium North American x-15 aircraft",
+                            "resources": [
+                                {
+                                    "label": "High-resolution TIFF",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-A19690360000-NASM2018-10042.tif",
+                                    "width": 8688,
+                                    "height": 5792
+                                },
+                                {
+                                    "width": 8688,
+                                    "height": 5792,
+                                    "label": "High-resolution JPEG",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-A19690360000-NASM2018-10042.jpg",
+                                    "dimensions": "8688x5792"
+                                },
+                                {
+                                    "label": "Screen Image",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-A19690360000-NASM2018-10042_screen"
+                                },
+                                {
+                                    "label": "Thumbnail Image",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-A19690360000-NASM2018-10042_thumb"
+                                }
+                            ]
+                        },
+                        {
+                            "thumbnail": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-A19690360000-NASM2018-10043",
+                            "idsId": "NASM-A19690360000-NASM2018-10043",
+                            "usage": { "access": "CC0" },
+                            "guid": "http://n2t.net/ark:/65665/gf4f01a3590-bef5-42d3-b126-64b536e2c4f4",
+                            "type": "Images",
+                            "content": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-A19690360000-NASM2018-10043",
+                            "text_equiv": "Red triangle \"Danger Ejection Seat\" label on side of black titanium North American x-15\n                aircraft",
+                            "resources": [
+                                {
+                                    "label": "High-resolution TIFF",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-A19690360000-NASM2018-10043.tif",
+                                    "width": 8688,
+                                    "height": 5792
+                                },
+                                {
+                                    "width": 8688,
+                                    "height": 5792,
+                                    "label": "High-resolution JPEG",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-A19690360000-NASM2018-10043.jpg",
+                                    "dimensions": "8688x5792"
+                                },
+                                {
+                                    "label": "Screen Image",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-A19690360000-NASM2018-10043_screen"
+                                },
+                                {
+                                    "label": "Thumbnail Image",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-A19690360000-NASM2018-10043_thumb"
+                                }
+                            ]
+                        },
+                        {
+                            "thumbnail": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-A19690360000-NASM2018-10044",
+                            "idsId": "NASM-A19690360000-NASM2018-10044",
+                            "usage": { "access": "CC0" },
+                            "guid": "http://n2t.net/ark:/65665/gf4a92b55ba-31cf-4357-924e-7ac522971e74",
+                            "type": "Images",
+                            "content": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-A19690360000-NASM2018-10044",
+                            "text_equiv": "Yellow rescue label and yellow spear detail on nose of black titanium North American x-15\n                aircraft",
+                            "resources": [
+                                {
+                                    "label": "High-resolution TIFF",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-A19690360000-NASM2018-10044.tif",
+                                    "width": 8688,
+                                    "height": 5792
+                                },
+                                {
+                                    "width": 8688,
+                                    "height": 5792,
+                                    "label": "High-resolution JPEG",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-A19690360000-NASM2018-10044.jpg",
+                                    "dimensions": "8688x5792"
+                                },
+                                {
+                                    "label": "Screen Image",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-A19690360000-NASM2018-10044_screen"
+                                },
+                                {
+                                    "label": "Thumbnail Image",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-A19690360000-NASM2018-10044_thumb"
+                                }
+                            ]
+                        },
+                        {
+                            "thumbnail": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-A19690360000-NASM2018-10045",
+                            "idsId": "NASM-A19690360000-NASM2018-10045",
+                            "usage": { "access": "CC0" },
+                            "guid": "http://n2t.net/ark:/65665/gf4f17d5250-ca64-4756-99f8-3877b734a095",
+                            "type": "Images",
+                            "content": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-A19690360000-NASM2018-10045",
+                            "text_equiv": "Metal plated vent on bottom of black titanium North American X-15 aircraft",
+                            "resources": [
+                                {
+                                    "label": "High-resolution TIFF",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-A19690360000-NASM2018-10045.tif",
+                                    "width": 8688,
+                                    "height": 5792
+                                },
+                                {
+                                    "width": 8688,
+                                    "height": 5792,
+                                    "label": "High-resolution JPEG",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-A19690360000-NASM2018-10045.jpg",
+                                    "dimensions": "8688x5792"
+                                },
+                                {
+                                    "label": "Screen Image",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-A19690360000-NASM2018-10045_screen"
+                                },
+                                {
+                                    "label": "Thumbnail Image",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-A19690360000-NASM2018-10045_thumb"
+                                }
+                            ]
+                        },
+                        {
+                            "thumbnail": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-A19690360000-NASM2018-10046",
+                            "idsId": "NASM-A19690360000-NASM2018-10046",
+                            "usage": { "access": "CC0" },
+                            "guid": "http://n2t.net/ark:/65665/gf4d0dbd7eb-953a-4b9d-919b-06b1fe2b652a",
+                            "type": "Images",
+                            "content": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-A19690360000-NASM2018-10046",
+                            "text_equiv": "Circular metal plates and apparatuses on bottom of North American x-15 aircraft",
+                            "resources": [
+                                {
+                                    "label": "High-resolution TIFF",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-A19690360000-NASM2018-10046.tif",
+                                    "width": 8688,
+                                    "height": 5792
+                                },
+                                {
+                                    "width": 8688,
+                                    "height": 5792,
+                                    "label": "High-resolution JPEG",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-A19690360000-NASM2018-10046.jpg",
+                                    "dimensions": "8688x5792"
+                                },
+                                {
+                                    "label": "Screen Image",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-A19690360000-NASM2018-10046_screen"
+                                },
+                                {
+                                    "label": "Thumbnail Image",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-A19690360000-NASM2018-10046_thumb"
+                                }
+                            ]
+                        },
+                        {
+                            "thumbnail": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-A19690360000-NASM2018-10047",
+                            "idsId": "NASM-A19690360000-NASM2018-10047",
+                            "usage": { "access": "CC0" },
+                            "guid": "http://n2t.net/ark:/65665/gf4da2d5128-8762-4953-a8ff-781bbb7f3f02",
+                            "type": "Images",
+                            "content": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-A19690360000-NASM2018-10047",
+                            "text_equiv": "Opened oval-shaped hatch door on undercarriage of the North American X-15 aircraft",
+                            "resources": [
+                                {
+                                    "label": "High-resolution TIFF",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-A19690360000-NASM2018-10047.tif",
+                                    "width": 8688,
+                                    "height": 5792
+                                },
+                                {
+                                    "width": 8688,
+                                    "height": 5792,
+                                    "label": "High-resolution JPEG",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-A19690360000-NASM2018-10047.jpg",
+                                    "dimensions": "8688x5792"
+                                },
+                                {
+                                    "label": "Screen Image",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-A19690360000-NASM2018-10047_screen"
+                                },
+                                {
+                                    "label": "Thumbnail Image",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-A19690360000-NASM2018-10047_thumb"
+                                }
+                            ]
+                        },
+                        {
+                            "thumbnail": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-A19690360000-NASM2018-10048",
+                            "idsId": "NASM-A19690360000-NASM2018-10048",
+                            "usage": { "access": "CC0" },
+                            "guid": "http://n2t.net/ark:/65665/gf43050d06a-4ee0-422d-9541-c151456b503f",
+                            "type": "Images",
+                            "content": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-A19690360000-NASM2018-10048",
+                            "text_equiv": "Two circular holes in body of black titanium North American X-15 aircraft",
+                            "resources": [
+                                {
+                                    "label": "High-resolution TIFF",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-A19690360000-NASM2018-10048.tif",
+                                    "width": 8688,
+                                    "height": 5792
+                                },
+                                {
+                                    "width": 8688,
+                                    "height": 5792,
+                                    "label": "High-resolution JPEG",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-A19690360000-NASM2018-10048.jpg",
+                                    "dimensions": "8688x5792"
+                                },
+                                {
+                                    "label": "Screen Image",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-A19690360000-NASM2018-10048_screen"
+                                },
+                                {
+                                    "label": "Thumbnail Image",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-A19690360000-NASM2018-10048_thumb"
+                                }
+                            ]
+                        },
+                        {
+                            "thumbnail": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-A19690360000-NASM2018-10049",
+                            "idsId": "NASM-A19690360000-NASM2018-10049",
+                            "usage": { "access": "CC0" },
+                            "guid": "http://n2t.net/ark:/65665/gf40df2b788-353a-4e0b-bbbe-2f9f5aa0208c",
+                            "type": "Images",
+                            "content": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-A19690360000-NASM2018-10049",
+                            "text_equiv": "Circular metal plates and apparatuses on bottom of North American x-15 aircraft",
+                            "resources": [
+                                {
+                                    "label": "High-resolution TIFF",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-A19690360000-NASM2018-10049.tif",
+                                    "width": 5792,
+                                    "height": 8688
+                                },
+                                {
+                                    "width": 5792,
+                                    "height": 8688,
+                                    "label": "High-resolution JPEG",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-A19690360000-NASM2018-10049.jpg",
+                                    "dimensions": "5792x8688"
+                                },
+                                {
+                                    "label": "Screen Image",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-A19690360000-NASM2018-10049_screen"
+                                },
+                                {
+                                    "label": "Thumbnail Image",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-A19690360000-NASM2018-10049_thumb"
+                                }
+                            ]
+                        },
+                        {
+                            "thumbnail": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-A19690360000-NASM2018-10050",
+                            "idsId": "NASM-A19690360000-NASM2018-10050",
+                            "usage": { "access": "CC0" },
+                            "guid": "http://n2t.net/ark:/65665/gf4d1ecd19c-ab3a-47b2-8769-b69446dde60c",
+                            "type": "Images",
+                            "content": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-A19690360000-NASM2018-10050",
+                            "text_equiv": "Circular metal plates and apparatuses on bottom of North American x-15 aircraft",
+                            "resources": [
+                                {
+                                    "label": "High-resolution TIFF",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-A19690360000-NASM2018-10050.tif",
+                                    "width": 5792,
+                                    "height": 8688
+                                },
+                                {
+                                    "width": 5792,
+                                    "height": 8688,
+                                    "label": "High-resolution JPEG",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-A19690360000-NASM2018-10050.jpg",
+                                    "dimensions": "5792x8688"
+                                },
+                                {
+                                    "label": "Screen Image",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-A19690360000-NASM2018-10050_screen"
+                                },
+                                {
+                                    "label": "Thumbnail Image",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-A19690360000-NASM2018-10050_thumb"
+                                }
+                            ]
+                        },
+                        {
+                            "thumbnail": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-A19690360000-NASM2018-10051",
+                            "idsId": "NASM-A19690360000-NASM2018-10051",
+                            "usage": { "access": "CC0" },
+                            "guid": "http://n2t.net/ark:/65665/gf4f810a842-dccf-4af6-919c-41cc6c043916",
+                            "type": "Images",
+                            "content": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-A19690360000-NASM2018-10051",
+                            "text_equiv": "Circular metal plates and apparatuses on bottom of North American x-15 aircraft",
+                            "resources": [
+                                {
+                                    "label": "High-resolution TIFF",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-A19690360000-NASM2018-10051.tif",
+                                    "width": 8688,
+                                    "height": 5792
+                                },
+                                {
+                                    "width": 8688,
+                                    "height": 5792,
+                                    "label": "High-resolution JPEG",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-A19690360000-NASM2018-10051.jpg",
+                                    "dimensions": "8688x5792"
+                                },
+                                {
+                                    "label": "Screen Image",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-A19690360000-NASM2018-10051_screen"
+                                },
+                                {
+                                    "label": "Thumbnail Image",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-A19690360000-NASM2018-10051_thumb"
+                                }
+                            ]
+                        },
+                        {
+                            "thumbnail": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-A19690360000-NASM2018-10052",
+                            "idsId": "NASM-A19690360000-NASM2018-10052",
+                            "usage": { "access": "CC0" },
+                            "guid": "http://n2t.net/ark:/65665/gf4acb7ff87-a29a-40b3-88cf-d4a40617ec00",
+                            "type": "Images",
+                            "content": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-A19690360000-NASM2018-10052",
+                            "text_equiv": "Circular metal plates and apparatuses on bottom of North American x-15 aircraft",
+                            "resources": [
+                                {
+                                    "label": "High-resolution TIFF",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-A19690360000-NASM2018-10052.tif",
+                                    "width": 8688,
+                                    "height": 5792
+                                },
+                                {
+                                    "width": 8688,
+                                    "height": 5792,
+                                    "label": "High-resolution JPEG",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-A19690360000-NASM2018-10052.jpg",
+                                    "dimensions": "8688x5792"
+                                },
+                                {
+                                    "label": "Screen Image",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-A19690360000-NASM2018-10052_screen"
+                                },
+                                {
+                                    "label": "Thumbnail Image",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-A19690360000-NASM2018-10052_thumb"
+                                }
+                            ]
+                        },
+                        {
+                            "thumbnail": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-A19690360000-NASM2018-10053",
+                            "idsId": "NASM-A19690360000-NASM2018-10053",
+                            "usage": { "access": "CC0" },
+                            "guid": "http://n2t.net/ark:/65665/gf470dfd949-a835-43df-b83a-62d269cdb409",
+                            "type": "Images",
+                            "content": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-A19690360000-NASM2018-10053",
+                            "text_equiv": "Circular metal plates and apparatuses on bottom of North American x-15 aircraft",
+                            "resources": [
+                                {
+                                    "label": "High-resolution TIFF",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-A19690360000-NASM2018-10053.tif",
+                                    "width": 8688,
+                                    "height": 5792
+                                },
+                                {
+                                    "width": 8688,
+                                    "height": 5792,
+                                    "label": "High-resolution JPEG",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-A19690360000-NASM2018-10053.jpg",
+                                    "dimensions": "8688x5792"
+                                },
+                                {
+                                    "label": "Screen Image",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-A19690360000-NASM2018-10053_screen"
+                                },
+                                {
+                                    "label": "Thumbnail Image",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-A19690360000-NASM2018-10053_thumb"
+                                }
+                            ]
+                        },
+                        {
+                            "thumbnail": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-A19690360000-NASM2018-10054",
+                            "idsId": "NASM-A19690360000-NASM2018-10054",
+                            "usage": { "access": "CC0" },
+                            "guid": "http://n2t.net/ark:/65665/gf4ee332c34-0880-4473-9cf3-ba3a6bfaf6aa",
+                            "type": "Images",
+                            "content": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-A19690360000-NASM2018-10054",
+                            "text_equiv": "Rocket Engine with \"H202 JETT\" in white lettering on body of black titanium North American X-15\n                aircraft",
+                            "resources": [
+                                {
+                                    "label": "High-resolution TIFF",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-A19690360000-NASM2018-10054.tif",
+                                    "width": 8688,
+                                    "height": 5792
+                                },
+                                {
+                                    "width": 8688,
+                                    "height": 5792,
+                                    "label": "High-resolution JPEG",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-A19690360000-NASM2018-10054.jpg",
+                                    "dimensions": "8688x5792"
+                                },
+                                {
+                                    "label": "Screen Image",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-A19690360000-NASM2018-10054_screen"
+                                },
+                                {
+                                    "label": "Thumbnail Image",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-A19690360000-NASM2018-10054_thumb"
+                                }
+                            ]
+                        },
+                        {
+                            "thumbnail": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-A19690360000-NASM2018-10055",
+                            "idsId": "NASM-A19690360000-NASM2018-10055",
+                            "usage": { "access": "CC0" },
+                            "guid": "http://n2t.net/ark:/65665/gf43a1ba113-8dab-47f0-948c-09a92d8432a2",
+                            "type": "Images",
+                            "content": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-A19690360000-NASM2018-10055",
+                            "text_equiv": "Black rectangular box-shaped attachment on body of black titanium North American X-15 aircraft",
+                            "resources": [
+                                {
+                                    "label": "High-resolution TIFF",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-A19690360000-NASM2018-10055.tif",
+                                    "width": 8688,
+                                    "height": 5792
+                                },
+                                {
+                                    "width": 8688,
+                                    "height": 5792,
+                                    "label": "High-resolution JPEG",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-A19690360000-NASM2018-10055.jpg",
+                                    "dimensions": "8688x5792"
+                                },
+                                {
+                                    "label": "Screen Image",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-A19690360000-NASM2018-10055_screen"
+                                },
+                                {
+                                    "label": "Thumbnail Image",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-A19690360000-NASM2018-10055_thumb"
+                                }
+                            ]
+                        },
+                        {
+                            "thumbnail": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-A19690360000-NASM2018-10056",
+                            "idsId": "NASM-A19690360000-NASM2018-10056",
+                            "usage": { "access": "CC0" },
+                            "guid": "http://n2t.net/ark:/65665/gf4d2baa022-852b-4490-a200-96785513a0c8",
+                            "type": "Images",
+                            "content": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-A19690360000-NASM2018-10056",
+                            "text_equiv": "Black rectangular box-shaped attachment on body of black titanium North American X-15 aircraft",
+                            "resources": [
+                                {
+                                    "label": "High-resolution TIFF",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-A19690360000-NASM2018-10056.tif",
+                                    "width": 8688,
+                                    "height": 5792
+                                },
+                                {
+                                    "width": 8688,
+                                    "height": 5792,
+                                    "label": "High-resolution JPEG",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-A19690360000-NASM2018-10056.jpg",
+                                    "dimensions": "8688x5792"
+                                },
+                                {
+                                    "label": "Screen Image",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-A19690360000-NASM2018-10056_screen"
+                                },
+                                {
+                                    "label": "Thumbnail Image",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-A19690360000-NASM2018-10056_thumb"
+                                }
+                            ]
+                        },
+                        {
+                            "thumbnail": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-A19690360000-NASM2018-10057",
+                            "idsId": "NASM-A19690360000-NASM2018-10057",
+                            "usage": { "access": "CC0" },
+                            "guid": "http://n2t.net/ark:/65665/gf433ed50af-8b46-461a-af4f-42e6d1a3fedd",
+                            "type": "Images",
+                            "content": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-A19690360000-NASM2018-10057",
+                            "text_equiv": "Two narrow tail pipes on back side of black titanium North American X-15 aircraft",
+                            "resources": [
+                                {
+                                    "label": "High-resolution TIFF",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-A19690360000-NASM2018-10057.tif",
+                                    "width": 8688,
+                                    "height": 5792
+                                },
+                                {
+                                    "width": 8688,
+                                    "height": 5792,
+                                    "label": "High-resolution JPEG",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-A19690360000-NASM2018-10057.jpg",
+                                    "dimensions": "8688x5792"
+                                },
+                                {
+                                    "label": "Screen Image",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-A19690360000-NASM2018-10057_screen"
+                                },
+                                {
+                                    "label": "Thumbnail Image",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-A19690360000-NASM2018-10057_thumb"
+                                }
+                            ]
+                        },
+                        {
+                            "thumbnail": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-A19690360000-NASM2018-10058",
+                            "idsId": "NASM-A19690360000-NASM2018-10058",
+                            "usage": { "access": "CC0" },
+                            "guid": "http://n2t.net/ark:/65665/gf4f0782638-fa3c-4d57-a547-421494e33c7b",
+                            "type": "Images",
+                            "content": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-A19690360000-NASM2018-10058",
+                            "text_equiv": "White \"Beware of Blast\" label and two narrow tail pipes on back side of black titanium North\n                American X-15 aircraft",
+                            "resources": [
+                                {
+                                    "label": "High-resolution TIFF",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-A19690360000-NASM2018-10058.tif",
+                                    "width": 8688,
+                                    "height": 5792
+                                },
+                                {
+                                    "width": 8688,
+                                    "height": 5792,
+                                    "label": "High-resolution JPEG",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-A19690360000-NASM2018-10058.jpg",
+                                    "dimensions": "8688x5792"
+                                },
+                                {
+                                    "label": "Screen Image",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-A19690360000-NASM2018-10058_screen"
+                                },
+                                {
+                                    "label": "Thumbnail Image",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-A19690360000-NASM2018-10058_thumb"
+                                }
+                            ]
+                        },
+                        {
+                            "thumbnail": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-A19690360000-NASM2018-10059",
+                            "idsId": "NASM-A19690360000-NASM2018-10059",
+                            "usage": { "access": "CC0" },
+                            "guid": "http://n2t.net/ark:/65665/gf4f8b43d47-b378-4d83-960e-b85ffa8b26c4",
+                            "type": "Images",
+                            "content": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-A19690360000-NASM2018-10059",
+                            "text_equiv": "Long slim metal exhaust pipes on side of North American X-15 aircraft",
+                            "resources": [
+                                {
+                                    "label": "High-resolution TIFF",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-A19690360000-NASM2018-10059.tif",
+                                    "width": 8688,
+                                    "height": 5792
+                                },
+                                {
+                                    "width": 8688,
+                                    "height": 5792,
+                                    "label": "High-resolution JPEG",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-A19690360000-NASM2018-10059.jpg",
+                                    "dimensions": "8688x5792"
+                                },
+                                {
+                                    "label": "Screen Image",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-A19690360000-NASM2018-10059_screen"
+                                },
+                                {
+                                    "label": "Thumbnail Image",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-A19690360000-NASM2018-10059_thumb"
+                                }
+                            ]
+                        },
+                        {
+                            "thumbnail": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-SI-2007-12572",
+                            "idsId": "NASM-SI-2007-12572",
+                            "usage": { "access": "CC0" },
+                            "guid": "http://n2t.net/ark:/65665/gf4e7f8434a-86ec-4e68-9d16-d7ad3d688903",
+                            "type": "Images",
+                            "content": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-SI-2007-12572",
+                            "resources": [
+                                {
+                                    "label": "High-resolution TIFF",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-SI-2007-12572.tif",
+                                    "width": 4631,
+                                    "height": 3321
+                                },
+                                {
+                                    "width": 4631,
+                                    "height": 3321,
+                                    "label": "High-resolution JPEG",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-SI-2007-12572.jpg",
+                                    "dimensions": "4631x3321"
+                                },
+                                {
+                                    "label": "Screen Image",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-SI-2007-12572_screen"
+                                },
+                                {
+                                    "label": "Thumbnail Image",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-SI-2007-12572_thumb"
+                                }
+                            ]
+                        },
+                        {
+                            "thumbnail": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-SI-2007-12580",
+                            "idsId": "NASM-SI-2007-12580",
+                            "usage": { "access": "CC0" },
+                            "guid": "http://n2t.net/ark:/65665/gf4bfcd8a2b-373b-43e5-9840-4c83c1d3d18f",
+                            "type": "Images",
+                            "content": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-SI-2007-12580",
+                            "resources": [
+                                {
+                                    "label": "High-resolution TIFF",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-SI-2007-12580.tif",
+                                    "width": 4992,
+                                    "height": 3328
+                                },
+                                {
+                                    "width": 4992,
+                                    "height": 3328,
+                                    "label": "High-resolution JPEG",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-SI-2007-12580.jpg",
+                                    "dimensions": "4992x3328"
+                                },
+                                {
+                                    "label": "Screen Image",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-SI-2007-12580_screen"
+                                },
+                                {
+                                    "label": "Thumbnail Image",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-SI-2007-12580_thumb"
+                                }
+                            ]
+                        },
+                        {
+                            "thumbnail": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-SI-2007-12573",
+                            "idsId": "NASM-SI-2007-12573",
+                            "usage": { "access": "CC0" },
+                            "guid": "http://n2t.net/ark:/65665/gf479b55abe-fed6-44a3-8764-28c4ac701a6e",
+                            "type": "Images",
+                            "content": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-SI-2007-12573",
+                            "resources": [
+                                {
+                                    "label": "High-resolution TIFF",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-SI-2007-12573.tif",
+                                    "width": 4696,
+                                    "height": 3192
+                                },
+                                {
+                                    "width": 4696,
+                                    "height": 3192,
+                                    "label": "High-resolution JPEG",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-SI-2007-12573.jpg",
+                                    "dimensions": "4696x3192"
+                                },
+                                {
+                                    "label": "Screen Image",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-SI-2007-12573_screen"
+                                },
+                                {
+                                    "label": "Thumbnail Image",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-SI-2007-12573_thumb"
+                                }
+                            ]
+                        },
+                        {
+                            "thumbnail": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-SI-2007-12574",
+                            "idsId": "NASM-SI-2007-12574",
+                            "usage": { "access": "CC0" },
+                            "guid": "http://n2t.net/ark:/65665/gf46f0ce1d1-498a-406c-a4a4-bed70a2ec0f1",
+                            "type": "Images",
+                            "content": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-SI-2007-12574",
+                            "resources": [
+                                {
+                                    "label": "High-resolution TIFF",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-SI-2007-12574.tif",
+                                    "width": 3328,
+                                    "height": 4992
+                                },
+                                {
+                                    "width": 3328,
+                                    "height": 4992,
+                                    "label": "High-resolution JPEG",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-SI-2007-12574.jpg",
+                                    "dimensions": "3328x4992"
+                                },
+                                {
+                                    "label": "Screen Image",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-SI-2007-12574_screen"
+                                },
+                                {
+                                    "label": "Thumbnail Image",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-SI-2007-12574_thumb"
+                                }
+                            ]
+                        },
+                        {
+                            "thumbnail": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-SI-2007-12577",
+                            "idsId": "NASM-SI-2007-12577",
+                            "usage": { "access": "CC0" },
+                            "guid": "http://n2t.net/ark:/65665/gf464dd11a4-1d60-47e3-90b3-be3f116df97d",
+                            "type": "Images",
+                            "content": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-SI-2007-12577",
+                            "resources": [
+                                {
+                                    "label": "High-resolution TIFF",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-SI-2007-12577.tif",
+                                    "width": 4488,
+                                    "height": 3096
+                                },
+                                {
+                                    "width": 4488,
+                                    "height": 3096,
+                                    "label": "High-resolution JPEG",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-SI-2007-12577.jpg",
+                                    "dimensions": "4488x3096"
+                                },
+                                {
+                                    "label": "Screen Image",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-SI-2007-12577_screen"
+                                },
+                                {
+                                    "label": "Thumbnail Image",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-SI-2007-12577_thumb"
+                                }
+                            ]
+                        },
+                        {
+                            "thumbnail": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-SI-2007-12583",
+                            "idsId": "NASM-SI-2007-12583",
+                            "usage": { "access": "CC0" },
+                            "guid": "http://n2t.net/ark:/65665/gf43a5ed370-7a9d-4bfc-8194-53a71f617acb",
+                            "type": "Images",
+                            "content": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-SI-2007-12583",
+                            "resources": [
+                                {
+                                    "label": "High-resolution TIFF",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-SI-2007-12583.tif",
+                                    "width": 4992,
+                                    "height": 3328
+                                },
+                                {
+                                    "width": 4992,
+                                    "height": 3328,
+                                    "label": "High-resolution JPEG",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-SI-2007-12583.jpg",
+                                    "dimensions": "4992x3328"
+                                },
+                                {
+                                    "label": "Screen Image",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-SI-2007-12583_screen"
+                                },
+                                {
+                                    "label": "Thumbnail Image",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-SI-2007-12583_thumb"
+                                }
+                            ]
+                        },
+                        {
+                            "thumbnail": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-SI-2007-12575",
+                            "idsId": "NASM-SI-2007-12575",
+                            "usage": { "access": "CC0" },
+                            "guid": "http://n2t.net/ark:/65665/gf4bc418c9f-9de5-4046-a2ef-d44f2b8e7218",
+                            "type": "Images",
+                            "content": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-SI-2007-12575",
+                            "resources": [
+                                {
+                                    "label": "High-resolution TIFF",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-SI-2007-12575.tif",
+                                    "width": 4136,
+                                    "height": 2890
+                                },
+                                {
+                                    "width": 4136,
+                                    "height": 2890,
+                                    "label": "High-resolution JPEG",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-SI-2007-12575.jpg",
+                                    "dimensions": "4136x2890"
+                                },
+                                {
+                                    "label": "Screen Image",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-SI-2007-12575_screen"
+                                },
+                                {
+                                    "label": "Thumbnail Image",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-SI-2007-12575_thumb"
+                                }
+                            ]
+                        },
+                        {
+                            "thumbnail": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-SI-2007-12576",
+                            "idsId": "NASM-SI-2007-12576",
+                            "usage": { "access": "CC0" },
+                            "guid": "http://n2t.net/ark:/65665/gf43f806d7f-8418-48b2-8c5e-ae9a44f7a3bc",
+                            "type": "Images",
+                            "content": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-SI-2007-12576",
+                            "resources": [
+                                {
+                                    "label": "High-resolution TIFF",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-SI-2007-12576.tif",
+                                    "width": 4312,
+                                    "height": 3136
+                                },
+                                {
+                                    "width": 4312,
+                                    "height": 3136,
+                                    "label": "High-resolution JPEG",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-SI-2007-12576.jpg",
+                                    "dimensions": "4312x3136"
+                                },
+                                {
+                                    "label": "Screen Image",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-SI-2007-12576_screen"
+                                },
+                                {
+                                    "label": "Thumbnail Image",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-SI-2007-12576_thumb"
+                                }
+                            ]
+                        },
+                        {
+                            "thumbnail": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-SI-2007-12579",
+                            "idsId": "NASM-SI-2007-12579",
+                            "usage": { "access": "CC0" },
+                            "guid": "http://n2t.net/ark:/65665/gf4d410b648-ddda-4271-94e8-b7b1fcbee27b",
+                            "type": "Images",
+                            "content": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-SI-2007-12579",
+                            "resources": [
+                                {
+                                    "label": "High-resolution TIFF",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-SI-2007-12579.tif",
+                                    "width": 4992,
+                                    "height": 3064
+                                },
+                                {
+                                    "width": 4992,
+                                    "height": 3064,
+                                    "label": "High-resolution JPEG",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-SI-2007-12579.jpg",
+                                    "dimensions": "4992x3064"
+                                },
+                                {
+                                    "label": "Screen Image",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-SI-2007-12579_screen"
+                                },
+                                {
+                                    "label": "Thumbnail Image",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-SI-2007-12579_thumb"
+                                }
+                            ]
+                        },
+                        {
+                            "thumbnail": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-SI-2007-12584",
+                            "idsId": "NASM-SI-2007-12584",
+                            "usage": { "access": "CC0" },
+                            "guid": "http://n2t.net/ark:/65665/gf49b7ccc2f-4cc8-4895-95ef-20eaf031a851",
+                            "type": "Images",
+                            "content": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-SI-2007-12584",
+                            "resources": [
+                                {
+                                    "label": "High-resolution TIFF",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-SI-2007-12584.tif",
+                                    "width": 4992,
+                                    "height": 3328
+                                },
+                                {
+                                    "width": 4992,
+                                    "height": 3328,
+                                    "label": "High-resolution JPEG",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-SI-2007-12584.jpg",
+                                    "dimensions": "4992x3328"
+                                },
+                                {
+                                    "label": "Screen Image",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-SI-2007-12584_screen"
+                                },
+                                {
+                                    "label": "Thumbnail Image",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-SI-2007-12584_thumb"
+                                }
+                            ]
+                        },
+                        {
+                            "thumbnail": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-SI-2007-16955",
+                            "idsId": "NASM-SI-2007-16955",
+                            "usage": { "access": "CC0" },
+                            "guid": "http://n2t.net/ark:/65665/gf4f70c6449-98c9-4b59-b99e-24f40d3e2d49",
+                            "type": "Images",
+                            "content": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-SI-2007-16955",
+                            "resources": [
+                                {
+                                    "label": "High-resolution TIFF",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-SI-2007-16955.tif",
+                                    "width": 4992,
+                                    "height": 3328
+                                },
+                                {
+                                    "width": 4992,
+                                    "height": 3328,
+                                    "label": "High-resolution JPEG",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-SI-2007-16955.jpg",
+                                    "dimensions": "4992x3328"
+                                },
+                                {
+                                    "label": "Screen Image",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-SI-2007-16955_screen"
+                                },
+                                {
+                                    "label": "Thumbnail Image",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-SI-2007-16955_thumb"
+                                }
+                            ]
+                        },
+                        {
+                            "thumbnail": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-SI-2008-5560",
+                            "idsId": "NASM-SI-2008-5560",
+                            "usage": { "access": "CC0" },
+                            "guid": "http://n2t.net/ark:/65665/gf4b4331eed-fb3d-49f1-a198-530a2ba04d25",
+                            "type": "Images",
+                            "content": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-SI-2008-5560",
+                            "resources": [
+                                {
+                                    "label": "High-resolution TIFF",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-SI-2008-5560.tif",
+                                    "width": 4800,
+                                    "height": 3840
+                                },
+                                {
+                                    "width": 4800,
+                                    "height": 3840,
+                                    "label": "High-resolution JPEG",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-SI-2008-5560.jpg",
+                                    "dimensions": "4800x3840"
+                                },
+                                {
+                                    "label": "Screen Image",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-SI-2008-5560_screen"
+                                },
+                                {
+                                    "label": "Thumbnail Image",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-SI-2008-5560_thumb"
+                                }
+                            ]
+                        },
+                        {
+                            "thumbnail": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-SI-2008-5568",
+                            "idsId": "NASM-SI-2008-5568",
+                            "usage": { "access": "CC0" },
+                            "guid": "http://n2t.net/ark:/65665/gf40221a667-0119-4290-9b37-70a0942abb82",
+                            "type": "Images",
+                            "content": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-SI-2008-5568",
+                            "resources": [
+                                {
+                                    "label": "High-resolution TIFF",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-SI-2008-5568.tif",
+                                    "width": 3328,
+                                    "height": 4992
+                                },
+                                {
+                                    "width": 3328,
+                                    "height": 4992,
+                                    "label": "High-resolution JPEG",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-SI-2008-5568.jpg",
+                                    "dimensions": "3328x4992"
+                                },
+                                {
+                                    "label": "Screen Image",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-SI-2008-5568_screen"
+                                },
+                                {
+                                    "label": "Thumbnail Image",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-SI-2008-5568_thumb"
+                                }
+                            ]
+                        },
+                        {
+                            "thumbnail": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-SI-2007-12578",
+                            "idsId": "NASM-SI-2007-12578",
+                            "usage": { "access": "CC0" },
+                            "guid": "http://n2t.net/ark:/65665/gf404ee4d9c-1527-4749-bf51-a766e4771d79",
+                            "type": "Images",
+                            "content": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-SI-2007-12578",
+                            "resources": [
+                                {
+                                    "label": "High-resolution TIFF",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-SI-2007-12578.tif",
+                                    "width": 4992,
+                                    "height": 3328
+                                },
+                                {
+                                    "width": 4992,
+                                    "height": 3328,
+                                    "label": "High-resolution JPEG",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-SI-2007-12578.jpg",
+                                    "dimensions": "4992x3328"
+                                },
+                                {
+                                    "label": "Screen Image",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-SI-2007-12578_screen"
+                                },
+                                {
+                                    "label": "Thumbnail Image",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-SI-2007-12578_thumb"
+                                }
+                            ]
+                        },
+                        {
+                            "thumbnail": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-SI-2007-12581",
+                            "idsId": "NASM-SI-2007-12581",
+                            "usage": { "access": "CC0" },
+                            "guid": "http://n2t.net/ark:/65665/gf4bb6840d3-5da8-489d-b9e8-a7e41727f898",
+                            "type": "Images",
+                            "content": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-SI-2007-12581",
+                            "resources": [
+                                {
+                                    "label": "High-resolution TIFF",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-SI-2007-12581.tif",
+                                    "width": 6144,
+                                    "height": 4096
+                                },
+                                {
+                                    "width": 6144,
+                                    "height": 4096,
+                                    "label": "High-resolution JPEG",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-SI-2007-12581.jpg",
+                                    "dimensions": "6144x4096"
+                                },
+                                {
+                                    "label": "Screen Image",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-SI-2007-12581_screen"
+                                },
+                                {
+                                    "label": "Thumbnail Image",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-SI-2007-12581_thumb"
+                                }
+                            ]
+                        },
+                        {
+                            "thumbnail": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-SI-2007-12582",
+                            "idsId": "NASM-SI-2007-12582",
+                            "usage": { "access": "CC0" },
+                            "guid": "http://n2t.net/ark:/65665/gf4180a1522-4a47-4bc0-a331-526119ad42de",
+                            "type": "Images",
+                            "content": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-SI-2007-12582",
+                            "resources": [
+                                {
+                                    "label": "High-resolution TIFF",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-SI-2007-12582.tif",
+                                    "width": 4992,
+                                    "height": 3328
+                                },
+                                {
+                                    "width": 4992,
+                                    "height": 3328,
+                                    "label": "High-resolution JPEG",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-SI-2007-12582.jpg",
+                                    "dimensions": "4992x3328"
+                                },
+                                {
+                                    "label": "Screen Image",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-SI-2007-12582_screen"
+                                },
+                                {
+                                    "label": "Thumbnail Image",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-SI-2007-12582_thumb"
+                                }
+                            ]
+                        },
+                        {
+                            "thumbnail": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-SI-2007-12585",
+                            "idsId": "NASM-SI-2007-12585",
+                            "usage": { "access": "CC0" },
+                            "guid": "http://n2t.net/ark:/65665/gf488188933-385d-400b-a4ac-9379393842a9",
+                            "type": "Images",
+                            "content": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-SI-2007-12585",
+                            "resources": [
+                                {
+                                    "label": "High-resolution TIFF",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-SI-2007-12585.tif",
+                                    "width": 3328,
+                                    "height": 4992
+                                },
+                                {
+                                    "width": 3328,
+                                    "height": 4992,
+                                    "label": "High-resolution JPEG",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-SI-2007-12585.jpg",
+                                    "dimensions": "3328x4992"
+                                },
+                                {
+                                    "label": "Screen Image",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-SI-2007-12585_screen"
+                                },
+                                {
+                                    "label": "Thumbnail Image",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-SI-2007-12585_thumb"
+                                }
+                            ]
+                        },
+                        {
+                            "thumbnail": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-SI-2007-12586",
+                            "idsId": "NASM-SI-2007-12586",
+                            "usage": { "access": "CC0" },
+                            "guid": "http://n2t.net/ark:/65665/gf4b71af3a7-db3d-4adf-a50d-8529c1663450",
+                            "type": "Images",
+                            "content": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-SI-2007-12586",
+                            "resources": [
+                                {
+                                    "label": "High-resolution TIFF",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-SI-2007-12586.tif",
+                                    "width": 3328,
+                                    "height": 4992
+                                },
+                                {
+                                    "width": 3328,
+                                    "height": 4992,
+                                    "label": "High-resolution JPEG",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-SI-2007-12586.jpg",
+                                    "dimensions": "3328x4992"
+                                },
+                                {
+                                    "label": "Screen Image",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-SI-2007-12586_screen"
+                                },
+                                {
+                                    "label": "Thumbnail Image",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-SI-2007-12586_thumb"
+                                }
+                            ]
+                        },
+                        {
+                            "thumbnail": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-SI-2007-12587",
+                            "idsId": "NASM-SI-2007-12587",
+                            "usage": { "access": "CC0" },
+                            "guid": "http://n2t.net/ark:/65665/gf4419821b9-cba0-4ae2-b42e-2312046c63ec",
+                            "type": "Images",
+                            "content": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-SI-2007-12587",
+                            "resources": [
+                                {
+                                    "label": "High-resolution TIFF",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-SI-2007-12587.tif",
+                                    "width": 4992,
+                                    "height": 3328
+                                },
+                                {
+                                    "width": 4992,
+                                    "height": 3328,
+                                    "label": "High-resolution JPEG",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-SI-2007-12587.jpg",
+                                    "dimensions": "4992x3328"
+                                },
+                                {
+                                    "label": "Screen Image",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-SI-2007-12587_screen"
+                                },
+                                {
+                                    "label": "Thumbnail Image",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-SI-2007-12587_thumb"
+                                }
+                            ]
+                        },
+                        {
+                            "thumbnail": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-SI-2007-12588",
+                            "idsId": "NASM-SI-2007-12588",
+                            "usage": { "access": "CC0" },
+                            "guid": "http://n2t.net/ark:/65665/gf412f5b1be-24cd-4bc6-b1da-872e7712737f",
+                            "type": "Images",
+                            "content": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-SI-2007-12588",
+                            "resources": [
+                                {
+                                    "label": "High-resolution TIFF",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-SI-2007-12588.tif",
+                                    "width": 4836,
+                                    "height": 3127
+                                },
+                                {
+                                    "width": 4836,
+                                    "height": 3127,
+                                    "label": "High-resolution JPEG",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-SI-2007-12588.jpg",
+                                    "dimensions": "4836x3127"
+                                },
+                                {
+                                    "label": "Screen Image",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-SI-2007-12588_screen"
+                                },
+                                {
+                                    "label": "Thumbnail Image",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-SI-2007-12588_thumb"
+                                }
+                            ]
+                        },
+                        {
+                            "thumbnail": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-SI-2007-16954",
+                            "idsId": "NASM-SI-2007-16954",
+                            "usage": { "access": "CC0" },
+                            "guid": "http://n2t.net/ark:/65665/gf43ecdc17a-2a01-44a5-9271-ea5e8d488dc8",
+                            "type": "Images",
+                            "content": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-SI-2007-16954",
+                            "resources": [
+                                {
+                                    "label": "High-resolution TIFF",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-SI-2007-16954.tif",
+                                    "width": 3883,
+                                    "height": 3151
+                                },
+                                {
+                                    "width": 3883,
+                                    "height": 3151,
+                                    "label": "High-resolution JPEG",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-SI-2007-16954.jpg",
+                                    "dimensions": "3883x3151"
+                                },
+                                {
+                                    "label": "Screen Image",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-SI-2007-16954_screen"
+                                },
+                                {
+                                    "label": "Thumbnail Image",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-SI-2007-16954_thumb"
+                                }
+                            ]
+                        },
+                        {
+                            "thumbnail": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-SI-2008-5562",
+                            "idsId": "NASM-SI-2008-5562",
+                            "usage": { "access": "CC0" },
+                            "guid": "http://n2t.net/ark:/65665/gf4a52331e3-00ec-4c3a-bc86-55c28815ce0e",
+                            "type": "Images",
+                            "content": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-SI-2008-5562",
+                            "resources": [
+                                {
+                                    "label": "High-resolution TIFF",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-SI-2008-5562.tif",
+                                    "width": 3088,
+                                    "height": 2056
+                                },
+                                {
+                                    "width": 3088,
+                                    "height": 2056,
+                                    "label": "High-resolution JPEG",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-SI-2008-5562.jpg",
+                                    "dimensions": "3088x2056"
+                                },
+                                {
+                                    "label": "Screen Image",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-SI-2008-5562_screen"
+                                },
+                                {
+                                    "label": "Thumbnail Image",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-SI-2008-5562_thumb"
+                                }
+                            ]
+                        },
+                        {
+                            "thumbnail": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-SI-2008-5566",
+                            "idsId": "NASM-SI-2008-5566",
+                            "usage": { "access": "CC0" },
+                            "guid": "http://n2t.net/ark:/65665/gf4134a1b82-032f-47de-82a3-36bb27a39d9b",
+                            "type": "Images",
+                            "content": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-SI-2008-5566",
+                            "resources": [
+                                {
+                                    "label": "High-resolution TIFF",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-SI-2008-5566.tif",
+                                    "width": 4992,
+                                    "height": 3328
+                                },
+                                {
+                                    "width": 4992,
+                                    "height": 3328,
+                                    "label": "High-resolution JPEG",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-SI-2008-5566.jpg",
+                                    "dimensions": "4992x3328"
+                                },
+                                {
+                                    "label": "Screen Image",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-SI-2008-5566_screen"
+                                },
+                                {
+                                    "label": "Thumbnail Image",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-SI-2008-5566_thumb"
+                                }
+                            ]
+                        },
+                        {
+                            "thumbnail": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-SI-2008-5567",
+                            "idsId": "NASM-SI-2008-5567",
+                            "usage": { "access": "CC0" },
+                            "guid": "http://n2t.net/ark:/65665/gf41f8ae961-bdf3-4773-bf47-24f597a85018",
+                            "type": "Images",
+                            "content": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-SI-2008-5567",
+                            "resources": [
+                                {
+                                    "label": "High-resolution TIFF",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-SI-2008-5567.tif",
+                                    "width": 5748,
+                                    "height": 3971
+                                },
+                                {
+                                    "width": 5748,
+                                    "height": 3971,
+                                    "label": "High-resolution JPEG",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-SI-2008-5567.jpg",
+                                    "dimensions": "5748x3971"
+                                },
+                                {
+                                    "label": "Screen Image",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-SI-2008-5567_screen"
+                                },
+                                {
+                                    "label": "Thumbnail Image",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-SI-2008-5567_thumb"
+                                }
+                            ]
+                        },
+                        {
+                            "thumbnail": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-SI-2008-5570",
+                            "idsId": "NASM-SI-2008-5570",
+                            "usage": { "access": "CC0" },
+                            "guid": "http://n2t.net/ark:/65665/gf42aaa291b-789e-4ef8-84b0-edb39458da00",
+                            "type": "Images",
+                            "content": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-SI-2008-5570",
+                            "resources": [
+                                {
+                                    "label": "High-resolution TIFF",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-SI-2008-5570.tif",
+                                    "width": 4896,
+                                    "height": 3317
+                                },
+                                {
+                                    "width": 4896,
+                                    "height": 3317,
+                                    "label": "High-resolution JPEG",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-SI-2008-5570.jpg",
+                                    "dimensions": "4896x3317"
+                                },
+                                {
+                                    "label": "Screen Image",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-SI-2008-5570_screen"
+                                },
+                                {
+                                    "label": "Thumbnail Image",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-SI-2008-5570_thumb"
+                                }
+                            ]
+                        },
+                        {
+                            "thumbnail": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-SI-2008-5558",
+                            "idsId": "NASM-SI-2008-5558",
+                            "usage": { "access": "CC0" },
+                            "guid": "http://n2t.net/ark:/65665/gf4d42cc5e6-f274-4723-a0fd-6b861ae456a6",
+                            "type": "Images",
+                            "content": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-SI-2008-5558",
+                            "resources": [
+                                {
+                                    "label": "High-resolution TIFF",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-SI-2008-5558.tif",
+                                    "width": 4608,
+                                    "height": 3016
+                                },
+                                {
+                                    "width": 4608,
+                                    "height": 3016,
+                                    "label": "High-resolution JPEG",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-SI-2008-5558.jpg",
+                                    "dimensions": "4608x3016"
+                                },
+                                {
+                                    "label": "Screen Image",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-SI-2008-5558_screen"
+                                },
+                                {
+                                    "label": "Thumbnail Image",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-SI-2008-5558_thumb"
+                                }
+                            ]
+                        },
+                        {
+                            "thumbnail": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-SI-2008-5561",
+                            "idsId": "NASM-SI-2008-5561",
+                            "usage": { "access": "CC0" },
+                            "guid": "http://n2t.net/ark:/65665/gf415873493-2d26-4cb7-86cb-678554220e63",
+                            "type": "Images",
+                            "content": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-SI-2008-5561",
+                            "resources": [
+                                {
+                                    "label": "High-resolution TIFF",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-SI-2008-5561.tif",
+                                    "width": 4448,
+                                    "height": 2848
+                                },
+                                {
+                                    "width": 4448,
+                                    "height": 2848,
+                                    "label": "High-resolution JPEG",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-SI-2008-5561.jpg",
+                                    "dimensions": "4448x2848"
+                                },
+                                {
+                                    "label": "Screen Image",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-SI-2008-5561_screen"
+                                },
+                                {
+                                    "label": "Thumbnail Image",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-SI-2008-5561_thumb"
+                                }
+                            ]
+                        },
+                        {
+                            "thumbnail": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-SI-2008-5559",
+                            "idsId": "NASM-SI-2008-5559",
+                            "usage": { "access": "CC0" },
+                            "guid": "http://n2t.net/ark:/65665/gf41d7828db-44c6-4364-8dfe-6f2fd6dd8f2b",
+                            "type": "Images",
+                            "content": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-SI-2008-5559",
+                            "resources": [
+                                {
+                                    "label": "High-resolution TIFF",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-SI-2008-5559.tif",
+                                    "width": 4992,
+                                    "height": 3328
+                                },
+                                {
+                                    "width": 4992,
+                                    "height": 3328,
+                                    "label": "High-resolution JPEG",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-SI-2008-5559.jpg",
+                                    "dimensions": "4992x3328"
+                                },
+                                {
+                                    "label": "Screen Image",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-SI-2008-5559_screen"
+                                },
+                                {
+                                    "label": "Thumbnail Image",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-SI-2008-5559_thumb"
+                                }
+                            ]
+                        },
+                        {
+                            "thumbnail": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-SI-2008-5563",
+                            "idsId": "NASM-SI-2008-5563",
+                            "usage": { "access": "CC0" },
+                            "guid": "http://n2t.net/ark:/65665/gf403208535-7cd4-4332-b993-de2bda08738c",
+                            "type": "Images",
+                            "content": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-SI-2008-5563",
+                            "resources": [
+                                {
+                                    "label": "High-resolution TIFF",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-SI-2008-5563.tif",
+                                    "width": 4427,
+                                    "height": 3270
+                                },
+                                {
+                                    "width": 4427,
+                                    "height": 3270,
+                                    "label": "High-resolution JPEG",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-SI-2008-5563.jpg",
+                                    "dimensions": "4427x3270"
+                                },
+                                {
+                                    "label": "Screen Image",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-SI-2008-5563_screen"
+                                },
+                                {
+                                    "label": "Thumbnail Image",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-SI-2008-5563_thumb"
+                                }
+                            ]
+                        },
+                        {
+                            "thumbnail": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-SI-2008-5564",
+                            "idsId": "NASM-SI-2008-5564",
+                            "usage": { "access": "CC0" },
+                            "guid": "http://n2t.net/ark:/65665/gf4c89280ca-525b-4efd-a894-11e7179e0683",
+                            "type": "Images",
+                            "content": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-SI-2008-5564",
+                            "resources": [
+                                {
+                                    "label": "High-resolution TIFF",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-SI-2008-5564.tif",
+                                    "width": 2400,
+                                    "height": 1600
+                                },
+                                {
+                                    "width": 2400,
+                                    "height": 1600,
+                                    "label": "High-resolution JPEG",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-SI-2008-5564.jpg",
+                                    "dimensions": "2400x1600"
+                                },
+                                {
+                                    "label": "Screen Image",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-SI-2008-5564_screen"
+                                },
+                                {
+                                    "label": "Thumbnail Image",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-SI-2008-5564_thumb"
+                                }
+                            ]
+                        },
+                        {
+                            "thumbnail": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-SI-2008-5565",
+                            "idsId": "NASM-SI-2008-5565",
+                            "usage": { "access": "CC0" },
+                            "guid": "http://n2t.net/ark:/65665/gf46d2b84cc-8233-4de4-8f1e-11cdc39c5f22",
+                            "type": "Images",
+                            "content": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-SI-2008-5565",
+                            "resources": [
+                                {
+                                    "label": "High-resolution TIFF",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-SI-2008-5565.tif",
+                                    "width": 5009,
+                                    "height": 5280
+                                },
+                                {
+                                    "width": 5009,
+                                    "height": 5280,
+                                    "label": "High-resolution JPEG",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-SI-2008-5565.jpg",
+                                    "dimensions": "5009x5280"
+                                },
+                                {
+                                    "label": "Screen Image",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-SI-2008-5565_screen"
+                                },
+                                {
+                                    "label": "Thumbnail Image",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-SI-2008-5565_thumb"
+                                }
+                            ]
+                        },
+                        {
+                            "thumbnail": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-SI-2008-5569",
+                            "idsId": "NASM-SI-2008-5569",
+                            "usage": { "access": "CC0" },
+                            "guid": "http://n2t.net/ark:/65665/gf480b964b5-08cb-487b-a478-028a46a27417",
+                            "type": "Images",
+                            "content": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-SI-2008-5569",
+                            "resources": [
+                                {
+                                    "label": "High-resolution TIFF",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-SI-2008-5569.tif",
+                                    "width": 3240,
+                                    "height": 4072
+                                },
+                                {
+                                    "width": 3240,
+                                    "height": 4072,
+                                    "label": "High-resolution JPEG",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-SI-2008-5569.jpg",
+                                    "dimensions": "3240x4072"
+                                },
+                                {
+                                    "label": "Screen Image",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-SI-2008-5569_screen"
+                                },
+                                {
+                                    "label": "Thumbnail Image",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-SI-2008-5569_thumb"
+                                }
+                            ]
+                        },
+                        {
+                            "thumbnail": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-A19690360000-NASM2018-10035",
+                            "idsId": "NASM-A19690360000-NASM2018-10035",
+                            "usage": { "access": "CC0" },
+                            "guid": "http://n2t.net/ark:/65665/gf4a9b1fdd6-5e3c-4932-8b04-4570bbdd96ef",
+                            "type": "Images",
+                            "content": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-A19690360000-NASM2018-10035",
+                            "text_equiv": "Tip of black titanium rocket-shaped North American x-15 aircraft hanging in museum",
+                            "resources": [
+                                {
+                                    "label": "High-resolution TIFF",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-A19690360000-NASM2018-10035.tif",
+                                    "width": 8688,
+                                    "height": 5792
+                                },
+                                {
+                                    "width": 8688,
+                                    "height": 5792,
+                                    "label": "High-resolution JPEG",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-A19690360000-NASM2018-10035.jpg",
+                                    "dimensions": "8688x5792"
+                                },
+                                {
+                                    "label": "Screen Image",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-A19690360000-NASM2018-10035_screen"
+                                },
+                                {
+                                    "label": "Thumbnail Image",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-A19690360000-NASM2018-10035_thumb"
+                                }
+                            ]
+                        },
+                        {
+                            "thumbnail": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-A19690360000-NASM2018-10036",
+                            "idsId": "NASM-A19690360000-NASM2018-10036",
+                            "usage": { "access": "CC0" },
+                            "guid": "http://n2t.net/ark:/65665/gf4b51be788-042b-42b2-9b35-d9fe07e56775",
+                            "type": "Images",
+                            "content": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-A19690360000-NASM2018-10036",
+                            "text_equiv": "Tip of black titanium rocket-shaped North American x-15 aircraft hanging in museum",
+                            "resources": [
+                                {
+                                    "label": "High-resolution TIFF",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-A19690360000-NASM2018-10036.tif",
+                                    "width": 8688,
+                                    "height": 5792
+                                },
+                                {
+                                    "width": 8688,
+                                    "height": 5792,
+                                    "label": "High-resolution JPEG",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-A19690360000-NASM2018-10036.jpg",
+                                    "dimensions": "8688x5792"
+                                },
+                                {
+                                    "label": "Screen Image",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-A19690360000-NASM2018-10036_screen"
+                                },
+                                {
+                                    "label": "Thumbnail Image",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-A19690360000-NASM2018-10036_thumb"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "unit_code": "NASM",
+                "title_sort": "NORTH AMERICAN X-15",
+                "guid": "http://n2t.net/ark:/65665/nv9d2c52e77-2f46-4a14-b2d0-6317b55f63f5",
+                "record_link": "http://n2t.net/ark:/65665/nv9d2c52e77-2f46-4a14-b2d0-6317b55f63f5",
+                "title": {
+                    "label": "Object Name",
+                    "content": "North American X-15"
+                },
+                "metadata_usage": { "access": "CC0" },
+                "data_source": "National Air and Space Museum"
+            },
+            "indexedStructured": {
+                "geoLocation": [
+                    {
+                        "L2": {
+                            "type": "Country",
+                            "content": "United States of America"
+                        }
+                    }
+                ],
+                "object_type": ["Aircraft"],
+                "name": ["Armstrong, Neil A.", "North American Aviation Inc."],
+                "topic": ["Aeronautics"],
+                "place": ["United States of America"],
+                "usage_flag": [
+                    "Space",
+                    "Rockets",
+                    "Aviation",
+                    "Experimental",
+                    "People",
+                    "Astronauts",
+                    "Engineers",
+                    "Records \u0026 Firsts",
+                    "Research",
+                    "Aviators",
+                    "Aircraft",
+                    "Military"
+                ],
+                "online_media_type": ["Images"]
+            },
+            "freetext": {
+                "setName": [
+                    {
+                        "label": "See more items in",
+                        "content": "National Air and Space Museum Collection"
+                    }
+                ],
+                "date": [{ "label": "Date", "content": "1959" }],
+                "identifier": [
+                    { "label": "Inventory Number", "content": "A19690360000" }
+                ],
+                "notes": [
+                    {
+                        "label": "Physical Description",
+                        "content": "North American X-15, rocket powered experimental aircraft; black titanium skin with wedge shaped horizontal stablizer; yellow stripe NASA inisignia on tail with stars and red bars United States national insignia on wings; white letter text \"U.S. AIR FORCE\" on the sides of the fuselage."
+                    },
+                    {
+                        "label": "Long Description",
+                        "content": "The North American X-15 rocket-powered research aircraft bridged the gap between manned flight within the atmosphere and manned flight beyond the atmosphere into space. After completing its initial test flights in 1959, the X-15 became the first winged aircraft to attain velocities of Mach 4, 5, and 6 (four, five, and six times the speed of sound). Because of its high-speed capability, the X-15 had to be designed to withstand aerodynamic temperatures on the order of 1,200 degrees F.; as a result, the aircraft was fabricated using a special high-strength nickel alloy named Inconel X."
+                    },
+                    {
+                        "label": "Long Description",
+                        "content": "Air-launched from a modified Boeing B-52 Stratofortress aircraft, the X-15 required conventional aerodynamic control surfaces to operate within the atmosphere and special \"thruster\" reaction control rockets located in the nose and wings of the aircraft to enable the pilot to maintain control when flying on the fringes of space. Indeed, the X-15 design was so much like that of a space vehicle that during the formative days of Project Mercury, Americaâ€™s first attempt to put a man in orbit, North American and National Air and Space Administration (NASA) engineers gave serious consideration to utilizing a growth version of the X-15 for the manned orbiting mission. This plan was dropped in favor of using a blunt-body reentry vehicle. Because of the potential dangers to the pilot should the X-15â€™s pressurized cockpit lose its atmosphere while the aircraft operated in a near-space environment, X-15 pilots wore specially developed full-pressure protection â€˜spacesuitsâ€™ while flying the experimental plane."
+                    },
+                    {
+                        "label": "Long Description",
+                        "content": "Three X-15 research aircraft were built and flown, completing a total of 199 research flights. The National Air and Space Museum has the historic X-15 #1, Air Force serial 56-6670. The X15 #2 (56-6671) was rebuilt following a landing accident as the advanced X-15A-2, having increased propellant capacity and, hence, a higher potential performance. The X-15A-2 was the fastest X-15 flown, and it is now on exhibit at the Air Force Museum, Wright-Patterson Air Force Base, Ohio. The X-15 #3 (56-6672) featured an advanced cockpit display panel and a special adaptive control system. The aircraft made many noteworthy flights until it crashed during atmospheric reentry, following pilot disorientation and a control-system failure. The pilot, Capt. Michael Adams, was killed."
+                    },
+                    {
+                        "label": "Long Description",
+                        "content": "The X-15 flew faster and higher than any other airplane. A peak altitude of 354,200 feet (67Â± miles) was reached by the X-15, and the X-15A-2 attained a speed of Mach 6.72 (4,534 mph) while testing a new ablative thermal protection material and a proposed design for a hypersonic ramjet. Various proposals were set forth for modifying the aircraft to accomplish new and even more radical tasks. At one point, NASA scientists planned to test a hydrogen-fueled supersonic combustion ramjet engine mounted on the X-15s lower vertical fin. A mock-up of this proposed installation was flight-tested on the X-15A-2. Other ideas included modifying the X-15 with a slender delta wing and using the aircraft as a booster for small satellite launch vehicles. None of these ideas, however, came to fruition."
+                    },
+                    {
+                        "label": "Long Description",
+                        "content": "The X-15 spearheaded research in a variety of areas: hypersonic aerodynamics, winged reentry from space. life-support systems for spacecraft, aerodynamic heating and heat transfer research, and earth sciences experiments. A total of 700 technical documents were produced, equivalent to the output of a typical 4,000-man federal research center for more than two years."
+                    },
+                    {
+                        "label": "Long Description",
+                        "content": "Development of the X-15 began in 1954, in a joint research program sponsored by the National Advisory Committee for Aeronautics (forerunner of NASA), the U.S. Air Force. the U.S. Navy, and private industry. North American was selected as prime contractor on the project following a competition in which Douglas. Republic. and Bell also participated. By the time of its first airborne test, flight research was too complex to rely on simple air-to-ground communications near a test field. The Air Force and the National Advisory Committee for Aeronautics developed a special 485-mile-long test corridor stretching from Wendover Air Force Base. Utah. to Edwards Air Force Base. California. It was planned that the X15 would be air-launched from a Boeing B-52 near Wendover. then fly down this corridor, the High Range. to Edwards. monitored by tracking stations at Ely and Beatty. Nevada. and at Edwards. The range lay along a series of flat dry lakes. where the X-15 could make an emergency landing. if necessary. Nothing this extensive had previously existed in flight research, and it foreshadowed the worldwide tracking network developed by American manned spacecraft ventures. The X-15 would complete its research mission and then. followed by special Lockheed F-104 chase aircraft. would land on the hard clay of Rogers (formerly Muroc) Dry Lake. Because the X-15 featured a cruciform tail surface arrangement. it was necessary for the designers to make the lower half of the ventral fin jettisonable prior to landing so that the conventional two-wheel, nose-landing gear and two tail-mounted landing skids could support the aircraft."
+                    },
+                    {
+                        "label": "Alternate Name",
+                        "content": "North American X-15"
+                    },
+                    {
+                        "label": "Key Accomplishment(s)",
+                        "content": "World\u0027s Fastest Piloted Aircraft"
+                    },
+                    {
+                        "label": "Impact or Innovation",
+                        "content": "The X-15 gathered critical flight data that made human spaceflight and future hypersonic aircraft possible."
+                    },
+                    {
+                        "label": "Brief Description",
+                        "content": "First flown in 1959, the North American X-15 bridged the gap between human flight in the atmosphere and spaceflight. It was the first winged aircraft to fly Mach 4, 5, \u0026 6 and to operate at altitudes above 30,500 m (100,000 ft). Eight of 12 pilots received astronaut wings."
+                    }
+                ],
+                "creditLine": [
+                    {
+                        "label": "Credit Line",
+                        "content": "Transferred from United States Air Force, Andrews AFB"
+                    }
+                ],
+                "name": [
+                    {
+                        "label": "Pilot",
+                        "content": "Neil A. Armstrong, 1930 - 2012"
+                    },
+                    {
+                        "label": "Manufacturer",
+                        "content": "North American Aviation Inc."
+                    }
+                ],
+                "place": [
+                    {
+                        "label": "Country of Origin",
+                        "content": "United States of America"
+                    }
+                ],
+                "physicalDescription": [
+                    { "label": "Materials", "content": "Overall: Titanium" },
+                    {
+                        "label": "Dimensions",
+                        "content": "3-D: 1554.5 Ã— 396.2cm, 5719.9kg, 6.706m (51 Ã— 13 ft., 12610lb., 22 ft.)"
+                    }
+                ],
+                "dataSource": [
+                    {
+                        "label": "Data Source",
+                        "content": "National Air and Space Museum"
+                    }
+                ],
+                "objectRights": [
+                    { "label": "Restrictions \u0026 Rights", "content": "CC0" }
+                ],
+                "objectType": [{ "label": "Type", "content": "CRAFT-Aircraft" }]
+            }
+        },
+        "url": "edanmdm:nasm_A19690360000",
+        "hash": "d6e735cd9346bc747352df85e33815bf8df23632",
+        "docSignature": "30c869a75b04412b33f541e04f0785f1",
+        "timestamp": 1666664365,
+        "lastTimeUpdated": 1653682062,
+        "title": "North American X-15"
+    },
+    {
+        "id": "ld1-1643400021979-1643400025156-1",
+        "version": "",
+        "unitCode": "NASM",
+        "linkedId": "",
+        "type": "edanmdm",
+        "content": {
+            "descriptiveNonRepeating": {
+                "record_ID": "nasm_A19710091000",
+                "online_media": {
+                    "mediaCount": 7,
+                    "media": [
+                        {
+                            "thumbnail": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-200E6FFBB72B2_001-000001",
+                            "idsId": "NASM-200E6FFBB72B2_001-000001",
+                            "usage": { "access": "CC0" },
+                            "guid": "http://n2t.net/ark:/65665/gf4c1f12c20-5fe3-4ce0-823a-5eeff30937a0",
+                            "type": "Images",
+                            "content": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-200E6FFBB72B2_001-000001",
+                            "resources": [
+                                {
+                                    "width": 3648,
+                                    "height": 3648,
+                                    "label": "High-resolution JPEG",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-200E6FFBB72B2_001-000001.jpg",
+                                    "dimensions": "3648x3648"
+                                },
+                                {
+                                    "label": "Screen Image",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-200E6FFBB72B2_001-000001_screen"
+                                },
+                                {
+                                    "label": "Thumbnail Image",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-200E6FFBB72B2_001-000001_thumb"
+                                }
+                            ]
+                        },
+                        {
+                            "thumbnail": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-200E6FFBB72B2_002-000001",
+                            "idsId": "NASM-200E6FFBB72B2_002-000001",
+                            "usage": { "access": "CC0" },
+                            "guid": "http://n2t.net/ark:/65665/gf4f7a25bb2-c8d3-4d4e-a37d-af92d34fae0a",
+                            "type": "Images",
+                            "content": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-200E6FFBB72B2_002-000001",
+                            "resources": [
+                                {
+                                    "width": 3648,
+                                    "height": 3648,
+                                    "label": "High-resolution JPEG",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-200E6FFBB72B2_002-000001.jpg",
+                                    "dimensions": "3648x3648"
+                                },
+                                {
+                                    "label": "Screen Image",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-200E6FFBB72B2_002-000001_screen"
+                                },
+                                {
+                                    "label": "Thumbnail Image",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-200E6FFBB72B2_002-000001_thumb"
+                                }
+                            ]
+                        },
+                        {
+                            "thumbnail": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-200E6FFBB72B2_003-000001",
+                            "idsId": "NASM-200E6FFBB72B2_003-000001",
+                            "usage": { "access": "CC0" },
+                            "guid": "http://n2t.net/ark:/65665/gf46757b50b-e6bc-4608-b63a-a87b1f52bdab",
+                            "type": "Images",
+                            "content": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-200E6FFBB72B2_003-000001",
+                            "resources": [
+                                {
+                                    "width": 5472,
+                                    "height": 3648,
+                                    "label": "High-resolution JPEG",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-200E6FFBB72B2_003-000001.jpg",
+                                    "dimensions": "5472x3648"
+                                },
+                                {
+                                    "label": "Screen Image",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-200E6FFBB72B2_003-000001_screen"
+                                },
+                                {
+                                    "label": "Thumbnail Image",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-200E6FFBB72B2_003-000001_thumb"
+                                }
+                            ]
+                        },
+                        {
+                            "thumbnail": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-200E6FFBB72B2_004-000001",
+                            "idsId": "NASM-200E6FFBB72B2_004-000001",
+                            "usage": { "access": "CC0" },
+                            "guid": "http://n2t.net/ark:/65665/gf466fb83bc-b2bd-44cb-82a1-8c23c117b160",
+                            "type": "Images",
+                            "content": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-200E6FFBB72B2_004-000001",
+                            "resources": [
+                                {
+                                    "width": 3648,
+                                    "height": 3648,
+                                    "label": "High-resolution JPEG",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-200E6FFBB72B2_004-000001.jpg",
+                                    "dimensions": "3648x3648"
+                                },
+                                {
+                                    "label": "Screen Image",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-200E6FFBB72B2_004-000001_screen"
+                                },
+                                {
+                                    "label": "Thumbnail Image",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-200E6FFBB72B2_004-000001_thumb"
+                                }
+                            ]
+                        },
+                        {
+                            "thumbnail": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-200E6FFBB72B2_005-000001",
+                            "idsId": "NASM-200E6FFBB72B2_005-000001",
+                            "usage": { "access": "CC0" },
+                            "guid": "http://n2t.net/ark:/65665/gf4df370e10-47f7-4e13-abac-614b83dcbcf0",
+                            "type": "Images",
+                            "content": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-200E6FFBB72B2_005-000001",
+                            "resources": [
+                                {
+                                    "width": 3648,
+                                    "height": 3648,
+                                    "label": "High-resolution JPEG",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-200E6FFBB72B2_005-000001.jpg",
+                                    "dimensions": "3648x3648"
+                                },
+                                {
+                                    "label": "Screen Image",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-200E6FFBB72B2_005-000001_screen"
+                                },
+                                {
+                                    "label": "Thumbnail Image",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-200E6FFBB72B2_005-000001_thumb"
+                                }
+                            ]
+                        },
+                        {
+                            "thumbnail": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-200E6FFBB72B2_006-000001",
+                            "idsId": "NASM-200E6FFBB72B2_006-000001",
+                            "usage": { "access": "CC0" },
+                            "guid": "http://n2t.net/ark:/65665/gf439250c80-c912-4c56-b41b-59a53022f24f",
+                            "type": "Images",
+                            "content": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-200E6FFBB72B2_006-000001",
+                            "resources": [
+                                {
+                                    "width": 3648,
+                                    "height": 3648,
+                                    "label": "High-resolution JPEG",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-200E6FFBB72B2_006-000001.jpg",
+                                    "dimensions": "3648x3648"
+                                },
+                                {
+                                    "label": "Screen Image",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-200E6FFBB72B2_006-000001_screen"
+                                },
+                                {
+                                    "label": "Thumbnail Image",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-200E6FFBB72B2_006-000001_thumb"
+                                }
+                            ]
+                        },
+                        {
+                            "thumbnail": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-200E6FFBB72B2_007-000001",
+                            "idsId": "NASM-200E6FFBB72B2_007-000001",
+                            "usage": { "access": "CC0" },
+                            "guid": "http://n2t.net/ark:/65665/gf4cf97a37b-6880-47dc-aee7-6346c9741745",
+                            "type": "Images",
+                            "content": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-200E6FFBB72B2_007-000001",
+                            "resources": [
+                                {
+                                    "width": 3648,
+                                    "height": 3648,
+                                    "label": "High-resolution JPEG",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-200E6FFBB72B2_007-000001.jpg",
+                                    "dimensions": "3648x3648"
+                                },
+                                {
+                                    "label": "Screen Image",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-200E6FFBB72B2_007-000001_screen"
+                                },
+                                {
+                                    "label": "Thumbnail Image",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-200E6FFBB72B2_007-000001_thumb"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "unit_code": "NASM",
+                "title_sort": "INDICATOR, ENGINE HOURS",
+                "guid": "http://n2t.net/ark:/65665/nv987185d0b-6326-4f11-9b2a-d11b6a1a2563",
+                "record_link": "http://n2t.net/ark:/65665/nv987185d0b-6326-4f11-9b2a-d11b6a1a2563",
+                "title": {
+                    "label": "Object Name",
+                    "content": "Indicator, Engine Hours"
+                },
+                "metadata_usage": { "access": "CC0" },
+                "data_source": "National Air and Space Museum"
+            },
+            "indexedStructured": {
+                "geoLocation": [
+                    {
+                        "L2": {
+                            "type": "Country",
+                            "content": "United States of America"
+                        }
+                    }
+                ],
+                "object_type": ["Engines"],
+                "name": ["A. W. Haydon Co."],
+                "place": ["United States of America"],
+                "usage_flag": ["Aviation", "Instruments"],
+                "online_media_type": ["Images"]
+            },
+            "freetext": {
+                "setName": [
+                    {
+                        "label": "See more items in",
+                        "content": "National Air and Space Museum Collection"
+                    }
+                ],
+                "identifier": [
+                    { "label": "Inventory Number", "content": "A19710091000" }
+                ],
+                "notes": [
+                    {
+                        "label": "Physical Description",
+                        "content": "7-1/2 x 3-3/4 x 3-1/8in.; electromechanical operation; 28 volts; World War II."
+                    }
+                ],
+                "creditLine": [
+                    {
+                        "label": "Credit Line",
+                        "content": "Gift of the Bendix Corporation"
+                    }
+                ],
+                "name": [
+                    { "label": "Manufacturer", "content": "A. W. Haydon Co." }
+                ],
+                "place": [
+                    {
+                        "label": "Country of Origin",
+                        "content": "United States of America"
+                    }
+                ],
+                "physicalDescription": [
+                    { "label": "Materials", "content": "Steel" },
+                    { "label": "Materials", "content": "Paint" },
+                    { "label": "Materials", "content": "Cadmium Plating" },
+                    { "label": "Materials", "content": "Glass" },
+                    { "label": "Materials", "content": "Paper" },
+                    { "label": "Materials", "content": "Adhesive Tape" },
+                    { "label": "Materials", "content": "Ink" },
+                    { "label": "Materials", "content": "Adhesive" },
+                    {
+                        "label": "Dimensions",
+                        "content": "3-D: 18.4 Ã— 9.7 Ã— 9cm (7 1/4 Ã— 3 13/16 Ã— 3 9/16 in.)"
+                    }
+                ],
+                "dataSource": [
+                    {
+                        "label": "Data Source",
+                        "content": "National Air and Space Museum"
+                    }
+                ],
+                "objectRights": [
+                    { "label": "Restrictions \u0026 Rights", "content": "CC0" }
+                ],
+                "objectType": [
+                    {
+                        "label": "Type",
+                        "content": "INSTRUMENTS-Engine \u0026 Fuel"
+                    }
+                ]
+            }
+        },
+        "url": "edanmdm:nasm_A19710091000",
+        "hash": "d6f1fa25f2b532b5ffcc4b8bf70e27957763ff0f",
+        "docSignature": "0b6f8b5667455b449001ec244c18acbc",
+        "timestamp": 1666664365,
+        "lastTimeUpdated": 1653682062,
+        "title": "Indicator, Engine Hours"
+    },
+    {
+        "id": "ld1-1643400021979-1643400034651-0",
+        "version": "",
+        "unitCode": "NASM",
+        "linkedId": "",
+        "type": "edanmdm",
+        "content": {
+            "descriptiveNonRepeating": {
+                "record_ID": "nasm_A19840839000",
+                "online_media": {
+                    "mediaCount": 7,
+                    "media": [
+                        {
+                            "thumbnail": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-NASM2020-11292",
+                            "idsId": "NASM-NASM2020-11292",
+                            "usage": { "access": "CC0" },
+                            "guid": "http://n2t.net/ark:/65665/gf4355f24c6-818d-4e6b-aeae-ad17209e496a",
+                            "type": "Images",
+                            "content": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-NASM2020-11292"
+                        },
+                        {
+                            "thumbnail": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-NASM2020-11293",
+                            "idsId": "NASM-NASM2020-11293",
+                            "usage": { "access": "CC0" },
+                            "guid": "http://n2t.net/ark:/65665/gf4a11e08c5-07cb-49e6-ac66-d161ffcc5ad5",
+                            "type": "Images",
+                            "content": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-NASM2020-11293"
+                        },
+                        {
+                            "thumbnail": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-NASM2020-11294",
+                            "idsId": "NASM-NASM2020-11294",
+                            "usage": { "access": "CC0" },
+                            "guid": "http://n2t.net/ark:/65665/gf4c9186031-02ff-47ab-af7f-61a6ba9e0648",
+                            "type": "Images",
+                            "content": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-NASM2020-11294"
+                        },
+                        {
+                            "thumbnail": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-NASM2020-11295",
+                            "idsId": "NASM-NASM2020-11295",
+                            "usage": { "access": "CC0" },
+                            "guid": "http://n2t.net/ark:/65665/gf46b612b34-343e-4dc2-853a-ecede69e8f18",
+                            "type": "Images",
+                            "content": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-NASM2020-11295"
+                        },
+                        {
+                            "thumbnail": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-SI-2004-17711",
+                            "idsId": "NASM-SI-2004-17711",
+                            "usage": { "access": "CC0" },
+                            "guid": "http://n2t.net/ark:/65665/gf49b223bef-d238-41b6-90d8-c07ee4dd4af2",
+                            "type": "Images",
+                            "content": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-SI-2004-17711"
+                        },
+                        {
+                            "thumbnail": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-SI-2004-17712",
+                            "idsId": "NASM-SI-2004-17712",
+                            "usage": { "access": "CC0" },
+                            "guid": "http://n2t.net/ark:/65665/gf4a5bc5747-58ae-491b-8486-0c7aada8ebd6",
+                            "type": "Images",
+                            "content": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-SI-2004-17712"
+                        },
+                        {
+                            "thumbnail": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-SI-2004-17715",
+                            "idsId": "NASM-SI-2004-17715",
+                            "usage": { "access": "CC0" },
+                            "guid": "http://n2t.net/ark:/65665/gf4ba3d294c-a058-41c5-84e7-74f62f750b10",
+                            "type": "Images",
+                            "content": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-SI-2004-17715"
+                        }
+                    ]
+                },
+                "unit_code": "NASM",
+                "title_sort": "BEDE BD-5B",
+                "guid": "http://n2t.net/ark:/65665/nv9e2d093a9-5984-4555-9c00-b2e7f944b2e4",
+                "record_link": "http://n2t.net/ark:/65665/nv9e2d093a9-5984-4555-9c00-b2e7f944b2e4",
+                "title": { "label": "Object Name", "content": "Bede BD-5B" },
+                "metadata_usage": { "access": "CC0" },
+                "data_source": "National Air and Space Museum"
+            },
+            "indexedStructured": {
+                "exhibition": [{ "building": "HAZY" }],
+                "geoLocation": [
+                    {
+                        "L2": {
+                            "type": "Country",
+                            "content": "United States of America"
+                        }
+                    }
+                ],
+                "object_type": ["Aircraft"],
+                "name": ["Graichen, Peter K", "Beckwith, Albert C."],
+                "onPhysicalExhibit": ["Yes"],
+                "topic": ["Aeronautics"],
+                "place": ["United States of America"],
+                "usage_flag": ["Homebuilt", "Aviation", "Private", "Aircraft"],
+                "online_media_type": ["Images"]
+            },
+            "freetext": {
+                "setName": [
+                    {
+                        "label": "See more items in",
+                        "content": "National Air and Space Museum Collection"
+                    },
+                    {
+                        "label": "Location",
+                        "content": "Steven F. Udvar-Hazy Center in Chantilly, VA"
+                    },
+                    { "label": "Hangar", "content": "Boeing Aviation Hangar" }
+                ],
+                "identifier": [
+                    { "label": "Inventory Number", "content": "A19840839000" }
+                ],
+                "notes": [
+                    {
+                        "label": "Physical Description",
+                        "content": "21ft. 6in. span, 13ft. 4in. long, 4ft.3in. high; all-metal, single-place; 1982."
+                    },
+                    {
+                        "label": "Summary",
+                        "content": "Designer Jim Bede announced that his BD-5 would deliver tremendous performance at a minimal cost, particulary to those who purchased and built the kit designed for amateur construction. Tremendous enthusiasm for the airplane could not overcome a significant weakness in the design: the lack of a suitable engine. The ultimate failure of concept should not obscure the many original and innovative aspects of the design."
+                    },
+                    {
+                        "label": "Long Description",
+                        "content": "Few airplanes have fired the imagination of sport pilots like the build-it-at-home-from-a-kit BD-5. The designer, Jim Bede, announced that the airplane would deliver tremendous performance at a minimal cost in money to purchase and operate, and time and space to build. Bede\u0027s enthusiasm for the airplane led him to market it prematurely with a fatal flaw: the lack of a suitable engine. The ultimate failure of the original BD-5 concept should not obscure the original and innovative aspects of the design."
+                    },
+                    {
+                        "label": "Long Description",
+                        "content": "By 1970, Bede (pronounced \u0027bee-dee\u0027) had earned a reputation for designing and flying innovative, high-performance aircraft. Factories produced more than 1,700 examples of his BD-1 (production designation AA-1), the first light aircraft mass-produced using bonded (glued) metal construction. Soon the BD-2 followed with the ambitious design goal to fly non-stop around the world without refueling. Bede never made the flight but the project stirred considerable interest among designers and pilots. Much more successful was the kitplane BD-4, which he designed so that builders constructed it using a patented \"panel-rib\" process. Bede sold about 600 BD-4 kits in part because the aircraft could accommodate four people."
+                    },
+                    {
+                        "label": "Long Description",
+                        "content": "Bede began concentrating on the BD-5 concept as early as 1967 but the demands of other projects slowed the work. In 1970, he began selling slick brochures packed with colorful photographs, intricate drawings, and astonishing performance estimates. Word of the BD-5 quickly flashed throughout the community of amateur builders and enthusiasts. On February 24, 1971, Bede accepted the first $900 deposit to reserve a BD-5 kit for a prospective builder. Though promising a lot of bang per buck, years of hard and difficult work remained to make the BD-5 idea practical. The aircraft had not even flown, yet Jim Bede and the BD-5 were coming under increasing pressure from a hyper-enthusiastic market whose patience and reason was fast succumbing to demands for quick gratification."
+                    },
+                    {
+                        "label": "Long Description",
+                        "content": "The slick brochures presented a prototype with a sharp, smooth nose gracefully flowing back to an exotic vee-tail, which soon gave way to a conventional cruciform tail mounted at the back end of a miniscule single-seat fuselage barely 4 m (13 ft) long. Bede mounted the wings low and depending on the version, they spanned (4.3 m/14 ft 4 in span) on the BD-5A, or just over 6.4 m (21 ft) on the BD-5B. The \u0027A model appeared in most of the early brochures and other advertising but as development continued, it became apparent that the airplane flew much better with the longer wings. To move about on the ground, Bede fitted tiny, retractable, tricycle landing gear. He minimized the physical attributes of the BD-5 to increase performance with small engines and to reduce the cost to fabricate components. Small size appealed to many homebuilders who were loath to take on projects that required more building space than a garage or apartment. Bede designed the wings to separate quickly and easily from the fuselage. This feature allowed the builder to store the BD-5 at home rather than paying to rent a hanger at the airfield."
+                    },
+                    {
+                        "label": "Long Description",
+                        "content": "Interest in the BD-5 soared after company test, Les Berven, flew the prototype on 12 September 1971. By December, prospective builder-pilots had flooded the company with orders for 4,000 kits. As is standard practice within the amateur-built aircraft community, builders had to form, cut, drill, bond, and rivet a variety of raw materials provided by Bede\u0027s staff into a finished BD-5 according to a detailed set of instructions. To reduce building time, Bede technicians formed a few of the more critical parts with complex shapes, such as the fuselage skins. Jim Bede sold the first kits for $2,100 and estimated that after toiling about 300-400 hours, the average builder could be ready to fly. Many variables always influence such predictions so kit manufacturers wisely pad their estimates, however Bede\u0027s projection appeared remarkable because the airplane was not a simple design of modest performance, but rather a genuine thoroughbred that demanded a high degree of skill and precision to build and fly."
+                    },
+                    {
+                        "label": "Long Description",
+                        "content": "In the hands of a qualified pilot, the tiny BD-5 could become a star performer capable of a full range of aerobatic maneuvers. Nearly all who flew the airplane called the handling qualities delightful. Small size and careful design made the control pressures were very light but the characteristic was due also to Bede\u0027s use of stiff aluminum push-rods supported on ball bearings to all control surfaces with the pilot\u0027s control stick and rudder pedals. One pilot described how he simply \u0027thought\u0027 himself into a turn, with little or no awareness that sensation of manipulating the controls. Quite pleasant in the air, such light control pressures could be deadly on takeoff when inexperienced pilots moved the controls too abruptly and lost control. There was no fix for this characteristic and pilots new to flying the BD-5 received stern warnings to use extreme caution until they were familiar with the tiny movements required to fly the BD-5. Advertised as 322 kph (200 mph), maximum cruise speed was as impressive as the handling, the result of not only a very clean and streamlined configuration, but also the small size and low weight, about 270 kg (600 lb). It was said that the little airplane behaved equally well at the opposite end of the performance spectrum but the statement that the BD-5 could slow down to soar like a motor glider was certainly a stretch unless really extraordinary weather conditions were encountered. Bede also claimed that the power plant sipped just 4 gallons per hour of fuel to give the airplane sufficient range to fly about 1,610 km (1,000 miles) at an altitude of 4,256 m (14,000 ft)."
+                    },
+                    {
+                        "label": "Long Description",
+                        "content": "Great handling, high-speed performance, and economical operation, all beautifully packaged! The BD-5 seemed to have it all, yet to excel in all these areas, a very special engine had to propel the kit plane. Such an engine did not exist. Bede had envisioned adapting one of the many two-cycle, air-cooled engine designs commonly used to power snowmobiles. His first engine was a 40 horsepower unit manufactured by Kiekhaefer Aeromarine that proved unreliable. Next he tried an engine manufactured in Germany by Hirth in versions that developed from 40 to 70 horsepower. After Hirth announced that the firm could not supply enough power plants to meet projected kit sales, the most difficult problem for BD-5 kit owners remained the engine. Bede tried motors from Polaris, Zenoah, Kawasaki, and others but never found an alternative able to withstand the unique demands of aircraft propulsion."
+                    },
+                    {
+                        "label": "Long Description",
+                        "content": "Most builders found the kits difficult to build. They had to fabricate complex parts including the drive system that transmitted power from the engine to the propeller. One owner eventually spent 7 years and $20,000 to finish his airplane. To meet demand, Bede announced a full production version designated the BD-5D, which he would certify and sell for $4,400 but none was built. The factory manufactured about 3,000 kits; however, customers bought less than 1,000. By the late 1970s, Bede had run out of time to save the BD-5. Budd Davisson summed up the disappointing outcome: \"Too much was said early in the game, promises were made, performance figures quoted and money taken. So, when things didn\u0027t go like clockwork, the BD buying public got a little bit ticked off.\""
+                    },
+                    {
+                        "label": "Long Description",
+                        "content": "Those who had bought kits began to sell them for far less than they had paid, if they could find buyers. Hoping to generate cash, Bede dabbled briefly with a sailplane version, and his jet-powered BD-5 became popular at air shows but the dream to mass market the little kit plane ended in 1979 when Bede declared bankruptcy."
+                    },
+                    {
+                        "label": "Long Description",
+                        "content": "Jim Bede\u0027s BD-5 remained a compelling design in the new millennium as hardy souls managed to keep about 150 flying in 2002, thanks largely to entrepreneurs who formed companies to supply knowledge, experience, and critical hardware. During the mid-1970s, Keith Hinshaw organized Bede-Micro Aviation in San Jose, California, and focused the business on supplying a solution to the engine problem, and supplying parts and assistance to builders. A former BD-5 owner, Hinshaw and his staff worked out a nifty solution to the propulsion problem when they successfully adapted a turbo-charged Honda automobile engine to the aircraft. Bede-Micro also designed and sold parts and plans to strengthen the wings and the top of the rudder, improved the landing gear and flaps, and stretched the fuselage 12 cm (5 in) to accommodate a greater variety of engines."
+                    },
+                    {
+                        "label": "Long Description",
+                        "content": "On 11 September 1984, Peter K. Graichen and Albert C. Beckwith of Stow, Ohio, donated their BD-5 to the Smithsonian National Air and Space Museum. Graichen had built begun to build the aircraft in 1972 and he finished six years and 5,000 working-hours later. To power the BD-5, he installed one of the Honda engines modified by Hinshaw\u0027s staff at Bede-Micro. The airplane was first flown on 21 October 1978 at Akron Municipal Airport. Pilots logged 9 hours of flying time before Graichen and Beckwith generously donated the airplane to the Museum in 1984."
+                    }
+                ],
+                "creditLine": [
+                    {
+                        "label": "Credit Line",
+                        "content": "Gift of Albert C. Beckwith and Peter Graichen."
+                    }
+                ],
+                "name": [
+                    {
+                        "label": "Manufacturer",
+                        "content": "Albert C. Beckwith"
+                    },
+                    { "label": "Manufacturer", "content": "Peter K. Graichen" }
+                ],
+                "place": [
+                    {
+                        "label": "Country of Origin",
+                        "content": "United States of America"
+                    }
+                ],
+                "physicalDescription": [
+                    {
+                        "label": "Dimensions",
+                        "content": "Wingspan: 6.6 m (21 ft 6 in)"
+                    },
+                    {
+                        "label": "Dimensions",
+                        "content": "Length: 4.1 m (13 ft 4 in)"
+                    },
+                    {
+                        "label": "Dimensions",
+                        "content": "Height: 1.3 m (4 ft 3 in)"
+                    },
+                    {
+                        "label": "Dimensions",
+                        "content": "Weights: Empty, 243.2 kg (535 lb)"
+                    },
+                    {
+                        "label": "Dimensions",
+                        "content": "Gross, 431.8 kg (950 lb)"
+                    },
+                    {
+                        "label": "Dimensions",
+                        "content": "Engine: Honda Civic EB-2 turbocharged, 101 horsepower"
+                    }
+                ],
+                "dataSource": [
+                    {
+                        "label": "Data Source",
+                        "content": "National Air and Space Museum"
+                    }
+                ],
+                "objectRights": [
+                    { "label": "Restrictions \u0026 Rights", "content": "CC0" }
+                ],
+                "objectType": [{ "label": "Type", "content": "CRAFT-Aircraft" }]
+            }
+        },
+        "url": "edanmdm:nasm_A19840839000",
+        "hash": "d6016321c85c20ee3c646cd1d156609969805e6d",
+        "docSignature": "75dd3bcb47e9f018b58ea67c2c1c9213",
+        "timestamp": 1669111351,
+        "lastTimeUpdated": 1669111340,
+        "title": "Bede BD-5B"
+    },
+    {
+        "id": "ld1-1643400021979-1643400023622-0",
+        "version": "",
+        "unitCode": "NASM",
+        "linkedId": "",
+        "type": "edanmdm",
+        "content": {
+            "descriptiveNonRepeating": {
+                "record_ID": "nasm_A19610048000",
+                "online_media": {
+                    "mediaCount": 18,
+                    "media": [
+                        {
+                            "thumbnail": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-A19610048000-NASM2018-10793",
+                            "idsId": "NASM-A19610048000-NASM2018-10793",
+                            "usage": { "access": "CC0" },
+                            "guid": "http://n2t.net/ark:/65665/gf4fa7af71f-6fdd-4062-ae12-7d48612fa1c3",
+                            "type": "Images",
+                            "content": "https://ids.si.edu/ids/deliveryService?id\u003dNASM-A19610048000-NASM2018-10793",
+                            "text_equiv": "Wood, fabric, and metal canard biplane 1903 Wright Flyer in museum",
+                            "resources": [
+                                {
+                                    "label": "High-resolution TIFF",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-A19610048000-NASM2018-10793.tif",
+                                    "width": 8466,
+                                    "height": 5792
+                                },
+                                {
+                                    "width": 8466,
+                                    "height": 5792,
+                                    "label": "High-resolution JPEG",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-A19610048000-NASM2018-10793.jpg",
+                                    "dimensions": "8466x5792"
+                                },
+                                {
+                                    "label": "Screen Image",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-A19610048000-NASM2018-10793_screen"
+                                },
+                                {
+                                    "label": "Thumbnail Image",
+                                    "url": "https://ids.si.edu/ids/download?id\u003dNASM-A19610048000-NASM2018-10793_thumb"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "unit_code": "NASM",
+                "title_sort": "1903 WRIGHT FLYER",
+                "guid": "http://n2t.net/ark:/65665/nv9aa91e7c2-85b2-4904-aff0-d990694b6f1d",
+                "record_link": "http://n2t.net/ark:/65665/nv9aa91e7c2-85b2-4904-aff0-d990694b6f1d",
+                "title": {
+                    "label": "Object Name",
+                    "content": "1903 Wright Flyer"
+                },
+                "metadata_usage": { "access": "CC0" },
+                "data_source": "National Air and Space Museum"
+            },
+            "indexedStructured": {
+                "date": ["1900s"],
+                "exhibition": [{ "building": "NASM" }],
+                "geoLocation": [
+                    {
+                        "L2": {
+                            "type": "Country",
+                            "content": "United States of America"
+                        }
+                    }
+                ],
+                "object_type": ["Aircraft"],
+                "onPhysicalExhibit": ["Yes"],
+                "topic": ["Aeronautics"],
+                "place": ["United States of America"],
+                "usage_flag": [
+                    "Aviation",
+                    "Inventors",
+                    "People",
+                    "Private",
+                    "Research",
+                    "Aircraft",
+                    "Pre-WWI"
+                ],
+                "online_media_type": ["Images"]
+            },
+            "freetext": {
+                "setName": [
+                    {
+                        "label": "See more items in",
+                        "content": "National Air and Space Museum Collection"
+                    },
+                    {
+                        "label": "Location",
+                        "content": "National Air and Space Museum in Washington, DC"
+                    },
+                    {
+                        "label": "Exhibition",
+                        "content": "Wright Brothers \u0026 The Invention of the Aerial Age"
+                    }
+                ],
+                "date": [{ "label": "Date", "content": "1903" }],
+                "identifier": [
+                    { "label": "Inventory Number", "content": "A19610048000" }
+                ],
+                "notes": [
+                    {
+                        "label": "Physical Description",
+                        "content": "Canard biplane with one 12-horsepower Wright horizontal four-cylinder engine driving two pusher propellers via sprocket-and-chain transmission system. Non-wheeled, linear skids act as landing gear. Natural fabric finish - no sealant or paint of any kind."
+                    }
+                ],
+                "creditLine": [
+                    {
+                        "label": "Credit Line",
+                        "content": "The Estate of Orville Wright."
+                    }
+                ],
+                "place": [
+                    {
+                        "label": "Country of Origin",
+                        "content": "United States of America"
+                    }
+                ],
+                "physicalDescription": [
+                    { "label": "Materials", "content": "Airframe: Wood" },
+                    {
+                        "label": "Materials",
+                        "content": "Fabric Covering: Muslin"
+                    },
+                    {
+                        "label": "Materials",
+                        "content": "Engine Crankcase: Aluminum"
+                    },
+                    {
+                        "label": "Dimensions",
+                        "content": "Wingspan: 12.3 m (40 ft 4 in)"
+                    },
+                    {
+                        "label": "Dimensions",
+                        "content": "Length: 6.4 m (21 ft 1 in)"
+                    },
+                    {
+                        "label": "Dimensions",
+                        "content": "Height: 2.8 m (9 ft 4 in)"
+                    },
+                    {
+                        "label": "Dimensions",
+                        "content": "Weight: Empty, 274 kg (605 lb)"
+                    },
+                    {
+                        "label": "Dimensions",
+                        "content": "Gross, 341 kg (750 lb)"
+                    }
+                ],
+                "dataSource": [
+                    {
+                        "label": "Data Source",
+                        "content": "National Air and Space Museum"
+                    }
+                ],
+                "objectRights": [
+                    { "label": "Restrictions \u0026 Rights", "content": "CC0" }
+                ],
+                "objectType": [{ "label": "Type", "content": "CRAFT-Aircraft" }]
+            }
+        },
+        "url": "edanmdm:nasm_A19610048000",
+        "hash": "d6ff7c60c032380ba9a7cd0a3ea29ce03b006c1f",
+        "docSignature": "10748ad86e2f4646912057957f974897",
+        "timestamp": 1669284066,
+        "lastTimeUpdated": 1669284042,
+        "title": "1903 Wright Flyer"
+    }
+]
