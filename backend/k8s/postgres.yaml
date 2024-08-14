@@ -11,6 +11,7 @@ kind: Secret
 metadata:
     name: postgres-credentials
     namespace: curio
+type: Opaque
 data:
     postgres_user: {{ .Values.postgres.user }}
     postgres_password: {{ .Values.postgres.password }}
@@ -41,12 +42,27 @@ metadata:
         app: postgres
         tier: database
 spec:
+    storageClassName: postgres
     accessModes:
         - ReadWriteOnce
     resources:
         requests:
             storage: 1Gi
-
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+    namespace: curio
+    name: postgres
+spec:
+    capacity:
+        storage: 1Gi
+    accessModes:
+        - ReadWriteOnce
+    storageClassName: postgres
+    persistentVolumeReclaimPolicy: Retain
+    hostPath:
+        path: /postgres
 ---
 apiVersion: apps/v1
 kind: Deployment
