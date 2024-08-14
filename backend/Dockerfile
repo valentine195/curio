@@ -4,10 +4,9 @@ COPY . .
 
 RUN ./mvnw clean install --no-transfer-progress
 
-COPY --from=build ./target/curio.jar app.jar
 
 RUN ls -ltr
 
 LABEL org.opencontainers.image.source=https://github.com/valentine195/curio
 
-ENTRYPOINT ["java","-jar","/app.jar"]
+ENTRYPOINT ["java","-jar","/target/curio.jar"]
