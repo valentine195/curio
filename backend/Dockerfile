@@ -2,11 +2,12 @@ FROM eclipse-temurin:latest AS build
 
 COPY . .
 
-RUN ./mvnw clean install
+RUN ./mvnw clean install --no-transfer-progress
 
-ARG JAR_FILE=target/*.jar
-COPY ${JAR_FILE} app.jar
+COPY ./target/curio-*.jar app.jar
 
-LABEL org.opencontainers.image.source https://github.com/valentine195/curio
+RUN ls -ltr
+
+LABEL org.opencontainers.image.source=https://github.com/valentine195/curio
 
 ENTRYPOINT ["java","-jar","/app.jar"]
