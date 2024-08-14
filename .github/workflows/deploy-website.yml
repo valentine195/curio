@@ -44,6 +44,7 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           push: true
+          context: ./frontend
           tags: |
             ghcr.io/valentine195/curio-frontend:latest
             ghcr.io/valentine195/curio-frontend:${{ github.sha }}
