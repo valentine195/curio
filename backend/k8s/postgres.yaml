@@ -5,16 +5,7 @@ metadata:
     namespace: curio
 data:
     name: "curio"
----
-apiVersion: v1
-kind: Secret
-metadata:
-    name: postgres-credentials
-    namespace: curio
-type: Opaque
-data:
-    postgres_user: {{ .Values.postgres.user }}
-    postgres_password: {{ .Values.postgres.password }}
+
 ---
 apiVersion: v1
 kind: Service
