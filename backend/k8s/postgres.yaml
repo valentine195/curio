@@ -4,24 +4,20 @@ metadata:
     name: postgres-configmap
     namespace: curio
 data:
-    name: "curio"
-
+    POSTGRES: jdbc:postgresql://postgres/curio
 ---
 apiVersion: v1
 kind: Service
 metadata:
-    name: postgres
-    namespace: curio
-    labels:
-        app: postgres
-        tier: database
+  name: postgres
+  namespace: curio
 spec:
-    ports:
-        - port: 5432
-    selector:
-        app: postgres
-        tier: database
-    clusterIP: None
+  selector:
+    app: postgres
+  ports:
+    - protocol: TCP
+      port: 5432
+      targetPort: 5432
 
 ---
 apiVersion: v1
@@ -83,19 +79,16 @@ spec:
                   env:
                       - name: POSTGRES_USER
                         valueFrom:
-                            secretKeyRef:
-                                name: postgres-credentials
-                                key: postgres_user
+                          secretKeyRef:
+                            name: postgres-credentials
+                            key: postgres_user
                       - name: POSTGRES_PASSWORD
                         valueFrom:
-                            secretKeyRef:
-                                name: postgres-credentials
-                                key: postgres_password
+                          secretKeyRef:
+                            name: postgres-credentials
+                            key: postgres_password
                       - name: POSTGRES_DB
-                        valueFrom:
-                            configMapKeyRef:
-                                name: postgres-configmap
-                                key: name
+                        value: curio
                   ports:
                       - containerPort: 5432
                         name: postgres

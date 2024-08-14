@@ -48,9 +48,18 @@ spec:
         - containerPort: 80
           protocol: TCP
         env:
-        - name: SPRING_DATASOURCE_PASSWORD
-          value: abc123
-        - name: SPRING_DATASOURCE_URL
-          value: jdbc:postgresql://postgresql:5432/curio
         - name: SPRING_DATASOURCE_USERNAME
-          value: curio
+          valueFrom:
+            secretKeyRef:
+              name: postgres-credentials
+              key: postgres_user
+        - name: SPRING_DATASOURCE_PASSWORD
+          valueFrom:
+            secretKeyRef:
+              name: postgres-credentials
+              key: postgres_password
+        - name: SPRING_DATASOURCE_URL
+          valueFrom:
+            configMapKeyRef:
+              name: postgres-configmap
+              key: POSTGRES
