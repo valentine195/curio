@@ -1,5 +1,7 @@
 FROM eclipse-temurin:latest AS build
 
+COPY . .
+
 RUN ./mvnw clean install
 
 ARG JAR_FILE=target/*.jar
