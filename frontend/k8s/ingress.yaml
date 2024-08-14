@@ -1,0 +1,24 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: curio-frontend
+  namespace: curio
+  annotations:
+    cert-manager.io/cluster-issuer: "letsencrypt-prod"          
+spec:
+  ingressClassName: nginx
+  tls:
+    - hosts:
+      - curio.javalent.com
+      secretName: curio-javalent-com
+  rules:
+  - host: curio.javalent.com
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend: 
+          service:
+            name: curio-frontend
+            port: 
+                number: 80

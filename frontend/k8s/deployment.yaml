@@ -1,0 +1,47 @@
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: curio-frontend
+  namespace: curio
+  labels:
+    app: curio-frontend
+    service: curio-frontend
+spec:
+  ports:
+  - port: 80
+    name: http
+  selector:
+    app: curio-frontend
+
+---
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: curio-frontend-v1
+  namespace: curio
+  labels:
+    app: curio-frontend
+    version: v1
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: curio-frontend
+      version: v1
+  template:
+    metadata:
+      labels:
+        app: curio-frontend
+        version: v1
+    spec:
+      imagePullSecrets:
+      - name: github-container-registry
+      containers:
+      - name: curio-frontend
+        image: ghcr.io/valentine195/curio-frontend:{{ .Values.sha }}
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 80
+          protocol: TCP
