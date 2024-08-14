@@ -4,7 +4,7 @@ COPY . .
 
 RUN ./mvnw clean install --no-transfer-progress
 
-COPY /target/curio.jar app.jar
+COPY ./target/curio.jar app.jar
 
 RUN ls -ltr
 
