@@ -1,4 +1,4 @@
-FROM java:latest AS build
+FROM eclipse-temurin:latest AS build
 
 COPY . .
 RUN ./mvnw clean install
