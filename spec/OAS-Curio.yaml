@@ -1,0 +1,22 @@
+openapi: 3.1.0
+info:
+  version: 1.0.0
+  title: Curio
+  description: >
+    Curio offers an easy way to browse the collection of museums around the world.
+tags:
+  - name: Echo
+    description: "Example echo operations."
+  - name: User
+    description: "Example actions on user accounts."
+  - name: Admin
+    description: "Example operations reserved for administrators."
+  - name: Info
+    description: "Example operations for retrieving information."
+  - name: Tag
+    description: "This is a tag description."
+servers:
+  - https://api.curio.javalent.com
+paths:
+  '/echo':
+    $ref: 'paths/echo.yaml'

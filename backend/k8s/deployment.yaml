@@ -1,0 +1,47 @@
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: curio-backend
+  namespace: curio
+  labels:
+    app: curio-backend
+    service: curio-backend
+spec:
+  ports:
+  - port: 80
+    name: http
+  selector:
+    app: curio-backend
+
+---
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: curio-backend-v1
+  namespace: curio
+  labels:
+    app: curio-backend
+    version: v1
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: curio-backend
+      version: v1
+  template:
+    metadata:
+      labels:
+        app: curio-backend
+        version: v1
+    spec:
+      imagePullSecrets:
+      - name: github-container-registry
+      containers:
+      - name: curio-backend
+        image: ghcr.io/valentine195/curio-backend:{{ .Values.sha }}
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 80
+          protocol: TCP

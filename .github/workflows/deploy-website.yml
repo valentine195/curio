@@ -1,0 +1,57 @@
+# This workflow will do a clean installation of node dependencies, cache/restore them, build the source code and run tests across different versions of node
+# For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
+
+name: Deploy Website
+
+on:
+  push:
+    paths:
+        - "frontend/src/**"
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: linux
+    steps:
+      -
+        name: Checkout
+        uses: actions/checkout@v3
+      -
+        name: Set up QEMU
+        uses: docker/setup-qemu-action@v2
+      - 
+        name: Set up Docker Context for Buildx
+        id: buildx-context
+        run: |
+           docker context create builders
+      -
+        name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v2
+        with:
+          driver-opts: network=host
+          endpoint: builders
+
+      - 
+        name: Login to GitHub Container Registry
+        uses: docker/login-action@v2
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - 
+        name: Build and push the Docker image
+        uses: docker/build-push-action@v4
+        with:
+          push: true
+          tags: |
+            ghcr.io/valentine195/curio-frontend:latest
+            ghcr.io/valentine195/curio-frontend:${{ github.sha }}
+      - name: Update SHA
+        uses: fjogeleit/yaml-update-action@main
+        with:
+          valueFile: 'frontend/k8s/values.yaml'
+          propertyPath: 'sha'
+          value: ${{ github.sha }}
+          branch: main
+          message: '🛠️ k8s update'

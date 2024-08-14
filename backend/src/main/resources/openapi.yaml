@@ -1,0 +1,73 @@
+openapi: 3.1.0
+info:
+  description: |
+    Curio offers an easy way to browse the collection of museums around the world.
+  title: Curio
+  version: 1.0.0
+servers: []
+tags:
+- description: Example echo operations.
+  name: Echo
+- description: Example actions on user accounts.
+  name: User
+- description: Example operations reserved for administrators.
+  name: Admin
+- description: Example operations for retrieving information.
+  name: Info
+- description: This is a tag description.
+  name: Tag
+paths:
+  /echo:
+    post:
+      description: This endpoint returns the exact message you've sent to it. You
+        can use it for testing purposes.
+      operationId: echo
+      requestBody:
+        content:
+          application/json:
+            schema:
+              example: Hello world!
+              type: string
+        description: "Example Echo payload. When the response is received, its contents\
+          \ should match the contents from the payload."
+        required: true
+      responses:
+        "200":
+          content:
+            application/json:
+              examples:
+                response:
+                  value: Hello world!
+              schema:
+                type: string
+          description: OK
+          headers:
+            X-Rate-Limit:
+              description: Calls per hour allowed by the user.
+              explode: false
+              schema:
+                format: int32
+                type: integer
+              style: simple
+            X-Expires-After:
+              description: date in UTC when token expires
+              explode: false
+              schema:
+                format: date-time
+                type: string
+              style: simple
+        "400":
+          description: Unauthorized
+      security:
+      - api_key: []
+      - basic_auth: []
+      summary: Echo test
+      tags:
+      - Echo
+      x-content-type: application/json
+      x-accepts:
+      - application/json
+      x-tags:
+      - tag: Echo
+components:
+  schemas: {}
