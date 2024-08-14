@@ -44,6 +44,7 @@ jobs:
         uses: docker/build-push-action@v4
         with:
           push: true
+          context: ./backend
           tags: |
             ghcr.io/valentine195/curio-server:latest
             ghcr.io/valentine195/curio-server:${{ github.sha }}
