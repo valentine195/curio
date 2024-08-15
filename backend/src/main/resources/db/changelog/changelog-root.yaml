@@ -28,6 +28,9 @@ databaseChangeLog:
                         - column:
                               name: thumbnail
                               type: varchar
+                        - column:
+                              name: description
+                              type: text
               - createTable:
                     tableName: museums
                     columns:

@@ -5,10 +5,9 @@ import java.util.UUID;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import com.javalent.curio.models.Museum;
+import com.javalent.curio.models.Item;
 
 @Repository
-public interface MuseumRepository extends JpaRepository<Museum, UUID> {
+public interface ItemRepository extends JpaRepository<Item, UUID> {
 
 }
-
