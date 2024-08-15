@@ -9,13 +9,13 @@ spec:
   ingressClassName: nginx
   tls:
     - hosts:
-      - api.curio.javalent.com
-      secretName: api-curio-javalent-com
+      - curio.javalent.com
+      secretName: curio-javalent-com
   rules:
-  - host: api.curio.javalent.com
+  - host: curio.javalent.com
     http:
       paths:
-      - path: /
+      - path: /api
         pathType: Prefix
         backend: 
           service:
