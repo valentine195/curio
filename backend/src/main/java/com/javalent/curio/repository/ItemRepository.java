@@ -8,6 +8,6 @@ import org.springframework.stereotype.Repository;
 import com.javalent.curio.models.Item;
 
 @Repository
-public interface ItemRepository extends JpaRepository<Item, UUID> {
+public interface ItemRepository extends JpaRepository<Item, String> {
 
 }

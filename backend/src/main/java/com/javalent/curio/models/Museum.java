@@ -16,4 +16,9 @@ public class Museum {
     public UUID id;
 
     public String name;
+
+    public Museum(String name) {
+        this.name = name;
+    }
+    public Museum() {}
 }
