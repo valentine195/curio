@@ -1,6 +1,6 @@
 databaseChangeLog:
     - includeAll:
-        path: "db/changelog/release/"
+       path: "db/changelog/release/"
     - changeSet:
           id: "1"
           author: Jeremy Valentine

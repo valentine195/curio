@@ -1,0 +1,20 @@
+databaseChangeLog:
+-  changeSet:
+    id: "1.3"
+    author: Jeremy Valentine
+    changes:
+    - addColumn:
+        tableName: items 
+        columns:
+          - column:
+                name: long_description
+                type: varchar
+          - column:
+                name: physical_description
+                type: varchar
+          - column:
+                name: summary
+                type: varchar
+          - column:
+                name: tags
+                type: varchar[]

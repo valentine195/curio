@@ -70,7 +70,7 @@ public class Downloader {
         for (String index : mainIndices) {
             var sub_unit = index.substring(BASE_URL.length() + 1, index.indexOf(INDEX_FILE));
             if (SUB_UNITS.contains(sub_unit)) {
-                pool.execute(new DeserializeAndInsertTask(downloadFile(index)));
+                pool.execute(new DeserializeAndInsertTask(downloadFile(index), sub_unit));
             }
         }
 
@@ -94,9 +94,11 @@ public class Downloader {
     class DeserializeAndInsertTask implements Runnable {
 
         private List<String> indices;
+        private String sub_unit;
 
-        public DeserializeAndInsertTask(List<String> indices) {
+        public DeserializeAndInsertTask(List<String> indices, String sub_unit) {
             this.indices = indices;
+            this.sub_unit = sub_unit;
         }
 
         ObjectMapper mapper = new ObjectMapper().configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES,
@@ -104,21 +106,22 @@ public class Downloader {
 
         @Override
         public void run() {
+            int added = 0;
             for (String index : indices) {
                 List<String> jsons = downloadFile(index);
-                System.out.println("Found " + jsons.size() + " JSON files");
                 for (String json : jsons) {
                     try {
                         SmithstonianItem smithstonianItem = mapper.readValue(json, SmithstonianItem.class);
                         Item item = new Item(smithstonianItem, smithstonian);
-                        System.out.println("Adding item " + item);
                         itemRepository.save(item);
+                        added++;
                     } catch (JsonProcessingException e) {
                         // TODO Auto-generated catch block
                         e.printStackTrace();
                     }
                 }
             }
+            System.out.println("Added " + added + " items for sub unit " + sub_unit);
         }
 
     }
