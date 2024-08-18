@@ -15,7 +15,7 @@
                 class="flex items-center gap-2 text-lg font-semibold md:text-base"
             >
                 <Search class="h-6 w-6" />
-                <h3 class='text-xl text-primary-600'>Curio</h3>
+                <h3 class="text-xl text-primary-600">Curio</h3>
             </a>
             <a
                 href="##"

@@ -4,7 +4,7 @@
 <div class="relative max-h-[600px] flex">
     <div class="heading overlay w-1/2 flex pt-12 p-4 font-playfair">
         <h1 class="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl">
-            Dive into treasures from museums around the world, all from the
+            Discover treasures from museums around the world, all from the
             comfort of your screen.
         </h1>
     </div>
