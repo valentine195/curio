@@ -4,28 +4,10 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
-import org.hibernate.annotations.JdbcTypeCode;
-import org.hibernate.annotations.Type;
-import org.hibernate.type.SqlTypes;
-
 import com.javalent.curio.museums.smithstonian.SmithstonianItem;
-import com.javalent.curio.museums.smithstonian.SmithstonianItem.Note;
-import com.javalent.curio.museums.smithstonian.SmithstonianItem.PhysicalDescription;
-
-import io.hypersistence.utils.hibernate.type.json.JsonBinaryType;
-
 import jakarta.annotation.Nonnull;
-import jakarta.persistence.CascadeType;
-import jakarta.persistence.CollectionTable;
-import jakarta.persistence.Column;
-import jakarta.persistence.Convert;
-import jakarta.persistence.ElementCollection;
 import jakarta.persistence.Entity;
-import jakarta.persistence.FetchType;
 import jakarta.persistence.Id;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.MapsId;
-import jakarta.persistence.OneToOne;
 import jakarta.persistence.Table;
 
 @Entity
