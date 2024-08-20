@@ -2,7 +2,6 @@ package com.javalent.curio.museums.smithstonian;
 
 import java.net.URI;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 import java.util.Optional;
 import java.util.Scanner;
@@ -19,7 +18,6 @@ import org.springframework.stereotype.Service;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.DeserializationFeature;
-import com.fasterxml.jackson.databind.MapperFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.datatype.jdk8.Jdk8Module;
 import com.javalent.curio.models.Item;
@@ -42,9 +40,6 @@ public class Downloader {
     @Autowired
     private ItemRepository itemRepository;
 
-    @Autowired
-    private MuseumRepository museumRepository;
-
     ExecutorService pool = Executors.newCachedThreadPool();
 
     Museum smithstonian;
@@ -53,16 +48,6 @@ public class Downloader {
     public void downloadFiles() {
         if (!SHOULD_DOWNLOAD)
             return;
-
-        Optional<Museum> maybeSmithstonian = museumRepository.findByName("Smithstonian Museum");
-        if (maybeSmithstonian.isEmpty()) {
-            System.out.println("Smithstonian not found");
-            smithstonian = new Museum("Smithstonian Museum");
-            museumRepository.save(smithstonian);
-        } else {
-            System.out.println("Smithstonian found");
-            smithstonian = maybeSmithstonian.get();
-        }
 
         System.out.println("sub_units: " + SUB_UNITS);
         List<String> mainIndices = downloadFile(BASE_URL + INDEX_FILE);
@@ -112,7 +97,7 @@ public class Downloader {
                 for (String json : jsons) {
                     try {
                         SmithstonianItem smithstonianItem = mapper.readValue(json, SmithstonianItem.class);
-                        Item item = new Item(smithstonianItem, smithstonian);
+                        Item item = new Item(smithstonianItem);
                         itemRepository.save(item);
                         added++;
                     } catch (JsonProcessingException e) {
