@@ -1,6 +1,9 @@
 <script>
     import "../app.scss";
-    import Search from "lucide-svelte/icons/search";
+    import { page } from "$app/stores";
+    import { Menu } from "lucide-svelte";
+    import { Button } from "$lib/components/ui/button";
+    import * as Sheet from "$lib/components/ui/sheet";
 </script>
 
 <div class="flex flex-col h-lvh">
@@ -14,20 +17,14 @@
                 href="##"
                 class="flex items-center gap-2 text-lg font-semibold md:text-base"
             >
-                <Search class="h-6 w-6" />
                 <h3 class="text-xl text-primary-600">Curio</h3>
             </a>
             <a
                 href="##"
                 class="text-foreground hover:text-foreground transition-colors"
+                class:active={$page.url.pathname === "/"}
             >
                 Home
-            </a>
-            <a
-                href="##"
-                class="text-muted-foreground hover:text-foreground transition-colors"
-            >
-                About
             </a>
         </nav>
     </header>
@@ -36,3 +33,11 @@
         <slot></slot>
     </div>
 </div>
+
+<style lang='scss'>
+    @import "../styles/colors";
+
+    .active {
+        border-bottom: 2px solid $primary-875;
+    }
+</style>
