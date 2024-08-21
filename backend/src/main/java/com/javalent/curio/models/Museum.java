@@ -2,12 +2,9 @@ package com.javalent.curio.models;
 
 import java.util.HashSet;
 import java.util.Set;
-import java.util.UUID;
-
 import org.hibernate.annotations.NaturalId;
 
 import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
 import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
@@ -16,8 +13,6 @@ import lombok.Data;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import lombok.Setter;
-import lombok.AccessLevel;
 
 @Getter
 @Setter

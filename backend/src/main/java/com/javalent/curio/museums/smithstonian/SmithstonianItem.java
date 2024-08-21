@@ -3,9 +3,6 @@ package com.javalent.curio.museums.smithstonian;
 import java.util.ArrayList;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.javalent.curio.models.Museum;
-
-import liquibase.logging.mdc.customobjects.History;
 
 public class SmithstonianItem {
     public String id;

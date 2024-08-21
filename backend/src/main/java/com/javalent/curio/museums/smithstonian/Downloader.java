@@ -3,7 +3,6 @@ package com.javalent.curio.museums.smithstonian;
 import java.net.URI;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Optional;
 import java.util.Scanner;
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutionException;
@@ -23,7 +22,6 @@ import com.fasterxml.jackson.datatype.jdk8.Jdk8Module;
 import com.javalent.curio.models.Item;
 import com.javalent.curio.models.Museum;
 import com.javalent.curio.repository.ItemRepository;
-import com.javalent.curio.repository.MuseumRepository;
 
 @Service
 public class Downloader {
@@ -101,7 +99,6 @@ public class Downloader {
                         itemRepository.save(item);
                         added++;
                     } catch (JsonProcessingException e) {
-                        // TODO Auto-generated catch block
                         e.printStackTrace();
                     }
                 }

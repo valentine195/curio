@@ -1,4 +1,4 @@
-package com.javalent.curio.controller;
+package com.javalent.curio.controller.museums;
 
 import org.springframework.web.bind.annotation.RestController;
 

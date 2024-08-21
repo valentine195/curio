@@ -26,6 +26,10 @@ import lombok.Setter;
 @Table(name = "tags")
 public class Tag {
 
+    public interface NameOnly {
+        String getId();
+    }
+
     @Id
     @Nonnull
     @NaturalId
@@ -33,11 +37,7 @@ public class Tag {
     public String id;
 
     @ManyToMany(mappedBy = "tags", cascade = CascadeType.ALL)
-    public Set<Item> items = new HashSet<>();
-
-    public Set<Item> getItems() {
-        return items;
-    }
+    private Set<Item> items = new HashSet<>();
 
     public Tag(String tag) {
         this.id = tag;
