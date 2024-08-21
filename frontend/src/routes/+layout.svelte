@@ -26,6 +26,13 @@
             >
                 Home
             </a>
+            <a
+                href="items"
+                class="text-foreground hover:text-foreground transition-colors"
+                class:active={$page.url.pathname === "/items"}
+            >
+                Items
+            </a>
         </nav>
     </header>
 
