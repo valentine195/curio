@@ -1,0 +1,221 @@
+@import "@angular/cdk/overlay-prebuilt.css";
+@import "primeng/resources/primeng.css";
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    h1, h2, h3, h4, h5, h6 {
+        font-family: var(--font-serif);
+    }
+}
+
+:root {
+  --font-sans: "Lato"; // background
+  --font-serif: "Merriweather";
+
+  //--background: #faf0e6; /* Primary background color for large sections */
+  --background: 33.5 53.1% 87.5%;
+  --background-900: #201b13;
+  --background-775: #3e311e;
+  --background-675: #5d4a2d;
+  --background-550: #7e653f;
+  --background-450: #9e7f51;
+  --background-325: #c29c65;
+  --background-225: #e5ba7b;
+  --background-100: #f0e1ce;
+
+  // primary
+
+  //--primary: #800020; /* Color for main headings and call-to-action buttons */
+  --main: 345 100% 25.1%;
+  --primary-900: #3b0609;
+  --primary-775: #800020;
+  --primary-675: #9c0029;
+  --primary-550: #cf003a;
+  --primary-450: #ff1a4c;
+  --primary-325: #ff777b;
+  --primary-225: #feacaa;
+  --primary-100: #fbdbd9;
+
+  // accent
+
+  //--accent: #556b2f; /* Background color for key sections or navigation */
+  --accent: 82 39% 30.2%;
+  --accent-900: #191d0f;
+  --accent-775: #2c3717;
+  --accent-675: #425323;
+  --accent-550: #556b2f;
+  --accent-450: #728e41;
+  --accent-325: #8cae51;
+  --accent-225: #a7cf63;
+  --accent-100: #c8ef82;
+
+  // highlight
+  --highlight: #daa520; /* For highlighting important elements like buttons or borders */
+  --highlight: 42.9 74.4% 49%;
+  --highlight-900: #231a07;
+  --highlight-775: #423007;
+  --highlight-675: #634909;
+  --highlight-550: #85630f;
+  --highlight-450: #a77d16;
+  --highlight-325: #daa520;
+  --highlight-225: #f2b829;
+  --highlight-100: #fadeae;
+
+  // muted
+
+  --muted: #708090; /* Secondary text color, dividers, and subtle accents */
+  --muted: 210 12.6% 50.2%;
+  --muted-900: #181c20;
+  --muted-775: #2d353c;
+  --muted-675: #454f5a;
+  --muted-550: #5d6b79;
+  --muted-450: #708090;
+  --muted-325: #92a6ba;
+  --muted-225: #b8c4d1;
+  --muted-100: #dee3e8;
+
+  // secondary
+  --secondary: #d1bfa6; /* Secondary background areas or buttons */
+  --secondary: 34.9 31.9% 73.5%;
+  --secondary-900: #1d1b18;
+  --secondary-775: #38332b;
+  --secondary-675: #544c41;
+  --secondary-550: #726859;
+  --secondary-450: #908371;
+  --secondary-325: #b0a18b;
+  --secondary-225: #d1bfa6;
+  --secondary-100: #e8e1d9;
+
+  // interactive
+  --interactive: #e97451; /* Color for hover states and interactive elements */
+  --interactive: 13.8 77.6% 61.6%;
+  --interactive-900: #2b150d;
+  --interactive-775: #592112;
+  --interactive-675: #882f17;
+  --interactive-550: #b64022;
+  --interactive-450: #e3522d;
+  --interactive-325: #e97451;
+  --interactive-225: #f0b39f;
+  --interactive-100: #f5ddd5;
+
+  // accent-secondary
+  --accent-secondary: #c08081; /* Complementary accents, like icons or decorative elements */
+  --accent-secondary: 359.1 33.7% 62.7%;
+  --accent-secondary-900: #291617;
+  --accent-secondary-775: #4b2a2b;
+  --accent-secondary-675: #6f4041;
+  --accent-secondary-550: #955759;
+  --accent-secondary-450: #c08081;
+  --accent-secondary-325: #c99696;
+  --accent-secondary-225: #dabbba;
+  --accent-secondary-100: #ecdfdf;
+
+  // dark
+  --dark: #36454f; /* Footer backgrounds, deep accents, or dark text */
+  --dark: 204 18.8% 26.1%;
+  --dark-900: #161c21;
+  --dark-775: #29353d;
+  --dark-675: #36454f;
+  --dark-550: #566d7b;
+  --dark-450: #6e899b;
+  --dark-325: #87a8be;
+  --dark-225: #adc6d7;
+  --dark-100: #dae4eb;
+
+  /* background */
+  --background-900: 49.7 82.9% 6.9%;
+  --background-775: 51.9 100% 11.6%;
+  --background-675: 52.5 100% 17.3%;
+  --background-550: 53.4 100% 23.1%;
+  --background-450: 53.6 100% 29.2%;
+  --background-325: 53.7 100% 35.7%;
+  --background-225: 53.6 99.1% 42.7%;
+  --background-100: 46.2 86.7% 94.1%;
+  --background: 46.2 86.7% 94.1%;
+
+  /* primary */
+  --main-900: 356.6 81.5% 12.7%;
+  --main-775: 345 100% 25.1%;
+  --main-675: 344.2 100% 30.6%;
+  --main-550: 343.2 100% 40.6%;
+  --main-450: 346.9 100% 55.1%;
+  --main-325: 358.2 100% 73.3%;
+  --main-225: 1.4 97.7% 83.1%;
+  --main-100: 3.5 81% 91.8%;
+
+  /* accent */
+  --accent-900: 77.1 31.8% 8.6%;
+  --accent-775: 80.6 41% 15.3%;
+  --accent-675: 81.2 40.7% 23.1%;
+  --accent-550: 82 39% 30.2%;
+  --accent-450: 81.8 37.2% 40.6%;
+  --accent-325: 81.9 36.5% 50%;
+  --accent-225: 82.2 52.9% 60%;
+  --accent-100: 81.5 77.3% 72.4%;
+
+  /* highlight */
+  --highlight-900: 40.7 66.7% 8.2%;
+  --highlight-775: 41.7 80.8% 14.3%;
+  --highlight-675: 42.7 83.3% 21.2%;
+  --highlight-550: 42.7 79.7% 29%;
+  --highlight-450: 42.6 76.7% 37.1%;
+  --highlight-325: 42.9 74.4% 49%;
+  --highlight-225: 42.7 88.5% 55.5%;
+  --highlight-100: 37.9 88.4% 83.1%;
+
+  /* muted */
+  --muted-900: 210 14.3% 11%;
+  --muted-775: 208 14.3% 20.6%;
+  --muted-675: 211.4 13.2% 31.2%;
+  --muted-550: 210 13.1% 42%;
+  --muted-450: 210 12.6% 50.2%;
+  --muted-325: 210 22.5% 65.1%;
+  --muted-225: 211.2 21.4% 77.1%;
+  --muted-100: 210 17.9% 89%;
+
+  /* secondary */
+  --secondary-900: 36 9.4% 10.4%;
+  --secondary-775: 36.9 13.1% 19.4%;
+  --secondary-675: 34.7 12.8% 29.2%;
+  --secondary-550: 36 12.3% 39.8%;
+  --secondary-450: 34.8 12.3% 50.4%;
+  --secondary-325: 35.7 19% 61.8%;
+  --secondary-225: 34.9 31.9% 73.5%;
+  --secondary-100: 32 24.6% 88%;
+
+  /* interactive */
+  --interactive-900: 16 53.6% 11%;
+  --interactive-775: 12.7 66.4% 21%;
+  --interactive-675: 12.7 71.1% 31.2%;
+  --interactive-550: 12.2 68.5% 42.4%;
+  --interactive-450: 12.2 76.5% 53.3%;
+  --interactive-325: 13.8 77.6% 61.6%;
+  --interactive-225: 14.8 73% 78.2%;
+  --interactive-100: 15 61.5% 89.8%;
+
+  /* accent-secondary */
+  --accent-secondary-900: 356.8 30.2% 12.4%;
+  --accent-secondary-775: 358.2 28.2% 22.9%;
+  --accent-secondary-675: 358.7 26.9% 34.3%;
+  --accent-secondary-550: 358.1 26.3% 46.3%;
+  --accent-secondary-450: 359.1 33.7% 62.7%;
+  --accent-secondary-325: 0 32.1% 68.8%;
+  --accent-secondary-225: 1.9 30.2% 79.2%;
+  --accent-secondary-100: 0 25.5% 90%;
+
+  /* dark */
+  --dark-900: 207.3 20% 10.8%;
+  --dark-775: 204 19.6% 20%;
+  --dark-675: 204 18.8% 26.1%;
+  --dark-550: 202.7 17.7% 41%;
+  --dark-450: 204 18.4% 52%;
+  --dark-325: 204 29.7% 63.7%;
+  --dark-225: 204.3 34.4% 76.1%;
+  --dark-100: 204.7 29.8% 88.8%;
+}

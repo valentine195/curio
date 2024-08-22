@@ -1,0 +1,17 @@
+.hero-overlay {
+  background: linear-gradient(
+    to bottom,
+    hsl(var(--background)),
+    transparent 50%
+  );
+}
+
+.hero-heading {
+  text-shadow: theme('colors.background.DEFAULT') 0px 0px 20px;
+}
+
+.hero-subheading {
+    backdrop-filter: blur(4px);
+    color: theme('colors.background.DEFAULT');
+    padding: 2rem
+}
