@@ -16,6 +16,16 @@ spec:
 
 ---
 
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: app-config
+  namespace: curio
+data:
+  baseUrl: https://curio.javalent.com
+
+---
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -30,6 +40,12 @@ spec:
     matchLabels:
       app: curio-frontend
       version: v1
+  volumes:
+    - name: config-volume
+      configMap:
+        # Provide the name of the ConfigMap containing the files you want
+        # to add to the container
+        name: app-config
   template:
     metadata:
       labels:
@@ -45,3 +61,6 @@ spec:
         ports:
         - containerPort: 80
           protocol: TCP
+        volumeMounts:
+        - name: config-volume
+          mountPath: /usr/share/nginx/html/config
