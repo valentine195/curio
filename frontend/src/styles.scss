@@ -1,4 +1,4 @@
-@import "@angular/cdk/overlay-prebuilt.css";
+@import "primeng/resources/themes/lara-light-blue/theme.css";
 @import "primeng/resources/primeng.css";
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
@@ -137,7 +137,7 @@
   --background-325: 53.7 100% 35.7%;
   --background-225: 53.6 99.1% 42.7%;
   --background-100: 46.2 86.7% 94.1%;
-  --background: 46.2 86.7% 94.1%;
+  --background: 60, 20%, 99%;
 
   /* primary */
   --main-900: 356.6 81.5% 12.7%;

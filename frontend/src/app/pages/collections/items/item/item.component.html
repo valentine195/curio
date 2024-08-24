@@ -1,0 +1,23 @@
+<div
+  class="bg-white flex flex-col w-full h-full gap-1 cursor-pointer border-muted border-solid border-[1px] rounded-md p-4 shadow-md hover:shadow-lg hover:-translate-y-1 transition-all"
+>
+  @if (item.thumbnail) {
+  <div class="image flex justify-center h-[200px]">
+    <img
+      src="{{ item.thumbnail }}"
+      alt="{{ item.title }} Thumbnail"
+      class="item-thumbnail h-[200px]"
+      loading="eager"
+    />
+  </div>
+  }
+  <h3 class="item-title">
+    {{ item.title }}
+  </h3>
+  <!-- <p class="item-summary">{{ item.summary }}</p> -->
+  <div class="tags flex flex-wrap gap-1">
+    @for (tag of item.tags; track tag) {
+    <div class="tag text-xs text-accent-550">{{ tag }}</div>
+    }
+  </div>
+</div>

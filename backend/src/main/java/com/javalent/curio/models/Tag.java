@@ -25,11 +25,6 @@ import lombok.Setter;
 @Entity
 @Table(name = "tags")
 public class Tag {
-
-    public interface NameOnly {
-        String getId();
-    }
-
     @Id
     @Nonnull
     @NaturalId

@@ -3,6 +3,7 @@ import { RouterOutlet } from '@angular/router';
 import { LucideAngularModule } from 'lucide-angular';
 import { NavComponent } from './components/nav/nav.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { ConfigService } from './config/config.service';
 
 @Component({
   selector: 'app-root',
@@ -13,4 +14,6 @@ import { FooterComponent } from './components/footer/footer.component';
 })
 export class AppComponent {
   title = 'frontend';
+
+  constructor(private config: ConfigService) {}
 }

@@ -32,7 +32,7 @@ public class ItemService /* implements ServiceInterface<Item> */ {
     }
 
     public Iterable<Item> getAll(ItemDTO params, @PageableDefault(value = 100) Pageable page) {
-        System.out.println(params);
+        System.out.println("GET ITEMS");
         if (!params.getTags().isEmpty() && !params.getMuseums().isEmpty()) {
             return itemRepository.findByTagsInAndMuseum_NameIn(params.getTags(), params.getMuseums(),
                     page);
