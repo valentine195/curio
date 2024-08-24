@@ -40,13 +40,13 @@ spec:
     matchLabels:
       app: curio-frontend
       version: v1
-  volumes:
-    - name: config-volume
-      configMap:
-        # Provide the name of the ConfigMap containing the files you want
-        # to add to the container
-        name: app-config
   template:
+    volumes:
+      - name: config-volume
+        configMap:
+          # Provide the name of the ConfigMap containing the files you want
+          # to add to the container
+          name: app-config
     metadata:
       labels:
         app: curio-frontend
