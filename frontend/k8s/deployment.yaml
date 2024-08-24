@@ -1,4 +1,3 @@
-
 apiVersion: v1
 kind: Service
 metadata:
@@ -9,13 +8,12 @@ metadata:
     service: curio-frontend
 spec:
   ports:
-  - port: 80
-    name: http
+    - port: 80
+      name: http
   selector:
     app: curio-frontend
 
 ---
-
 apiVersion: v1
 kind: ConfigMap
 metadata:
@@ -25,7 +23,6 @@ data:
   baseUrl: https://curio.javalent.com
 
 ---
-
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -41,26 +38,26 @@ spec:
       app: curio-frontend
       version: v1
   template:
-    volumes:
-      - name: config-volume
-        configMap:
-          # Provide the name of the ConfigMap containing the files you want
-          # to add to the container
-          name: app-config
     metadata:
       labels:
         app: curio-frontend
         version: v1
     spec:
-      imagePullSecrets:
-      - name: github-container-registry
-      containers:
-      - name: curio-frontend
-        image: ghcr.io/valentine195/curio-frontend:{{ .Values.sha }}
-        imagePullPolicy: Always
-        ports:
-        - containerPort: 80
-          protocol: TCP
-        volumeMounts:
+      volumes:
         - name: config-volume
-          mountPath: /usr/share/nginx/html/config
+          configMap:
+            # Provide the name of the ConfigMap containing the files you want
+            # to add to the container
+            name: app-config
+      imagePullSecrets:
+        - name: github-container-registry
+      containers:
+        - name: curio-frontend
+          image: ghcr.io/valentine195/curio-frontend:{{ .Values.sha }}
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 80
+              protocol: TCP
+          volumeMounts:
+            - name: config-volume
+              mountPath: /usr/share/nginx/html/config
