@@ -20,7 +20,10 @@ metadata:
   name: app-config
   namespace: curio
 data:
-  baseUrl: https://curio.javalent.com
+  app-config: |
+    {
+      "baseUrl": "https://curio.javalent.com"
+    }
 
 ---
 apiVersion: apps/v1
