@@ -20,7 +20,7 @@ metadata:
   name: app-config
   namespace: curio
 data:
-  app-config: |
+  app-config.json: |
     {
       "baseUrl": "https://curio.javalent.com"
     }
