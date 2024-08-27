@@ -21,7 +21,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.datatype.jdk8.Jdk8Module;
 import com.javalent.curio.models.Item;
 import com.javalent.curio.models.Museum;
-import com.javalent.curio.repository.ItemRepository;
+import com.javalent.curio.repository.items.ItemRepository;
 
 @Service
 public class Downloader {

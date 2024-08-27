@@ -1,6 +1,11 @@
 package com.javalent.curio.services;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 import java.util.Optional;
+
+import org.hibernate.search.engine.search.predicate.spi.SearchPredicateBuilder;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
@@ -9,10 +14,11 @@ import org.springframework.stereotype.Service;
 
 import com.javalent.curio.controller.items.ItemDTO;
 import com.javalent.curio.models.Item;
-import com.javalent.curio.repository.ItemRepository;
+import com.javalent.curio.repository.items.ItemRepository;
+import com.javalent.curio.repository.items.SearchPredicate;
 
 @Service
-public class ItemService /* implements ServiceInterface<Item> */ {
+public class ItemService {
 
     @Autowired
     ItemRepository itemRepository;
@@ -20,12 +26,6 @@ public class ItemService /* implements ServiceInterface<Item> */ {
     public Iterable<Item> getAll() {
         return itemRepository.findAll(Sort.by("title"));
     }
-
-    /*
-     * public List<Item> getAllPaginated(ItemDTO params, Pageable page) {
-     * 
-     * }
-     */
 
     public Iterable<Item> getAll(ItemDTO params) {
         return getAll(params, Pageable.ofSize(100));
@@ -49,6 +49,16 @@ public class ItemService /* implements ServiceInterface<Item> */ {
 
     public Optional<Item> getOne(String item) {
         return itemRepository.findById(item);
+    }
+
+    List<SearchPredicate> predicates = Arrays.asList(
+            SearchPredicate.builder().field("title").boost(1000).build(),
+            SearchPredicate.builder().field("title").boost(500).fuzzy(2).build(),
+            SearchPredicate.builder().field("summary").field("physicalDescription").field("longDescription").boost(100)
+                    .fuzzy(1).build());
+
+    public List<Item> search(String query) {
+        return itemRepository.searchBy(predicates, query, 100);
     }
 
 }

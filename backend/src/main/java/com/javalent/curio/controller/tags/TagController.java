@@ -24,9 +24,4 @@ public class TagController {
         return tagService.getTags();
     }
 
-    @GetMapping("/{item}")
-    public Optional<Tag> getItem(@PathVariable("item") String item) {
-        return tagService.getOne(item);
-    }
-
 }

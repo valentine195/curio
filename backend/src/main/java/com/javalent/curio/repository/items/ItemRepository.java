@@ -1,4 +1,4 @@
-package com.javalent.curio.repository;
+package com.javalent.curio.repository.items;
 
 import java.util.List;
 import java.util.Optional;
@@ -11,9 +11,11 @@ import org.springframework.lang.NonNull;
 import org.springframework.stereotype.Repository;
 
 import com.javalent.curio.models.Item;
+import com.javalent.curio.repository.search.SearchRepository;
 
 @Repository
-public interface ItemRepository extends PagingAndSortingRepository<Item, String>, CrudRepository<Item, String> {
+public interface ItemRepository
+        extends SearchRepository<Item, String>, CrudRepository<Item, String> {
 
     @NonNull
     Optional<Item> findById(@NonNull String id);

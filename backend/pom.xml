@@ -65,6 +65,15 @@
         </dependency>
 
         <dependency>
+            <groupId>org.hibernate.search</groupId>
+            <artifactId>hibernate-search-mapper-orm</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.hibernate.search</groupId>
+            <artifactId>hibernate-search-backend-lucene</artifactId>
+        </dependency>
+
+        <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-devtools</artifactId>
             <scope>runtime</scope>
@@ -87,9 +96,26 @@
             <version>1.18.34</version>
             <scope>provided</scope>
         </dependency>
+        <dependency>
+            <groupId>org.jboss.logging</groupId>
+            <artifactId>jboss-logging</artifactId>
+            <version>3.6.0.Final</version>
+        </dependency>
 
     </dependencies>
-
+    <dependencyManagement>
+        <dependencies>
+            <!-- Import Hibernate Search BOM to get all of its artifact versions aligned: -->
+            <dependency>
+                <groupId>org.hibernate.search</groupId>
+                <artifactId>hibernate-search-bom</artifactId>
+                <version>7.2.0.Final</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <!-- Any other dependency management entries -->
+        </dependencies>
+    </dependencyManagement>
     <build>
         <finalName>curio</finalName>
         <plugins>

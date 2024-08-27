@@ -4,10 +4,14 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
+import org.hibernate.search.mapper.pojo.mapping.definition.annotation.FullTextField;
+import org.hibernate.search.mapper.pojo.mapping.definition.annotation.Indexed;
+
 import com.javalent.curio.models.Museum.BaseMuseum;
 import com.javalent.curio.museums.smithstonian.SmithstonianItem;
 import jakarta.annotation.Nonnull;
 import jakarta.persistence.CascadeType;
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.FetchType;
 import jakarta.persistence.Id;
@@ -26,6 +30,7 @@ import lombok.Setter;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
+@Indexed
 @Table(name = "items")
 public class Item {
 
@@ -46,13 +51,18 @@ public class Item {
     }
 
     @Nonnull
+    @FullTextField
     public String title;
 
 
     public String thumbnail;
 
+    @FullTextField
     public String summary;
+    @FullTextField
     public String physicalDescription;
+    @FullTextField
+    @Column(name="long_description")
     public String longDescription;
 
     @ManyToMany(cascade = { CascadeType.ALL }, fetch = FetchType.LAZY)
