@@ -12,8 +12,8 @@ import org.springframework.lang.NonNull;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
-import com.javalent.curio.models.Item;
-import com.javalent.curio.repository.search.index.Indexer;
+import com.javalent.curio.items.models.Item;
+import com.javalent.curio.search.index.Indexer;
 
 @SpringBootApplication
 public class CurioApplication {
