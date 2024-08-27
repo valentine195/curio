@@ -10,7 +10,7 @@
   </header>
 
   <div class="search-bar">
-    <input type="text" placeholder="Search the collection..." />
+    <input #search type="text" placeholder="Search the collection..." (input)="itemsService.search.set(search.value)" />
   </div>
 
   <div class="list-container flex gap-2">
@@ -44,10 +44,13 @@
     </div>
     <div class="w-full flex flex-col gap-4">
       <div class="items-list gap-4 w-full">
-        @if (itemsService.items$ | async) { @for (item of (itemsService.items()
-        )?.content; track item.id) {
+        @if (itemsService.searching()) { @for (item of (itemsService.search$ |
+        async); track item.id) {
         <app-item [item]="item" />
-        } }
+        } } @else { @if (itemsService.items$ | async) { @for (item of
+        (itemsService.items() ); track item.id) {
+        <app-item [item]="item" />
+        } } }
         <!-- @else { @for (item of [0,0,0,0]; track item) {
           <div class="flex flex-col gap-4">
             <div class="skeleton h-32 w-full"></div>
@@ -57,12 +60,12 @@
           </div>
           } } -->
       </div>
-      <p-paginator
+      <!-- <p-paginator
         (onPageChange)="itemsService.setPage($event.page ?? 0)"
         [first]="0"
         [rows]="itemsService.items()?.numberOfElements"
         [totalRecords]="itemsService.items()?.totalElements"
-      />
+      /> -->
       <!-- [rowsPerPageOptions]="[10, 20, 30]" -->
     </div>
   </div>
