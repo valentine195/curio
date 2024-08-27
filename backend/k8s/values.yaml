@@ -1,4 +1,4 @@
-sha: 5fb00e21e21b5b1c2a3a004aa2b61b67c504ab39
+sha: ef0511e6978c895181b54200e7e34e8febd47a97
 postgres:
   user: ${postgresUsername}
   password: ${postgresPassword}
