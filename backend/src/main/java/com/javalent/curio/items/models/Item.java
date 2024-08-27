@@ -7,7 +7,7 @@ import java.util.stream.Collectors;
 import org.hibernate.search.mapper.pojo.mapping.definition.annotation.FullTextField;
 import org.hibernate.search.mapper.pojo.mapping.definition.annotation.Indexed;
 
-import com.javalent.curio.downloader.institutions.smithstonian.SmithstonianItem;
+import com.javalent.curio.connectors.smithstonian.SmithstonianItem;
 import com.javalent.curio.museums.models.Museum;
 import com.javalent.curio.museums.models.Museum.BaseMuseum;
 import com.javalent.curio.tags.models.Tag;

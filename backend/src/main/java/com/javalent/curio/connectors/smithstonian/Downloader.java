@@ -1,4 +1,4 @@
-package com.javalent.curio.downloader.institutions.smithstonian;
+package com.javalent.curio.connectors.smithstonian;
 
 import java.net.URI;
 import java.util.ArrayList;

@@ -1,4 +1,4 @@
-package com.javalent.curio.downloader.institutions.smithstonian;
+package com.javalent.curio.connectors.smithstonian;
 
 public enum SubUnits {
     AAA,
