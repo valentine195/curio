@@ -2,10 +2,6 @@ package com.javalent.curio.repository.search;
 
 import java.io.Serializable;
 import java.util.List;
-import java.util.function.Function;
-
-import org.hibernate.search.engine.search.predicate.dsl.PredicateFinalStep;
-import org.hibernate.search.engine.search.predicate.dsl.SearchPredicateFactory;
 import org.hibernate.search.engine.search.query.SearchResult;
 import org.hibernate.search.mapper.orm.Search;
 import org.hibernate.search.mapper.orm.session.SearchSession;
