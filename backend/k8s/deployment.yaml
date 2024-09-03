@@ -63,3 +63,8 @@ spec:
             configMapKeyRef:
               name: postgres-configmap
               key: POSTGRES
+        - name: SMITHSONIAN_KEY
+          valueFrom:
+            secretKeyRef:
+              name: curio-api-keys
+              key: SMITHSONIAN_KEY
