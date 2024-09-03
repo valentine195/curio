@@ -1,4 +1,4 @@
-package com.javalent.curio.connectors.smithstonian.models;
+package com.javalent.curio.connectors.smithsonian.models;
 
 public enum SubUnits {
     AAA,

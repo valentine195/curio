@@ -1,4 +1,4 @@
-package com.javalent.curio.connectors.smithstonian;
+package com.javalent.curio.connectors.smithsonian;
 
 import java.net.URI;
 import java.util.ArrayList;
@@ -19,18 +19,18 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.datatype.jdk8.Jdk8Module;
-import com.javalent.curio.connectors.smithstonian.models.SmithstonianItem;
+import com.javalent.curio.connectors.smithsonian.models.SmithsonianItem;
 import com.javalent.curio.items.models.Item;
 import com.javalent.curio.items.repository.ItemRepository;
 import com.javalent.curio.museums.models.Museum;
 
 @Service
 public class Downloader {
-    @Value("${smithstonian.download}")
+    @Value("${smithsonian.download}")
     private Boolean SHOULD_DOWNLOAD;
 
     // https://www.baeldung.com/spring-inject-arrays-lists#injecting-lists
-    @Value("#{'${smithstonian.subunits}'.toLowerCase().split(',')}")
+    @Value("#{'${smithsonian.subunits}'.toLowerCase().split(',')}")
     private List<String> SUB_UNITS;
 
     private static String BASE_URL = "https://smithsonian-open-access.s3-us-west-2.amazonaws.com/metadata/edan";
@@ -41,7 +41,7 @@ public class Downloader {
 
     ExecutorService pool = Executors.newCachedThreadPool();
 
-    Museum smithstonian;
+    Museum smithsonian;
 
     @EventListener(ApplicationReadyEvent.class)
     public void downloadFiles() {
@@ -71,7 +71,7 @@ public class Downloader {
         } catch (ExecutionException e) {
             e.printStackTrace();
         }
-        System.out.println("There was an issue downloading the Smithstonian data.");
+        System.out.println("There was an issue downloading the Smithsonian data.");
         return new ArrayList<String>();
     }
 
@@ -95,8 +95,8 @@ public class Downloader {
                 List<String> jsons = downloadFile(index);
                 for (String json : jsons) {
                     try {
-                        SmithstonianItem smithstonianItem = mapper.readValue(json, SmithstonianItem.class);
-                        Item item = new Item(smithstonianItem);
+                        SmithsonianItem smithsonianItem = mapper.readValue(json, SmithsonianItem.class);
+                        Item item = new Item(smithsonianItem);
                         itemRepository.save(item);
                         added++;
                     } catch (JsonProcessingException e) {

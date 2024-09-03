@@ -1,4 +1,4 @@
-package com.javalent.curio.connectors.smithstonian.models;
+package com.javalent.curio.connectors.smithsonian.models;
 
 import java.util.ArrayList;
 
@@ -8,7 +8,7 @@ import com.javalent.curio.connectors.ResponseItem;
 import lombok.ToString;
 
 @ToString
-public class SmithstonianItem implements ResponseItem {
+public class SmithsonianItem implements ResponseItem {
     public String id;
     public String version;
     public UnitCode unitCode;

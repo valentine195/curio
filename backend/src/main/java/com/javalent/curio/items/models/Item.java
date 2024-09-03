@@ -7,7 +7,7 @@ import java.util.stream.Collectors;
 import org.hibernate.search.mapper.pojo.mapping.definition.annotation.FullTextField;
 import org.hibernate.search.mapper.pojo.mapping.definition.annotation.Indexed;
 
-import com.javalent.curio.connectors.smithstonian.models.SmithstonianItem;
+import com.javalent.curio.connectors.smithsonian.models.SmithsonianItem;
 import com.javalent.curio.museums.models.Museum;
 import com.javalent.curio.museums.models.Museum.BaseMuseum;
 import com.javalent.curio.tags.models.Tag;
@@ -97,17 +97,17 @@ public class Item {
         tag.getItems().remove(this);
     }
 
-    public Item(SmithstonianItem smithstonianItem) {
-        this.id = smithstonianItem.id;
-        this.title = smithstonianItem.title;
-        this.museum = new Museum(smithstonianItem.unitCode.toString(), "Smithstonian Institute");
+    public Item(SmithsonianItem smithsonianItem) {
+        this.id = smithsonianItem.id;
+        this.title = smithsonianItem.title;
+        this.museum = new Museum(smithsonianItem.unitCode.toString(), "Smithsonian Institute");
 
 /*         List<Media> mediaList = new ArrayList<>();
-        if (smithstonianItem.content.descriptiveNonRepeating.online_media != null
-                && smithstonianItem.content.descriptiveNonRepeating.online_media.media != null) {
-            for (SmithstonianItem.Medium medium : smithstonianItem.content.descriptiveNonRepeating.online_media.media) {
+        if (smithsonianItem.content.descriptiveNonRepeating.online_media != null
+                && smithsonianItem.content.descriptiveNonRepeating.online_media.media != null) {
+            for (SmithsonianItem.Medium medium : smithsonianItem.content.descriptiveNonRepeating.online_media.media) {
                 if (medium.resources != null) {
-                    for (SmithstonianItem.Resource resource : medium.resources) {
+                    for (SmithsonianItem.Resource resource : medium.resources) {
                         if (resource.label == null) continue;
                         Media m = new Media(resource.url, resource.label);
                         mediaList.add(m);
@@ -119,14 +119,14 @@ public class Item {
         this.setMedia(mediaList);
         System.out.println(this.getMedia()); */
 
-if (smithstonianItem.content.descriptiveNonRepeating.online_media != null
-        && smithstonianItem.content.descriptiveNonRepeating.online_media.media != null) {
-    this.thumbnail = smithstonianItem.content.descriptiveNonRepeating.online_media.media
+if (smithsonianItem.content.descriptiveNonRepeating.online_media != null
+        && smithsonianItem.content.descriptiveNonRepeating.online_media.media != null) {
+    this.thumbnail = smithsonianItem.content.descriptiveNonRepeating.online_media.media
             .get(0).thumbnail;
 }
 
-        if (smithstonianItem.content.freetext.notes != null) {
-            for (SmithstonianItem.Note note : smithstonianItem.content.freetext.notes) {
+        if (smithsonianItem.content.freetext.notes != null) {
+            for (SmithsonianItem.Note note : smithsonianItem.content.freetext.notes) {
                 switch (note.label) {
                     case "Long Description": {
                         if (this.longDescription == null) {
@@ -153,9 +153,9 @@ if (smithstonianItem.content.descriptiveNonRepeating.online_media != null
             }
         }
 
-        if (smithstonianItem.content.indexedStructured != null
-                && smithstonianItem.content.indexedStructured.object_type != null) {
-            for (String tag : smithstonianItem.content.indexedStructured.object_type) {
+        if (smithsonianItem.content.indexedStructured != null
+                && smithsonianItem.content.indexedStructured.object_type != null) {
+            for (String tag : smithsonianItem.content.indexedStructured.object_type) {
                 this.addTag(new Tag(tag));
             }
         }
