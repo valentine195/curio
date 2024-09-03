@@ -1,9 +1,9 @@
 import { Component, effect, OnInit } from '@angular/core';
 import { ItemsService } from '../../services/items.service';
 import { Observable, tap } from 'rxjs';
-import { ItemsResponseData } from '../../interfaces/items/item';
+import { ItemsResponseData } from '../../interfaces/items/items';
 import { AsyncPipe } from '@angular/common';
-import { ItemComponent } from './items/item/item.component';
+import { ItemCardComponent } from './components/item-card/item-card.component';
 import { MuseumsService } from '../../services/museums.service';
 import { TagsService } from '../../services/tags.service';
 import { PaginatorModule, PaginatorState } from 'primeng/paginator';
@@ -11,7 +11,7 @@ import { PaginatorModule, PaginatorState } from 'primeng/paginator';
 @Component({
   selector: 'app-collections',
   standalone: true,
-  imports: [AsyncPipe, ItemComponent, PaginatorModule],
+  imports: [AsyncPipe, ItemCardComponent, PaginatorModule],
   templateUrl: './collections.component.html',
   styleUrl: './collections.component.scss',
 })

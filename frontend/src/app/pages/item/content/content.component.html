@@ -1,0 +1,5 @@
+@for (entry of content; track entry[0]) {
+<h3 class="bold text-lg">{{ entry[0] }}</h3>
+@for (content of entry[1]; track content) {
+<span>{{ content }}</span>
+} }

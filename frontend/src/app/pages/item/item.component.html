@@ -1,0 +1,32 @@
+<div class="item flex flex-col gap-4">
+  @if (item(); as item) {
+  <h1 class="bold text-3xl">{{ item.title }}</h1>
+  @if (images().length) {
+
+  <gallery
+    [items]="images()"
+    scrollBehavior="instant"
+    navScrollBehavior="instant"
+    loadingStrategy="preload"
+    slidingDirection="horizontal"
+    thumbPosition="right"
+  ></gallery>
+
+  <div class="item-details ml-4 mr-4">
+    <div class="summary">
+      @for (content of summary(); track content.content) {
+      <p class="mb-2">{{ content.content }}</p>
+      }
+    </div>
+
+    <div class="free-text">
+      @for (text of freetext(); track text) {
+      <app-content [content]="text" [url]="url()"></app-content>
+      }
+    </div>
+  </div>
+  <a class="link-info" href="{{ item.content.descriptiveNonRepeating.guid }}"
+    >See original</a
+  >
+  } }
+</div>

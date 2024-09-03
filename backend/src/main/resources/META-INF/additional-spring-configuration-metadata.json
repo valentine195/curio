@@ -1,17 +1,24 @@
-{"properties": [
-  {
-    "name": "smithstonian.subunits",
-    "type": "java.lang.String",
-    "description": "List of Smithstonian SubUnits to track"
-  },
-  {
-    "name": "smithstonian.download",
-    "type": "java.lang.Boolean",
-    "description": "Download Smithstonian museum data"
-  },
-  {
-    "name": "cors.origins",
-    "type": "java.lang.String",
-    "description": "CORS origins"
-  }
-]}
+{
+    "properties": [
+        {
+            "name": "smithstonian.subunits",
+            "type": "java.lang.String",
+            "description": "List of Smithstonian SubUnits to track"
+        },
+        {
+            "name": "smithstonian.download",
+            "type": "java.lang.Boolean",
+            "description": "Download Smithstonian museum data"
+        },
+        {
+            "name": "cors.origins",
+            "type": "java.lang.String",
+            "description": "CORS origins"
+        },
+        {
+            "name": "connector.smithstonian.apikey",
+            "type": "java.lang.String",
+            "description": "A description for 'connector.smithstonian.apikey'"
+        }
+    ]
+}

@@ -2,6 +2,7 @@ package com.javalent.curio.items.controller;
 
 import org.springframework.web.bind.annotation.RestController;
 
+import com.javalent.curio.connectors.ConnectorService;
 import com.javalent.curio.items.models.Item;
 import com.javalent.curio.items.models.ItemDTO;
 import com.javalent.curio.items.services.ItemService;
@@ -16,10 +17,12 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
-
 @RestController
 @RequestMapping("/api/items")
 public class ItemController {
+    @Autowired
+    private ConnectorService connectorService;
+
     @Autowired
     private ItemService itemService;
 
@@ -29,14 +32,19 @@ public class ItemController {
     }
 
     @GetMapping("/{item}")
-    public Optional<Item> getItem(@PathVariable("item") String item) {
-        return itemService.getOne(item);
+    public Optional<?> getItem(@PathVariable("item") String item) {
+        Optional<Item> fromDB = itemService.getOne(item);
+        if (!fromDB.isPresent())
+        return fromDB;
+        System.out.println("fromDB: " + fromDB.get());
+        
+        return connectorService.getItem(fromDB.get());
+
     }
 
     @GetMapping("/search")
     public List<Item> getMethodName(@RequestParam("query") String query) {
         return itemService.search(query);
     }
-    
 
 }

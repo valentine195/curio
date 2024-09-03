@@ -33,7 +33,7 @@
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^18.2.0",
-    "@angular/cdk": "^18.2.0",
+    "@angular/cdk": "^18.2.2",
     "@angular/cli": "^18.2.0",
     "@angular/compiler-cli": "^18.2.0",
     "@spartan-ng/cli": "^0.0.1-alpha.361",
@@ -45,6 +45,8 @@
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
+    "lightgallery": "^2.7.2",
+    "ng-gallery": "^11.0.0",
     "postcss": "^8.4.41",
     "primeng": "^17.18.9",
     "tailwind-merge": "^2.2.0",

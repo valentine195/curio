@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable, signal } from '@angular/core';
 import { ConfigService } from '../config/config.service';
-import { ItemsResponseData } from '../interfaces/items/item';
+import { ItemsResponseData } from '../interfaces/items/items';
 
 @Injectable({
   providedIn: 'root',

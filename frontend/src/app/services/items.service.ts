@@ -2,9 +2,10 @@ import { HttpClient } from '@angular/common/http';
 import { computed, Injectable, Signal, signal } from '@angular/core';
 import { toObservable, toSignal } from '@angular/core/rxjs-interop';
 import { ConfigService } from '../config/config.service';
-import { Item, ItemsResponseData } from '../interfaces/items/item';
+import { Item, ItemsResponseData } from '../interfaces/items/items';
 import { MuseumsService } from './museums.service';
 import { exhaustMap, switchMap, tap } from 'rxjs';
+import { SmithsonianItem } from '../interfaces/items/smithsonian';
 
 @Injectable({
   providedIn: 'root',
@@ -63,6 +64,10 @@ export class ItemsService {
       }
     )
   );
+
+  getItem(id: string) {
+    return this.http$.get<SmithsonianItem>(`${this.baseUrl}/api/items/${id}`);
+  }
 
   constructor(
     private http$: HttpClient,

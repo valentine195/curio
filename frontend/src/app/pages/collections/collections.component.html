@@ -10,7 +10,12 @@
   </header>
 
   <div class="search-bar">
-    <input #search type="text" placeholder="Search the collection..." (input)="itemsService.search.set(search.value)" />
+    <input
+      #search
+      type="text"
+      placeholder="Search the collection..."
+      (input)="itemsService.search.set(search.value)"
+    />
   </div>
 
   <div class="list-container flex gap-2">
@@ -46,10 +51,10 @@
       <div class="items-list gap-4 w-full">
         @if (itemsService.searching()) { @for (item of (itemsService.search$ |
         async); track item.id) {
-        <app-item [item]="item" />
+        <app-item-card [item]="item" />
         } } @else { @if (itemsService.items$ | async) { @for (item of
         (itemsService.items() ); track item.id) {
-        <app-item [item]="item" />
+        <app-item-card [item]="item" />
         } } }
         <!-- @else { @for (item of [0,0,0,0]; track item) {
           <div class="flex flex-col gap-4">

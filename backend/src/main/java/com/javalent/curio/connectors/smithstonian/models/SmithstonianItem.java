@@ -1,10 +1,14 @@
-package com.javalent.curio.connectors.smithstonian;
+package com.javalent.curio.connectors.smithstonian.models;
 
 import java.util.ArrayList;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import com.javalent.curio.connectors.ResponseItem;
 
-public class SmithstonianItem {
+import lombok.ToString;
+
+@ToString
+public class SmithstonianItem implements ResponseItem {
     public String id;
     public String version;
     public UnitCode unitCode;
