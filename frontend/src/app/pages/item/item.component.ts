@@ -1,4 +1,5 @@
 import { Component, computed, inject, OnInit, signal } from '@angular/core';
+import { DeviceDetectorService } from 'ngx-device-detector';
 import { ActivatedRoute } from '@angular/router';
 import { GalleryModule, GalleryItem, ImageItem } from 'ng-gallery';
 import {
@@ -17,6 +18,9 @@ import { ContentComponent } from './content/content.component';
 })
 export class ItemComponent implements OnInit {
   private activatedRoute = inject(ActivatedRoute);
+  private deviceDetector = inject(DeviceDetectorService);
+
+  isMobile = this.deviceDetector.isMobile();
 
   item = signal<SmithsonianItem | null>(null);
 
