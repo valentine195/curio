@@ -12,6 +12,7 @@ import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Pageable;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -35,9 +36,9 @@ public class ItemController {
     public Optional<?> getItem(@PathVariable("item") String item) {
         Optional<Item> fromDB = itemService.getOne(item);
         if (!fromDB.isPresent())
-        return fromDB;
+            return fromDB;
         System.out.println("fromDB: " + fromDB.get());
-        
+
         return connectorService.getItem(fromDB.get());
 
     }
@@ -45,6 +46,11 @@ public class ItemController {
     @GetMapping("/search")
     public List<Item> getMethodName(@RequestParam("query") String query) {
         return itemService.search(query);
+    }
+
+    @DeleteMapping
+    public void deleteAllItems() {
+        itemService.delete();
     }
 
 }

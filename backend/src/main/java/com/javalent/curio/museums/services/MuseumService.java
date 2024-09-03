@@ -15,4 +15,8 @@ public class MuseumService {
     public List<String> getMuseums() {
         return this.museumRepository.findMuseumNames();
     }
+
+    public void delete() {
+        museumRepository.deleteAll();
+    }
 }

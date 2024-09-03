@@ -16,4 +16,8 @@ public class TagService {
         return tagRepository.findTagNames();
     }
 
+    public void delete() {
+        tagRepository.deleteAll();
+    }
+
 }

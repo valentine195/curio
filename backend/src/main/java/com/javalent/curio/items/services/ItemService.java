@@ -59,4 +59,8 @@ public class ItemService {
         return itemRepository.searchBy(predicates, query, 100);
     }
 
+    public void delete() {
+        itemRepository.deleteAll();
+    }
+
 }
