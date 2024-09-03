@@ -1,9 +1,0 @@
-databaseChangeLog:
--  changeSet:
-    id:  update-item-id
-    author: Jeremy Valentine
-    changes:
-    -  modifyDataType:
-        columnName:  id
-        newDataType:  varchar
-        tableName:  items

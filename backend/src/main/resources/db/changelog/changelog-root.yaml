@@ -1,6 +1,4 @@
 databaseChangeLog:
-    - includeAll:
-       path: "db/changelog/release/"
     - changeSet:
           id: "1"
           author: Jeremy Valentine
@@ -10,13 +8,13 @@ databaseChangeLog:
                     columns:
                         - column:
                               name: id
-                              type: UUID
+                              type: varchar
                               constraints:
                                   primaryKey: true
                                   nullable: false
                         - column:
                               name: museum
-                              type: UUID
+                              type: varchar
                               constraints:
                                   nullable: false
                         - column:
@@ -25,31 +23,55 @@ databaseChangeLog:
                               constraints:
                                   nullable: false
                         - column:
-                              name: sub_unit
-                              type: varchar
-                        - column:
                               name: thumbnail
                               type: varchar
                         - column:
-                              name: description
-                              type: text
+                              name: long_description
+                              type: varchar
+                        - column:
+                              name: physical_description
+                              type: varchar
+                        - column:
+                              name: summary
+                              type: varchar
               - createTable:
                     tableName: museums
                     columns:
-                        - column:
-                              name: id
-                              type: UUID
-                              constraints:
-                                  primaryKey: true
-                                  nullable: false
                         - column:
                               name: name
                               type: varchar
                               constraints:
                                   nullable: false
+                        - column:
+                            name: institution
+                            type: varchar
+              - createTable:
+                    tableName: tags
+                    columns:
+                        - column:
+                              name: id
+                              type: varchar
+                              constraints:
+                                  primaryKey: true
+                                  nullable: false
+              - createTable:
+                    tableName: items_tags
+                    columns:
+                        - column:
+                              name: items_id
+                              type: varchar
+                        - column:
+                              name: tags_id
+                              type: varchar
               - addForeignKeyConstraint:
-                    baseTableName: items
-                    baseColumnNames: museum
-                    referencedTableName: museums
+                    baseTableName: items_tags
+                    baseColumnNames: items_id
+                    referencedTableName: items
                     referencedColumnNames: id
-                    constraintName: fk_item_museum
+                    constraintName: fk_item_tags_items
+              - addForeignKeyConstraint:
+                    baseTableName: items_tags
+                    baseColumnNames: tags_id
+                    referencedTableName: tags
+                    referencedColumnNames: id
+                    constraintName: fk_item_tags_tags

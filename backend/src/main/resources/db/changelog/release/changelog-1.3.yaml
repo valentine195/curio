@@ -1,8 +1,0 @@
-databaseChangeLog:
--  changeSet:
-    id: "1.3"
-    author: Jeremy Valentine
-    changes:
-    - dropColumn:
-        tableName: items
-        columnName: description
