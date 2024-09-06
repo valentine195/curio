@@ -12,6 +12,7 @@ import com.javalent.curio.museums.models.Museum;
 import com.javalent.curio.museums.models.Museum.BaseMuseum;
 import com.javalent.curio.tags.models.Tag;
 
+import generated.javalent.curio.schemas.edan.FreetextProperty;
 import jakarta.annotation.Nonnull;
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
@@ -61,15 +62,6 @@ public class Item {
     public String title;
 
     public String thumbnail;
-/*     @OneToMany(mappedBy = "item", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
-    public List<Media> media = new ArrayList<>();
-
-    public void setMedia(List<Media> list) {
-        for (Media media : list) {
-            media.setItem(this);
-        }
-        this.media = list;
-    } */
 
     @FullTextField
     public String summary;
@@ -102,63 +94,47 @@ public class Item {
         this.title = smithsonianItem.title;
         this.museum = new Museum(smithsonianItem.unitCode.toString(), "Smithsonian Institute");
 
-/*         List<Media> mediaList = new ArrayList<>();
-        if (smithsonianItem.content.descriptiveNonRepeating.online_media != null
-                && smithsonianItem.content.descriptiveNonRepeating.online_media.media != null) {
-            for (SmithsonianItem.Medium medium : smithsonianItem.content.descriptiveNonRepeating.online_media.media) {
-                if (medium.resources != null) {
-                    for (SmithsonianItem.Resource resource : medium.resources) {
-                        if (resource.label == null) continue;
-                        Media m = new Media(resource.url, resource.label);
-                        mediaList.add(m);
-                        System.out.println(m);
-                    }
-                }
-            }
+        if (smithsonianItem.content.getDescriptiveNonRepeating().getOnlineMedia() != null
+                && smithsonianItem.content.getDescriptiveNonRepeating().getOnlineMedia().getMedia() != null) {
+            this.thumbnail = "https://ids.si.edu/ids/deliveryService?id=" + smithsonianItem.content.getDescriptiveNonRepeating().getOnlineMedia().getMedia()
+                    .get(0).getIdsId();
         }
-        this.setMedia(mediaList);
-        System.out.println(this.getMedia()); */
 
-if (smithsonianItem.content.descriptiveNonRepeating.online_media != null
-        && smithsonianItem.content.descriptiveNonRepeating.online_media.media != null) {
-    this.thumbnail = smithsonianItem.content.descriptiveNonRepeating.online_media.media
-            .get(0).thumbnail;
-}
-
-        if (smithsonianItem.content.freetext.notes != null) {
-            for (SmithsonianItem.Note note : smithsonianItem.content.freetext.notes) {
-                switch (note.label) {
+        if (smithsonianItem.content.getFreetext().getAdditionalProperties().containsKey("notes")) {
+            for (FreetextProperty note : smithsonianItem.content.getFreetext().getAdditionalProperties().get("notes")) {
+                switch (note.getLabel()) {
                     case "Long Description": {
                         if (this.longDescription == null) {
                             this.longDescription = "";
                         }
-                        this.longDescription += note.content + "\n\n";
+                        this.longDescription += note.getContent() + "\n\n";
                         break;
                     }
                     case "Physical Description": {
                         if (this.physicalDescription == null) {
                             this.physicalDescription = "";
                         }
-                        this.physicalDescription += note.content + "\n\n";
+                        this.physicalDescription += note.getContent() + "\n\n";
                         break;
                     }
                     case "Summary": {
                         if (this.summary == null) {
                             this.summary = "";
                         }
-                        this.summary += note.content + "\n\n";
+                        this.summary += note.getContent() + "\n\n";
                         break;
                     }
                 }
             }
         }
 
-        if (smithsonianItem.content.indexedStructured != null
-                && smithsonianItem.content.indexedStructured.object_type != null) {
-            for (String tag : smithsonianItem.content.indexedStructured.object_type) {
+        if (smithsonianItem.content.getIndexedStructured() != null
+                && smithsonianItem.content.getIndexedStructured().getObjectType() != null) {
+            for (String tag : smithsonianItem.content.getIndexedStructured().getObjectType()) {
                 this.addTag(new Tag(tag));
             }
         }
+
     }
 
     @Override

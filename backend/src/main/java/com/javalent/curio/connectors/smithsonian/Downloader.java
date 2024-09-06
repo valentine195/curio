@@ -97,8 +97,10 @@ public class Downloader {
                     try {
                         SmithsonianItem smithsonianItem = mapper.readValue(json, SmithsonianItem.class);
                         Item item = new Item(smithsonianItem);
-                        itemRepository.save(item);
-                        added++;
+                        if (item.getThumbnail() != null) {
+                            itemRepository.save(item);
+                            added++;
+                        }
                     } catch (JsonProcessingException e) {
                         e.printStackTrace();
                     }

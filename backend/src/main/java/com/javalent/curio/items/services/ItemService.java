@@ -51,7 +51,8 @@ public class ItemService {
 
     List<SearchPredicate> predicates = Arrays.asList(
             SearchPredicate.builder().field("title").boost(1000).build(),
-            SearchPredicate.builder().field("title").boost(500).fuzzy(2).build(),
+            SearchPredicate.builder().field("title").boost(750).fuzzy(1).build(),
+            /* SearchPredicate.builder().field("tags").boost(500).build(), */
             SearchPredicate.builder().field("summary").field("physicalDescription").field("longDescription").boost(100)
                     .fuzzy(1).build());
 
