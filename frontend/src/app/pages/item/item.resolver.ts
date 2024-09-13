@@ -1,8 +1,8 @@
 import { inject } from '@angular/core';
 import { ResolveFn } from '@angular/router';
 import { ItemsService } from '../../services/items.service';
-import { SmithsonianItem } from '../../interfaces/items/smithsonian';
+import { ResponseItem } from '../../interfaces/museums/response-item';
 
-export const itemResolver: ResolveFn<SmithsonianItem> = (route, state) => {
+export const itemResolver: ResolveFn<ResponseItem> = (route) => {
   return inject(ItemsService).getItem(route.paramMap.get("item")!);
 };

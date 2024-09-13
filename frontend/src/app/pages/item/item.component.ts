@@ -1,92 +1,59 @@
 import { Component, computed, inject, OnInit, signal } from '@angular/core';
-import { DeviceDetectorService } from 'ngx-device-detector';
-import { ActivatedRoute } from '@angular/router';
-import { GalleryModule, GalleryItem, ImageItem } from 'ng-gallery';
-import {
-  LabeledContent,
-  MediaType,
-  SmithsonianItem,
-} from '../../interfaces/items/smithsonian';
-import { ContentComponent } from './content/content.component';
+import { ActivatedRoute, Router } from '@angular/router';
+import { Observable, tap } from 'rxjs';
+import { ItemsService } from '../../services/items.service';
+import { AsyncPipe } from '@angular/common';
+import { ResponseItem } from '../../interfaces/museums/response-item';
+import { MuseumsComponent } from './museums/museums.component';
+import { ImageItem } from 'ng-gallery';
+import { GalleryComponent } from './components/gallery/gallery.component';
 
 @Component({
   selector: 'app-item',
   standalone: true,
-  imports: [GalleryModule, ContentComponent],
+  imports: [GalleryComponent, AsyncPipe, MuseumsComponent],
   templateUrl: './item.component.html',
   styleUrl: './item.component.scss',
+  providers: [],
 })
 export class ItemComponent implements OnInit {
-  private activatedRoute = inject(ActivatedRoute);
-  private deviceDetector = inject(DeviceDetectorService);
+  private activedRouted = inject(ActivatedRoute);
+  private router = inject(Router);
+  private itemSerivce = inject(ItemsService);
 
-  isMobile = this.deviceDetector.isMobile();
+  item$: Observable<ResponseItem> | null = null;
 
-  item = signal<SmithsonianItem | null>(null);
-
+  item = signal<ResponseItem | null>(null);
   images = computed(() => {
-    let item = this.item();
-    let galleryItems: GalleryItem[] = [];
-
-    for (const img of item?.content.descriptiveNonRepeating.online_media
-      .media ?? []) {
-      if (img.type === MediaType.IMAGES) {
-        galleryItems.push(
-          new ImageItem({
-            src: img.content,
-            thumb: `${img.thumbnail}&max_w=250`,
-          })
-        );
+    const item = this.item();
+    const images = [];
+    if (item) {
+      for (const img of item.images) {
+        images.push(new ImageItem(img));
       }
     }
-
-    return galleryItems;
-  });
-  freetext = computed<LabeledContent[][]>(() =>
-    Object.values(this.item()?.content.freetext ?? {})
-  );
-  summary = computed<LabeledContent[]>(() => {
-    return (this.item()?.content.freetext.notes ?? []).filter(
-      ({ label }) => label === 'Summary'
-    );
-  });
-  url = computed<string | null>(() => {
-    return this.item()?.content.descriptiveNonRepeating.guid ?? null;
-  });
-  /* 
-  physicalDescription = computed(() => {
-    console.log('🚀 ~ file: item.component.ts:38 ~ physicalDescription:');
-
-    let item = this.item();
-    let contentMap = new Map<string, string[]>();
-    for (const labeledContent of item?.content.freetext?.physicalDescription ??
-      []) {
-      const arr = contentMap.get(labeledContent.label) ?? [];
-      arr.push(labeledContent.content);
-      contentMap.set(labeledContent.label, arr);
-    }
-    return contentMap;
-  });
-
-  objectRights = computed(() => {
-    let item = this.item();
-
-    return item?.content.freetext.objectRights ?? [];
-  });
-  dataSource = computed(() => {
-    let item = this.item();
-
-    return item?.content.freetext.dataSource ?? [];
-  }); */
-  originalLink = computed(() => {
-    return this.item()?.content.descriptiveNonRepeating.guid;
+    return images;
   });
 
   ngOnInit() {
-    this.activatedRoute.data.subscribe(({ item }) => {
-      console.log('🚀 ~ file: item.component.ts:17 ~ item:', item);
-      this.item.set(item);
-      // do something with your resolved data ...
-    });
+    this.activedRouted.paramMap
+      .pipe(
+        tap((map) => {
+          const itemId = map.get('item');
+          if (!itemId) {
+            this.router.navigateByUrl('/error');
+            return;
+          }
+
+          this.item$ = this.itemSerivce.getItem(itemId).pipe(
+            tap((item) => {
+              console.log('🚀 ~ file: item.component.ts:50 ~ item:', item);
+
+              this.item.set(item);
+            })
+          );
+        })
+      )
+      .subscribe();
   }
 }

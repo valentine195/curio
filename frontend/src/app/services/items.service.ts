@@ -6,6 +6,7 @@ import { Item, ItemsResponseData } from '../interfaces/items/items';
 import { MuseumsService } from './museums.service';
 import { exhaustMap, switchMap, tap } from 'rxjs';
 import { SmithsonianItem } from '../interfaces/items/smithsonian';
+import { ResponseItem } from '../interfaces/museums/response-item';
 
 @Injectable({
   providedIn: 'root',
@@ -16,7 +17,7 @@ export class ItemsService {
   }
   search = signal<string | null>(null);
   searching = computed(() => (this.search()?.length ?? 0) > 0);
-  search$ = toObservable(this.search).pipe(
+  /*   search$ = toObservable(this.search).pipe(
     tap((search) => console.log('search', search)), // Just some debugging
     switchMap(
       (
@@ -28,20 +29,27 @@ export class ItemsService {
           .pipe(tap((response) => this.items.set(response))); // Update the response
       }
     )
-  );
+  ); */
 
   page = signal(0);
+  pageSize = signal(100);
   setPage(page: number) {
     this.page.set(page);
   }
   queryParams = computed(() => {
-    const params = new URLSearchParams({ page: `${this.page()}` });
+    const params = new URLSearchParams({
+      page: `${this.page()}` /* , size: `${this.pageSize()}` */,
+    });
     const museums = this.museums$.filterBy();
     if (museums.length) {
       params.append(
         'museums',
         [...museums].map((s) => s.replaceAll(',', '|')).join(',')
       );
+    }
+    const query = this.search();
+    if (query) {
+      params.append('query', query);
     }
     return params;
   });
@@ -66,7 +74,7 @@ export class ItemsService {
   );
 
   getItem(id: string) {
-    return this.http$.get<SmithsonianItem>(`${this.baseUrl}/api/items/${id}`);
+    return this.http$.get<ResponseItem>(`${this.baseUrl}/api/items/${id}`);
   }
 
   constructor(

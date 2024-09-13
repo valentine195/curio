@@ -1,7 +1,11 @@
 package com.javalent.curio.connectors.smithsonian;
 
-import com.javalent.curio.connectors.smithsonian.models.SmithsonianItem;
+import com.javalent.curio.connectors.smithsonian.models.SmithsonianResponseItem;
+import lombok.Getter;
+import lombok.Setter;
 
+@Getter
+@Setter
 public class SmithsonianResponse {
-    public SmithsonianItem response;
+    public SmithsonianResponseItem response;
 }

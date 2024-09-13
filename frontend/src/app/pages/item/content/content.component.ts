@@ -1,13 +1,12 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { LabeledContent } from '../../../interfaces/items/smithsonian';
-import { LabeledContentComponent } from './labeled-content/labeled-content.component';
 
 type ContentMap = Map<string, string[]>;
 
 @Component({
   selector: 'app-content',
   standalone: true,
-  imports: [LabeledContentComponent],
+  imports: [],
   templateUrl: './content.component.html',
   styleUrl: './content.component.scss',
 })
@@ -22,6 +21,8 @@ export class ContentComponent implements OnInit {
   @Input({
     required: true,
     transform: (value: LabeledContent[]) => {
+      console.log('🚀 ~ file: content.component.ts:25 ~ value:', value);
+
       let contentMap = new Map<string, string[]>();
       for (const labeledContent of value ?? []) {
         const arr = contentMap.get(labeledContent.label) ?? [];

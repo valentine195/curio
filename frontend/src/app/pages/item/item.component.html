@@ -1,32 +1,30 @@
-<div class="item flex flex-col gap-4">
-  @if (item(); as item) {
-  <h1 class="bold text-3xl m-4">{{ item.title }}</h1>
-  @if (images().length) {
+<div
+  class="item flex flex-col gap-4 h-full w-full mb-4 md:pl-16 md:pr-16 lg:pl-48 lg:pr-48 pl-4 pr-4"
+>
+  @if (item$ && item$ | async; as item) {
+  <div class="title flex flex-col gap-2">
+    <h1 class="text-4xl">
+      {{ item.title }}
+    </h1>
+    <div class="text-sm flex justify-between">
+      <span class="small">{{ item.museum }}</span>
 
-  <gallery
-    [items]="images()"
-    scrollBehavior="instant"
-    navScrollBehavior="instant"
-    loadingStrategy="preload"
-    slidingDirection="horizontal"
-    [thumbPosition]="isMobile ? 'bottom' : 'right'"
-  ></gallery>
-
-  <div class="item-details ml-4 mr-4">
-    <div class="summary">
-      @for (content of summary(); track content.content) {
-      <p class="mb-2">{{ content.content }}</p>
-      }
-    </div>
-
-    <div class="free-text">
-      @for (text of freetext(); track text) {
-      <app-content [content]="text" [url]="url()"></app-content>
-      }
+      <a [href]="item.url" class="link">See original</a>
     </div>
   </div>
-  <a class="link-info" href="{{ item.content.descriptiveNonRepeating.guid }}"
-    >See original</a
+  <div
+    class="gallery-container md:-ml-16 md:-mr-16 lg:-ml-48 lg:-mr-48 -ml-4 -mr-4"
   >
-  } }
+    <app-gallery [images]="images()"></app-gallery>
+  </div>
+
+  <div class="content-container mt-4">
+    <app-museums [item]="item"></app-museums>
+  </div>
+
+  } @else {
+  <span
+    class="loading loading-ring loading-lg self-center mt-auto mb-auto"
+  ></span>
+  }
 </div>

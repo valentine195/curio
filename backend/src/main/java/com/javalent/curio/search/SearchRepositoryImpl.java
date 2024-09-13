@@ -2,12 +2,18 @@ package com.javalent.curio.search;
 
 import java.io.Serializable;
 import java.util.List;
+
 import org.hibernate.search.engine.search.query.SearchResult;
 import org.hibernate.search.mapper.orm.Search;
 import org.hibernate.search.mapper.orm.session.SearchSession;
 import org.springframework.data.jpa.repository.support.JpaEntityInformation;
 import org.springframework.data.jpa.repository.support.SimpleJpaRepository;
 import org.springframework.transaction.annotation.Transactional;
+
+import com.javalent.curio.search.models.SearchPredicate;
+import com.javalent.curio.search.models.TermSearchPredicate;
+import com.javalent.curio.features.items.models.ItemSearchDTO;
+import com.javalent.curio.search.models.FieldSearchPredicate;
 
 import jakarta.persistence.EntityManager;
 
@@ -36,8 +42,8 @@ public class SearchRepositoryImpl<T, ID extends Serializable> extends SimpleJpaR
         return result.hits();
     }
 
-    public List<T> searchBy(List<SearchPredicate> predicates, String query, int limit) {
-        SearchResult<T> result = getSearchResult(predicates, query, limit);
+    public List<T> searchBy(List<SearchPredicate> predicates, ItemSearchDTO search, int limit) {
+        SearchResult<T> result = getSearchResult(predicates, search, limit);
         return result.hits();
     }
 
@@ -51,17 +57,30 @@ public class SearchRepositoryImpl<T, ID extends Serializable> extends SimpleJpaR
         return result;
     }
 
-    private SearchResult<T> getSearchResult(List<SearchPredicate> predicates, String query, int limit) {
+    private SearchResult<T> getSearchResult(List<SearchPredicate> predicates, ItemSearchDTO search, int limit) {
         SearchSession searchSession = Search.session(entityManager);
-        System.out.println(predicates);
         SearchResult<T> result = searchSession
                 .search(getDomainClass())
-                .where((f) -> f.or().with(g -> {
-                    for (SearchPredicate predicate : predicates) {
-                        g.add(f.match().fields(predicate.fields.toArray(new String[0])).boost(predicate.boost)
-                                .matching(query).fuzzy(predicate.fuzzy));
+                .where((f, root) -> {
+                    root.add(f.matchAll());
+                    if (!search.getMuseums().isEmpty()) {
+                        root.add(f.terms().field("museum.name").matchingAny(search.getMuseums()));
                     }
-                }))
+                    root.add(f.bool().with(b -> {
+                        for (SearchPredicate predicate : predicates) {
+                            switch (predicate) {
+                                case FieldSearchPredicate p -> {
+                                    b.should(f.match().fields(p.fields.toArray(new String[0])).boost(p.boost)
+                                            .matching(search.getQuery()).fuzzy(p.fuzzy));
+                                }
+                                case TermSearchPredicate t -> {
+                                }
+                                default -> {
+                                }
+                            }
+                        }
+                    }));
+                })
                 .fetch(limit);
         return result;
     }

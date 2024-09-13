@@ -133,7 +133,7 @@
                 <configuration>
                     <sourceDirectory>${basedir}/src/main/resources/schemas</sourceDirectory>
                     <outputDirectory>${basedir}/src/main/java</outputDirectory>
-                    <targetPackage>generated.javalent.curio.schemas</targetPackage>
+                    <targetPackage>generated.schemas</targetPackage>
                 </configuration>
                 <executions>
                     <execution>

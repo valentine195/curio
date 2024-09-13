@@ -17,8 +17,6 @@
   </h3>
   <!-- <p class="item-summary">{{ item.summary }}</p> -->
   <div class="tags flex flex-wrap gap-1">
-    @for (tag of item.tags; track tag) {
-    <div class="tag text-xs text-accent-550">{{ tag }}</div>
-    }
+    <div class="tag text-xs text-accent-550">{{ item.museum.name }}</div>
   </div>
 </div>

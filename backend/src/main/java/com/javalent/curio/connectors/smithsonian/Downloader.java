@@ -9,7 +9,6 @@ import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.context.event.ApplicationReadyEvent;
 import org.springframework.context.event.EventListener;
@@ -19,13 +18,19 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.datatype.jdk8.Jdk8Module;
-import com.javalent.curio.connectors.smithsonian.models.SmithsonianItem;
-import com.javalent.curio.items.models.Item;
-import com.javalent.curio.items.repository.ItemRepository;
-import com.javalent.curio.museums.models.Museum;
+import com.javalent.curio.connectors.smithsonian.models.SmithsonianResponseItem;
+import com.javalent.curio.features.items.models.Item;
+import com.javalent.curio.features.items.repository.ItemRepository;
+import com.javalent.curio.features.museums.models.Museum;
+
+import lombok.RequiredArgsConstructor;
 
 @Service
+@RequiredArgsConstructor
 public class Downloader {
+
+    private final ItemRepository itemRepository;
+
     @Value("${smithsonian.download}")
     private Boolean SHOULD_DOWNLOAD;
 
@@ -35,9 +40,6 @@ public class Downloader {
 
     private static String BASE_URL = "https://smithsonian-open-access.s3-us-west-2.amazonaws.com/metadata/edan";
     private static String INDEX_FILE = "/index.txt";
-
-    @Autowired
-    private ItemRepository itemRepository;
 
     ExecutorService pool = Executors.newCachedThreadPool();
 
@@ -95,7 +97,7 @@ public class Downloader {
                 List<String> jsons = downloadFile(index);
                 for (String json : jsons) {
                     try {
-                        SmithsonianItem smithsonianItem = mapper.readValue(json, SmithsonianItem.class);
+                        SmithsonianResponseItem smithsonianItem = mapper.readValue(json, SmithsonianResponseItem.class);
                         Item item = new Item(smithsonianItem);
                         if (item.getThumbnail() != null) {
                             itemRepository.save(item);

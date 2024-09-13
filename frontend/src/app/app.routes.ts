@@ -9,8 +9,11 @@ export const routes: Routes = [
   { path: '', component: HomeComponent },
   {
     path: 'collections',
-    loadComponent: () => CollectionsComponent
+    loadComponent: () => CollectionsComponent,
   },
-  { path: 'collections/:item', component: ItemComponent, resolve: {item: itemResolver} },
+  {
+    path: 'collections/:item',
+    component: ItemComponent /* , resolve: {item: itemResolver} */,
+  },
   { path: '**', loadComponent: () => ErrorComponent },
 ];

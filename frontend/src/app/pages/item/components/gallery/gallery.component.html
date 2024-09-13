@@ -1,0 +1,9 @@
+  <gallery
+    [items]="images"
+    scrollBehavior="instant"
+    navScrollBehavior="instant"
+    loadingStrategy="preload"
+    slidingDirection="horizontal"
+    [thumbPosition]="isMobile ? 'bottom' : 'right'"
+    [thumb]="images.length >= 2"
+  ></gallery>

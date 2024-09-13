@@ -4,15 +4,15 @@ export const Schema = {
   EDANMD: 'edanmd',
 } as const;
 export type Schema = (typeof Schema)[keyof typeof Schema];
-export const UnitType = {
+export const UnitCode = {
   NASM: 'NASM',
 } as const;
-export type UnitType = (typeof UnitType)[keyof typeof UnitType];
+export type UnitCode = (typeof UnitCode)[keyof typeof UnitCode];
 
 export interface SmithsonianItem {
   id: string;
   title: string;
-  unitCode: UnitType;
+  unitCode: UnitCode;
   type: Schema;
   url: string;
   content: SmithsonianContent;
@@ -55,7 +55,7 @@ interface DescriptiveNonRepeating {
   guid: Link;
   title: LabeledContent;
   record_ID: string;
-  unit_code: UnitType;
+  unit_code: UnitCode;
   title_sort: string;
   data_source: string;
   record_link: Link;

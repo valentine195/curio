@@ -12,7 +12,7 @@ import org.springframework.lang.NonNull;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
-import com.javalent.curio.items.models.Item;
+import com.javalent.curio.features.items.models.Item;
 import com.javalent.curio.search.index.Indexer;
 
 @SpringBootApplication

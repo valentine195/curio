@@ -6,7 +6,8 @@ import java.util.Optional;
 
 import org.springframework.stereotype.Service;
 
-import com.javalent.curio.items.models.Item;
+import com.javalent.curio.connectors.models.response.ResponseItem;
+import com.javalent.curio.features.items.models.Item;
 
 @Service
 public class ConnectorService {
@@ -16,11 +17,13 @@ public class ConnectorService {
         MAP.put(institution, connector);
     }
 
-    public Optional<ResponseItem> getItem(Item item) {
+    public Optional<? extends ResponseItem> getItem(Item item) {
         Connector<?> connector = MAP.get(item.getMuseum().institution);
         if (connector == null)
             return Optional.empty();
 
-        return Optional.of(connector.getItem(item.id));
+        Optional<? extends ResponseItem> response = connector.getItem(item.id);
+
+        return response;
     }
 }

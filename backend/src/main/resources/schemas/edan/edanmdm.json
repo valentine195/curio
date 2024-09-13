@@ -1,7 +1,7 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "type": "object",
-    "title": "The EDAN metadata model which supports description of object, artifact, specimens.",
+    "title": "EdanMDM",
     "definitions": {
         "descriptiveNonRepeating": {
             "type": "object",
