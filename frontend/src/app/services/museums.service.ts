@@ -2,13 +2,14 @@ import { HttpClient } from '@angular/common/http';
 import { computed, Injectable, signal } from '@angular/core';
 import { ConfigService } from '../config/config.service';
 import { ItemsResponseData } from '../interfaces/items/items';
+import { FilterService } from './filter.service.interface';
 
 type Museum = string;
 
 @Injectable({
   providedIn: 'root',
 })
-export class MuseumsService {
+export class MuseumsService implements FilterService<Museum> {
   get baseUrl() {
     return this.config$.config.baseUrl;
   }
@@ -25,7 +26,9 @@ export class MuseumsService {
     }
     return new URLSearchParams({ museums: arr.join(',') }).toString();
   });
-
+  clear() {
+    this.filterBy.set([]);
+  }
   toggle(museum: Museum) {
     this.filterBy.update((set) => {
       if (set.includes(museum)) {

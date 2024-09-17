@@ -48,30 +48,26 @@
       </div>
     </div>
     <div class="w-full flex flex-col gap-4">
+      @defer (when items();) {
       <div class="items-list gap-4 w-full">
-        <!-- @if (itemsService.searching()) { @for (item of (itemsService.search$ |
-        async); track item.id) {
+        @for (item of items()?.content; track item.id) {
         <app-item-card [item]="item" />
-        } } @else { --> @if (itemsService.items$ | async) { @for (item of
-        (itemsService.items() ); track item.id) {
-        <app-item-card [item]="item" />
-        } } <!-- } -->
-        <!-- @else { @for (item of [0,0,0,0]; track item) {
-          <div class="flex flex-col gap-4">
-            <div class="skeleton h-32 w-full"></div>
-            <div class="skeleton h-4 w-28"></div>
-            <div class="skeleton h-4 w-full"></div>
-            <div class="skeleton h-4 w-full"></div>
-          </div>
-          } } -->
+        }
       </div>
-      <!-- <p-paginator
-        (onPageChange)="itemsService.setPage($event.page ?? 0)"
-        [first]="0"
-        [rows]="itemsService.items()?.numberOfElements"
-        [totalRecords]="itemsService.items()?.totalElements"
-      /> -->
-      <!-- [rowsPerPageOptions]="[10, 20, 30]" -->
+      @if (items(); as items){
+      <mat-paginator
+        (page)="itemsService.handlePageEvent($event)"
+        [length]="items.totalElements"
+        [pageSize]="items.size"
+        [pageSizeOptions]="[10, 25, 50, 100]"
+        aria-label="Select page"
+      />}} @placeholder(minimum 2000ms) {
+      <div class="items-list gap-4 w-full">
+        @for (_ of [0,0,0,0,0,0,0,0,0,0,0,0].keys(); track $index) {
+        <app-item-skeleton></app-item-skeleton>
+        }
+      </div>
+      }
     </div>
   </div>
 </div>

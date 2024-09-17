@@ -7,6 +7,8 @@ import { MuseumsService } from './museums.service';
 import { exhaustMap, switchMap, tap } from 'rxjs';
 import { SmithsonianItem } from '../interfaces/items/smithsonian';
 import { ResponseItem } from '../interfaces/museums/response-item';
+import { PageEvent } from '@angular/material/paginator';
+import { TagsService } from './tags.service';
 
 @Injectable({
   providedIn: 'root',
@@ -16,35 +18,38 @@ export class ItemsService {
     return this.config$.config.baseUrl;
   }
   search = signal<string | null>(null);
-  searching = computed(() => (this.search()?.length ?? 0) > 0);
-  /*   search$ = toObservable(this.search).pipe(
-    tap((search) => console.log('search', search)), // Just some debugging
-    switchMap(
-      (
-        search // Don't execute the http request if one is already in progress
-      ) => {
-        console.log('requesting search');
-        return this.http$
-          .get<Item[]>(`${this.baseUrl}/api/items/search?query=${search}`) // Make the http request
-          .pipe(tap((response) => this.items.set(response))); // Update the response
-      }
-    )
-  ); */
-
   page = signal(0);
   pageSize = signal(100);
+
+  handlePageEvent(pageEvent: PageEvent) {
+    if (pageEvent.pageIndex != this.page()) {
+      this.page.set(pageEvent.pageIndex);
+    }
+    if (pageEvent.pageSize != this.pageSize()) {
+      this.pageSize.set(pageEvent.pageSize);
+    }
+  }
+
   setPage(page: number) {
     this.page.set(page);
   }
   queryParams = computed(() => {
     const params = new URLSearchParams({
-      page: `${this.page()}` /* , size: `${this.pageSize()}` */,
+      page: `${this.page()}`,
+      size: `${this.pageSize()}`,
     });
     const museums = this.museums$.filterBy();
     if (museums.length) {
       params.append(
         'museums',
         [...museums].map((s) => s.replaceAll(',', '|')).join(',')
+      );
+    }
+    const tags = this.tags$.filterBy();
+    if (tags.length) {
+      params.append(
+        'tags',
+        [...tags].map((s) => s.replaceAll(',', '|')).join(',')
       );
     }
     const query = this.search();
@@ -80,6 +85,7 @@ export class ItemsService {
   constructor(
     private http$: HttpClient,
     private config$: ConfigService,
-    private museums$: MuseumsService
+    private museums$: MuseumsService,
+    private tags$: TagsService
   ) {}
 }

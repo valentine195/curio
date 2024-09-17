@@ -13,5 +13,5 @@ public interface SearchRepository<T, ID extends Serializable> extends PagingAndS
 
     List<T> searchBy(String text, int limit, String... fields);
 
-    List<T> searchBy(List<SearchPredicate> predicates, ItemSearchDTO search, int limit);
+    List<T> searchBy(List<SearchPredicate> predicates, ItemSearchDTO search);
 }

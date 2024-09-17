@@ -42,8 +42,8 @@ public class SearchRepositoryImpl<T, ID extends Serializable> extends SimpleJpaR
         return result.hits();
     }
 
-    public List<T> searchBy(List<SearchPredicate> predicates, ItemSearchDTO search, int limit) {
-        SearchResult<T> result = getSearchResult(predicates, search, limit);
+    public List<T> searchBy(List<SearchPredicate> predicates, ItemSearchDTO search) {
+        SearchResult<T> result = getSearchResult(predicates, search);
         return result.hits();
     }
 
@@ -57,7 +57,7 @@ public class SearchRepositoryImpl<T, ID extends Serializable> extends SimpleJpaR
         return result;
     }
 
-    private SearchResult<T> getSearchResult(List<SearchPredicate> predicates, ItemSearchDTO search, int limit) {
+    private SearchResult<T> getSearchResult(List<SearchPredicate> predicates, ItemSearchDTO search) {
         SearchSession searchSession = Search.session(entityManager);
         SearchResult<T> result = searchSession
                 .search(getDomainClass())
@@ -81,7 +81,7 @@ public class SearchRepositoryImpl<T, ID extends Serializable> extends SimpleJpaR
                         }
                     }));
                 })
-                .fetch(limit);
+                .fetch(null);
         return result;
     }
 }

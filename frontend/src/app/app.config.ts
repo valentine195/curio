@@ -9,6 +9,7 @@ import { provideAnimations } from '@angular/platform-browser/animations';
 import { routes } from './app.routes';
 import { provideHttpClient } from '@angular/common/http';
 import { ConfigService } from './config/config.service';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 
 export const appConfig: ApplicationConfig = {
   providers: [
@@ -21,6 +22,6 @@ export const appConfig: ApplicationConfig = {
       useFactory: (configService: ConfigService) => () => configService.config$,
       deps: [ConfigService],
       multi: true,
-    },
+    }, provideAnimationsAsync(),
   ],
 };

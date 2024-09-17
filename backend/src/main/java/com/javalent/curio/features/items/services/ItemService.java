@@ -67,12 +67,12 @@ public class ItemService {
     public List<Item> search(String query) {
         var search = new ItemSearchDTO();
         search.setQuery(query);
-        return itemRepository.searchBy(PREDICATES, search, 100);
+        return itemRepository.searchBy(PREDICATES, search);
     }
 
     public Page<Item> search(ItemSearchDTO params, Pageable page) {
 
-        List<Item> allList = itemRepository.searchBy(PREDICATES, params, page.getPageSize());
+        List<Item> allList = itemRepository.searchBy(PREDICATES, params);
         List<Item> pageList = allList.stream()
                 .skip(page.getOffset())
                 .limit(page.getPageSize())
