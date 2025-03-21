@@ -11,17 +11,16 @@ import { ItemSkeletonComponent } from './components/item-skeleton/item-skeleton.
 import { MatPaginatorModule } from '@angular/material/paginator';
 
 @Component({
-  selector: 'app-collections',
-  standalone: true,
-  imports: [
-    AsyncPipe,
-    ItemCardComponent,
-    ItemSkeletonComponent,
-    PaginatorModule,
-    MatPaginatorModule,
-  ],
-  templateUrl: './collections.component.html',
-  styleUrl: './collections.component.scss',
+    selector: 'app-collections',
+    imports: [
+        AsyncPipe,
+        ItemCardComponent,
+        ItemSkeletonComponent,
+        PaginatorModule,
+        MatPaginatorModule,
+    ],
+    templateUrl: './collections.component.html',
+    styleUrl: './collections.component.scss'
 })
 export class CollectionsComponent implements OnInit {
   /* items$: Observable<ItemsResponseData>; */

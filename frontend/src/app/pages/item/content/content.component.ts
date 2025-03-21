@@ -4,11 +4,10 @@ import { LabeledContent } from '../../../interfaces/items/smithsonian';
 type ContentMap = Map<string, string[]>;
 
 @Component({
-  selector: 'app-content',
-  standalone: true,
-  imports: [],
-  templateUrl: './content.component.html',
-  styleUrl: './content.component.scss',
+    selector: 'app-content',
+    imports: [],
+    templateUrl: './content.component.html',
+    styleUrl: './content.component.scss'
 })
 export class ContentComponent implements OnInit {
   ngOnInit(): void {

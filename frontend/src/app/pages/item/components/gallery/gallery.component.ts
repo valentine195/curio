@@ -3,11 +3,10 @@ import { GalleryModule, GalleryItem } from 'ng-gallery';
 import { DeviceDetectorService } from 'ngx-device-detector';
 
 @Component({
-  selector: 'app-gallery',
-  standalone: true,
-  imports: [GalleryModule],
-  templateUrl: './gallery.component.html',
-  styleUrl: './gallery.component.scss',
+    selector: 'app-gallery',
+    imports: [GalleryModule],
+    templateUrl: './gallery.component.html',
+    styleUrl: './gallery.component.scss'
 })
 export class GalleryComponent {
   private deviceDetector = inject(DeviceDetectorService);

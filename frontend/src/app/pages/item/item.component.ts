@@ -9,12 +9,11 @@ import { ImageItem } from 'ng-gallery';
 import { GalleryComponent } from './components/gallery/gallery.component';
 
 @Component({
-  selector: 'app-item',
-  standalone: true,
-  imports: [GalleryComponent, AsyncPipe, MuseumsComponent],
-  templateUrl: './item.component.html',
-  styleUrl: './item.component.scss',
-  providers: [],
+    selector: 'app-item',
+    imports: [GalleryComponent, AsyncPipe, MuseumsComponent],
+    templateUrl: './item.component.html',
+    styleUrl: './item.component.scss',
+    providers: []
 })
 export class ItemComponent implements OnInit {
   private activedRouted = inject(ActivatedRoute);
