@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Viaoda+Libre&display=swap");
 
 @import "tailwindcss";
 @plugin "daisyui";
@@ -12,10 +13,10 @@
   --color-base-100: #f8f8f6; /* Soft, cool off-white (Main background) */
   --color-base-200: #ececea; /* Light neutral gray */
   --color-base-300: #dad9d6; /* Muted warm gray */
-  --color-base-content: #2c3e50; /* Deep slate blue for text */
+  --color-base-content: #3a5973; /* Deep slate blue for text */
 
   /* Primary Colors (Main Brand Color) */
-  --color-primary: #2c3e50; /* Deep slate blue */
+  --color-primary: #3a5973; /* Deep slate blue */
   --color-primary-content: #f8f8f6; /* Text on primary */
 
   /* Secondary Colors (Supporting Accents) */
@@ -44,6 +45,7 @@
 @theme {
   --font-sans: Lato;
   --font-serif: Merriweather;
+  --font-title: "Viaoda Libre";
 }
 
 html,
