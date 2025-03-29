@@ -7,11 +7,11 @@
 }
 
 .hero-heading {
-  text-shadow: theme('colors.background.DEFAULT') 0px 0px 10px;
+  text-shadow: var(--color-primary-content) 0px 0px 10px;
 }
 
 .hero-subheading {
-    backdrop-filter: blur(4px);
-    color: theme('colors.background.DEFAULT');
-    padding: 2rem
+  backdrop-filter: blur(4px);
+  color: var(--color-primary-content);
+  padding: 2rem;
 }
