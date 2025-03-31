@@ -8,10 +8,11 @@
 
 .hero-heading {
   text-shadow: var(--color-primary-content) 0px 0px 10px;
+  color: var(--color-accent-content);
 }
 
 .hero-subheading {
   backdrop-filter: blur(4px);
-  color: var(--color-primary-content);
+  color: var(--color-accent-content);
   padding: 2rem;
 }

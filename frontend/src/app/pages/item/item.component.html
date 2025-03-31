@@ -1,5 +1,5 @@
 <div
-  class="item flex flex-col gap-4 h-full w-full mb-4 md:pl-16 md:pr-16 lg:pl-48 lg:pr-48 pl-4 pr-4"
+  class="item flex flex-col gap-4 h-full w-full mb-4 md:pl-16 md:pr-16 lg:pl-36 lg:pr-36 pl-4 pr-4"
 >
   @if (item$ && item$ | async; as item) {
   <div class="title flex flex-col gap-2">
@@ -9,11 +9,11 @@
     <div class="text-sm flex justify-between">
       <span class="small">{{ item.museum }}</span>
 
-      <a [href]="item.url" class="link">See original</a>
+      <a [href]="item.url" class="link" target="_blank" rel="noopener">See original</a>
     </div>
   </div>
   <div
-    class="gallery-container md:-ml-16 md:-mr-16 lg:-ml-48 lg:-mr-48 -ml-4 -mr-4"
+    class="gallery-container md:-ml-16 md:-mr-16 lg:-ml-36 lg:-mr-36 -ml-4 -mr-4"
   >
     <app-gallery [images]="images()"></app-gallery>
   </div>

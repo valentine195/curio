@@ -1,1 +1,77 @@
-<p class="whitespace-pre-wrap text-lg">{{ item.description }}</p>
+<div class="smithsonian-container">
+  <p class="whitespace-pre-wrap text-lg">{{ description() }}</p>
+
+  <!-- Tabs for Additional Details -->
+  <mat-tab-group>
+    <mat-tab label="Physical Description">
+      <div class="mt-2">
+        @if (physicalDescriptionNotes()) {
+          <p>{{ physicalDescriptionNotes() }}</p>
+        }
+        <div>
+          @for (entry of physicalDescription(); track entry[0]) {
+            <p>
+              <strong>{{ entry[0] }}</strong>
+            </p>
+            <!--           <ul class="list-disc"> -->
+            @for (value of entry[1]; track value) {
+              <li>{{ value }}</li>
+            }
+            <!--           </ul> -->
+          }
+        </div>
+      </div>
+    </mat-tab>
+
+    @if (onExhibit() || exhibition().length) {
+      <mat-tab label="Exhibitions">
+        <div class="mt-2">
+          @if (onExhibit()) {
+            <p>This item is on display.</p>
+          }
+          @if (exhibition().length) {
+            <p>{{ exhibition() }}</p>
+          }
+        </div>
+      </mat-tab>
+    }
+
+    @if (creditLine() || objectRights()) {
+      <mat-tab label="Rights & Credits">
+        <div class="mt-2">
+          @if (creditLine()) {
+            <div>
+              @for (entry of creditLine(); track entry[0]) {
+                <strong>{{ entry[0] }}</strong>
+                @for (value of entry[1]; track value) {
+                  <li>{{ value }}</li>
+                }
+              }
+            </div>
+          }
+          @if (objectRights()) {
+            <div>
+              @for (entry of objectRights(); track entry[0]) {
+                <strong>{{ entry[0] }}</strong>
+                @for (value of entry[1]; track value) {
+                  <li>{{ value }}</li>
+                }
+              }
+            </div>
+          }
+        </div>
+      </mat-tab>
+    }
+    @if (item().content.freetext?.["notes"]?.length) {
+      <mat-tab label="Additional Notes">
+        <div class="mt-2">
+          @for (note of item().content.freetext?.["notes"] ?? []; track note) {
+            @if (!description().includes(note.content ?? "")) {
+              <p class="mb-2" [innerHTML]="note.content ?? '' | safeHtml"></p>
+            }
+          }
+        </div>
+      </mat-tab>
+    }
+  </mat-tab-group>
+</div>

@@ -16,7 +16,7 @@
   --color-base-content: #3a5973; /* Deep slate blue for text */
 
   /* Primary Colors (Main Brand Color) */
-  --color-primary: #3a5973; /* Deep slate blue */
+  --color-primary: #2c3e50; /* Deep slate blue */
   --color-primary-content: #f8f8f6; /* Text on primary */
 
   /* Secondary Colors (Supporting Accents) */
@@ -45,7 +45,7 @@
 @theme {
   --font-sans: Lato;
   --font-serif: Merriweather;
-  --font-title: "Viaoda Libre";
+  --font-title: "freight-text-pro";
 }
 
 html,

@@ -1,0 +1,56 @@
+.smithsonian-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: "Arial", sans-serif;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.source {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.metadata-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.metadata-item {
+  background: #f9f9f9;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+mat-tab-group {
+  margin-top: 15px;
+}
+
+mat-tab-group p:first {
+  margin-top: calc(var(--spacing) * 4);
+}
+mat-tab-group p {
+  margin-bottom: calc(var(--spacing) * 4);
+}
+mat-expansion-panel {
+  margin-top: 10px;
+}
+
+.record-link {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.record-link a {
+  text-decoration: none;
+  color: #0078d4;
+  font-weight: bold;
+}
