@@ -1,6 +1,7 @@
 import {
   APP_INITIALIZER,
   type ApplicationConfig,
+  importProvidersFrom,
   provideZoneChangeDetection,
 } from '@angular/core';
 import { provideRouter } from '@angular/router';
@@ -10,6 +11,7 @@ import { routes } from './app.routes';
 import { provideHttpClient } from '@angular/common/http';
 import { ConfigService } from './config/config.service';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import { Funnel, LucideAngularModule } from 'lucide-angular';
 
 export const appConfig: ApplicationConfig = {
   providers: [
@@ -17,11 +19,14 @@ export const appConfig: ApplicationConfig = {
     provideRouter(routes),
     provideHttpClient(),
     provideAnimations(),
+    importProvidersFrom(LucideAngularModule.pick({ Funnel })),
+
     {
       provide: APP_INITIALIZER,
       useFactory: (configService: ConfigService) => () => configService.config$,
       deps: [ConfigService],
       multi: true,
-    }, provideAnimationsAsync(),
+    },
+    provideAnimationsAsync(),
   ],
 };

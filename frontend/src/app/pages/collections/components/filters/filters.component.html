@@ -1,0 +1,38 @@
+<div class="filters flex flex-col gap-2 justify-start">
+  <div class="museum-filter">
+    <h4>Museums</h4>
+    <ul class="filter-list">
+      @for (museum of museums$ | async; track museum) {
+        <li>
+          <label class="fieldset-label cursor-pointer gap-2">
+            <input
+              type="checkbox"
+              [checked]="museumService.filterBy().includes(museum)"
+              class="checkbox checkbox-sm"
+              (change)="museumService.toggle(museum)"
+            />
+            <span class="label-text">{{ museum }}</span>
+          </label>
+        </li>
+      }
+    </ul>
+  </div>
+  <div class="tag-filter">
+    <h4>Tags</h4>
+    <ul class="filter-list">
+      @for (tag of (tags$ | async)?.slice(0, 10); track tag) {
+        <li>
+          <label class="fieldset-label cursor-pointer gap-2">
+            <input
+              type="checkbox"
+              [checked]="tagService.filterBy().includes(tag)"
+              class="checkbox checkbox-sm"
+              (change)="tagService.toggle(tag)"
+            />
+            <span class="label-text">{{ tag }}</span>
+          </label>
+        </li>
+      }
+    </ul>
+  </div>
+</div>
