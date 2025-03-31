@@ -47,6 +47,7 @@ export class NasmComponent {
       this.item().content.indexedStructured?.onPhysicalExhibit?.[0] === 'Yes',
   );
   exhibition = computed(() => {
+    if (!this.onExhibit()) return 'This item is not on exhibit.';
     const item = this.item();
     if (!item.content.freetext?.['setName']?.length) return '';
     const setName = item.content.freetext['setName'];
