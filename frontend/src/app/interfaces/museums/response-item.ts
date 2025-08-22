@@ -1,30 +1,34 @@
-import { ImageItem } from 'ng-gallery';
+import { BaseItem } from './base-item';
+import { NasmItem, NasmResponseItem } from './smithsonian/nasm';
+import { ChndmItem, ChndmResponseItem } from './smithsonian/chndm';
 import { SmithsonianItem } from './smithsonian/smithsonian';
-import { NasmItem } from './smithsonian/nasm';
+import { UnitCode } from '../items/smithsonian';
+import { FsgItem, FsgResponseItem } from './smithsonian/fsg';
 
-export const Museum = {
-  NASM: 'National Air and Space Museum',
-  CHNDM: 'Cooper Hewitt, Smithsonian Design Museum',
-  FSG: 'Freer Gallery of Art and Arthur M. Sackler Gallery',
-  NMAI: 'National Museum of the American Indian',
-} as const;
-export type Museum = (typeof Museum)[keyof typeof Museum];
+/**
+ * Response items are items coming from an API call to a museum.
+ */
+export type ResponseItem =
+  | NasmResponseItem
+  | ChndmResponseItem
+  | FsgResponseItem;
 
-export interface ItemImage {
-  src: string;
-  thumb: string;
+// Factory method for creating the correct BaseItem implementation should be moved to a service or utility file to avoid circular dependencies.
+// The following code has been removed as it directly references Smithsonian item classes.
+
+export function createBaseItem(item: ResponseItem): BaseItem {
+  switch (item.unitCode) {
+    case UnitCode.CHNDM: {
+      return new ChndmItem(item);
+    }
+    case UnitCode.NASM: {
+      return new NasmItem(item);
+    }
+    case UnitCode.FSG: {
+      return new FsgItem(item);
+    }
+    default: {
+      return new SmithsonianItem(item);
+    }
+  }
 }
-
-export interface BaseResponseItem<T> {
-  content: T;
-  id: string;
-  institution: string;
-  images: ItemImage[];
-  museum: Museum;
-  title: string;
-  type: string;
-  url: string;
-  description: string;
-}
-
-export type ResponseItem = NasmItem;

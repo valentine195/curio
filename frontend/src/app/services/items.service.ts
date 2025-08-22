@@ -4,7 +4,7 @@ import { toObservable, toSignal } from '@angular/core/rxjs-interop';
 import { ConfigService } from '../config/config.service';
 import { Item, ItemsResponseData } from '../interfaces/items/items';
 import { MuseumsService } from './museums.service';
-import { exhaustMap, switchMap, tap } from 'rxjs';
+import { catchError, exhaustMap, of, switchMap, tap } from 'rxjs';
 import { SmithsonianItem } from '../interfaces/items/smithsonian';
 import { ResponseItem } from '../interfaces/museums/response-item';
 import { PageEvent } from '@angular/material/paginator';
@@ -42,14 +42,14 @@ export class ItemsService {
     if (museums.length) {
       params.append(
         'museums',
-        [...museums].map((s) => s.replaceAll(',', '|')).join(',')
+        [...museums].map((s) => s.replaceAll(',', '|')).join(','),
       );
     }
     const tags = this.tags$.filterBy();
     if (tags.length) {
       params.append(
         'tags',
-        [...tags].map((s) => s.replaceAll(',', '|')).join(',')
+        [...tags].map((s) => s.replaceAll(',', '|')).join(','),
       );
     }
     const query = this.search();
@@ -66,26 +66,33 @@ export class ItemsService {
     tap((params) => console.log('params', params.toString())), // Just some debugging
     switchMap(
       (
-        params // Don't execute the http request if one is already in progress
+        params, // Don't execute the http request if one is already in progress
       ) => {
         console.log('requesting');
         return this.http$
           .get<ItemsResponseData>(
-            `${this.baseUrl}/api/items?${params.toString()}`
+            `${this.baseUrl}/api/items?${params.toString()}`,
           ) // Make the http request
           .pipe(tap((response) => this.items.set(response.content))); // Update the response
-      }
-    )
+      },
+    ),
   );
 
   getItem(id: string) {
-    return this.http$.get<ResponseItem>(`${this.baseUrl}/api/items/${id}`);
+    console.log('🚀 ~ id:', id);
+
+    return this.http$.get<ResponseItem>(`${this.baseUrl}/api/items/${id}`).pipe(
+      catchError((e) => {
+        console.error(e);
+        return of(e);
+      }),
+    );
   }
 
   constructor(
     private http$: HttpClient,
     private config$: ConfigService,
     private museums$: MuseumsService,
-    private tags$: TagsService
+    private tags$: TagsService,
   ) {}
 }

@@ -1,6 +1,11 @@
-@switch (item.museum) { @case ("National Air and Space Museum") {
-<app-nasm [item]="item"></app-nasm>
-}
-@default {
+@if (item(); as item) {
+  @if (isNasmItem(item)) {
+    <app-nasm [item]="item"></app-nasm>
+  } @else if (isChndmItem(item)) {
+    <app-chndm [item]="item"></app-chndm>
+  } @else if (isFsgItem(item)) {
+    <app-fsg [item]="item"></app-fsg>
+  } @else {
     <p>This museum page is still under construction.</p>
-} }
+  }
+}

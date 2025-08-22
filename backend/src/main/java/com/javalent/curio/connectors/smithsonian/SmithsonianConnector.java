@@ -1,8 +1,10 @@
-package com.javalent.curio.connectors.smithsonian.models;
+package com.javalent.curio.connectors.smithsonian;
 
 import java.net.URI;
 import java.util.Optional;
 
+import com.javalent.curio.connectors.smithsonian.models.SmithsonianResponse;
+import com.javalent.curio.connectors.smithsonian.models.SmithsonianResponseItem;
 import org.jboss.logging.Logger;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
@@ -11,7 +13,6 @@ import org.springframework.web.util.UriComponentsBuilder;
 
 import com.javalent.curio.connectors.Connector;
 import com.javalent.curio.connectors.ConnectorService;
-import com.javalent.curio.connectors.smithsonian.SmithsonianResponse;
 import com.javalent.curio.features.museums.models.Museum;
 import com.javalent.curio.features.museums.services.MuseumService;
 

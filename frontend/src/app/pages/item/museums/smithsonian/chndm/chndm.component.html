@@ -1,1 +1,75 @@
-<p>chndm works!</p>
+<p>This page is a work in progress.</p>
+<p class="accession">{{ item().getAccessionNumber() }}</p>
+
+@if (item().getDescription(); as desc) {
+  <span>{{ desc }}</span>
+}
+@if (item().getDesigner(); as designer) {
+  <p>Designed by {{ designer }}</p>
+}
+@for (entry of item().getTimeline(); track entry.label) {
+  <p>
+    <span>{{ entry.label }}: </span>
+    <span>{{ entry.date }}</span>
+  </p>
+}
+
+{{ item().getCatalogueStatus() }}
+
+<mat-tab-group>
+  <mat-tab label="Physical Description">
+    <div class="mt-2">
+      <div>
+        @for (entry of item().getPhysicalDescription(); track entry[0]) {
+          <p>
+            <strong>{{ entry[0] }}</strong>
+          </p>
+          @for (value of entry[1]; track value) {
+            <li>{{ value }}</li>
+          }
+        }
+      </div>
+    </div>
+  </mat-tab>
+
+  @if (item().getCreditLine() || item().getObjectRights()) {
+    <mat-tab label="Rights & Credits">
+      <div class="mt-2">
+        @if (item().getCreditLine()) {
+          <div>
+            @for (entry of item().getCreditLine(); track entry[0]) {
+              <strong>{{ entry[0] }}</strong>
+              @for (value of entry[1]; track value) {
+                <li>{{ value }}</li>
+              }
+            }
+          </div>
+        }
+        @if (item().getObjectRights()) {
+          <div>
+            @for (entry of item().getObjectRights(); track entry[0]) {
+              <strong>{{ entry[0] }}</strong>
+              @for (value of entry[1]; track value) {
+                <li>{{ value }}</li>
+              }
+            }
+          </div>
+        }
+      </div>
+    </mat-tab>
+  }
+  <!--   @if (item().getContent().freetext?.["notes"]?.length) {
+    <mat-tab label="Additional Notes">
+      <div class="mt-2">
+        @for (
+          note of item().getContent().freetext?.["notes"] ?? [];
+          track note
+        ) {
+          @if (!description().includes(note.content ?? "")) {
+            <p class="mb-2" [innerHTML]="note.content ?? '' | safeHtml"></p>
+          }
+        }
+      </div>
+    </mat-tab>
+  } -->
+</mat-tab-group>

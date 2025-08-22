@@ -1,22 +1,22 @@
 <a
   class="bg-white flex flex-col w-full h-full gap-1 cursor-pointer rounded-lg p-4 shadow-md hover:shadow-lg hover:-translate-y-1 transition-all"
-  [routerLink]="item.id"
+  [routerLink]="item().id"
 >
-  @if (item.thumbnail) {
-  <div class="image flex justify-center">
-    <img
-      src="{{ item.thumbnail }}&max_w=400"
-      alt="{{ item.title }} Thumbnail"
-      class="item-thumbnail h-[200px]"
-      loading="eager"
-    />
-  </div>
+  @if (item().thumbnail) {
+    <div class="image flex justify-center">
+      <img
+        src="{{ item().thumbnail }}&max_w=400"
+        alt="{{ item().title }} Thumbnail"
+        class="item-thumbnail h-[200px]"
+        loading="eager"
+      />
+    </div>
   }
   <h3 class="item-title">
-    {{ item.title }}
+    {{ item().title }}
   </h3>
   <!-- <p class="item-summary">{{ item.summary }}</p> -->
   <div class="tags flex flex-wrap gap-1">
-    <div class="tag text-xs text-accent-550">{{ item.museum.name }}</div>
+    <div class="tag text-xs text-accent-550">{{ item().museum.name }}</div>
   </div>
 </a>

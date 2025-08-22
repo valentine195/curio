@@ -62,10 +62,10 @@
         </div>
       </mat-tab>
     }
-    @if (item().content.freetext?.["notes"]?.length) {
+    @if (item().getContent().freetext?.["notes"]?.length) {
       <mat-tab label="Additional Notes">
         <div class="mt-2">
-          @for (note of item().content.freetext?.["notes"] ?? []; track note) {
+          @for (note of item().getContent().freetext?.["notes"] ?? []; track note) {
             @if (!description().includes(note.content ?? "")) {
               <p class="mb-2" [innerHTML]="note.content ?? '' | safeHtml"></p>
             }

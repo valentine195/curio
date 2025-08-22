@@ -18,7 +18,7 @@ public class ConnectorService {
     }
 
     public Optional<? extends ResponseItem> getItem(Item item) {
-        Connector<?> connector = MAP.get(item.getMuseum().institution);
+        Connector<?> connector = MAP.get(item.getMuseum().getInstitution());
         if (connector == null)
             return Optional.empty();
 

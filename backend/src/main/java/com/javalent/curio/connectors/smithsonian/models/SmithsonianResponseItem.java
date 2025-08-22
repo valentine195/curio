@@ -3,13 +3,18 @@ package com.javalent.curio.connectors.smithsonian.models;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.fasterxml.jackson.annotation.JsonCreator;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonSubTypes;
 import com.fasterxml.jackson.annotation.JsonTypeInfo;
 import com.fasterxml.jackson.annotation.JsonTypeInfo.As;
 import com.fasterxml.jackson.annotation.JsonTypeInfo.Id;
 import com.javalent.curio.connectors.models.response.ResponseItem;
 import com.javalent.curio.connectors.models.response.ResponseItemImage;
-import com.javalent.curio.connectors.smithsonian.nasm.NasmResponseItem;
+
+import com.javalent.curio.connectors.smithsonian.models.subunits.DefaultSmithsonianResponseItem;
+import com.javalent.curio.connectors.smithsonian.models.subunits.chndm.ChndmResponseItem;
+import com.javalent.curio.connectors.smithsonian.models.subunits.nasm.NasmResponseItem;
 
 import generated.schemas.edan.Medium;
 import lombok.Getter;
@@ -19,12 +24,20 @@ import lombok.ToString;
 @Getter
 @Setter
 @ToString
-@JsonTypeInfo(use = JsonTypeInfo.Id.DEDUCTION, include = JsonTypeInfo.As.EXISTING_PROPERTY, property = "unitCode")
+@JsonTypeInfo(
+        use = JsonTypeInfo.Id.NAME,
+        include = JsonTypeInfo.As.PROPERTY,
+        property = "unitCode",
+        visible = true,
+        defaultImpl = DefaultSmithsonianResponseItem.class
+)
 @JsonSubTypes({
-        @JsonSubTypes.Type(value = NasmResponseItem.class, name = "NASM")
+        @JsonSubTypes.Type(value = NasmResponseItem.class, name = "NASM"),
+        @JsonSubTypes.Type(value = ChndmResponseItem.class, name = "CHNDM")
 })
 public abstract class SmithsonianResponseItem extends ResponseItem {
 
+    @JsonProperty("unitCode")
     public UnitCode unitCode;
 
     private SmithsonianEdanmdmContent content;
@@ -82,6 +95,16 @@ public abstract class SmithsonianResponseItem extends ResponseItem {
         SAAM("Smithsonian American Art Museum"),
         SIA("Smithsonian Institution Archives"),
         SIL("Smithsonian Libraries");
+
+        @JsonCreator
+        public static UnitCode forValue(String value) {
+            for (UnitCode code : UnitCode.values()) {
+                if (code.name().equalsIgnoreCase(value) || code.getName().equalsIgnoreCase(value)) {
+                    return code;
+                }
+            }
+            return null;
+        }
 
         public final String name;
 

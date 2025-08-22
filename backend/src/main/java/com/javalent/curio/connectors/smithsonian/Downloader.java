@@ -9,6 +9,7 @@ import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
+import org.jboss.logging.Logger;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.context.event.ApplicationReadyEvent;
 import org.springframework.context.event.EventListener;
@@ -28,6 +29,7 @@ import lombok.RequiredArgsConstructor;
 @Service
 @RequiredArgsConstructor
 public class Downloader {
+    private static final Logger LOGGER = Logger.getLogger(Downloader.class);
 
     private final ItemRepository itemRepository;
 
@@ -105,6 +107,7 @@ public class Downloader {
                         }
                     } catch (JsonProcessingException e) {
                         e.printStackTrace();
+                        LOGGER.info(json);
                     }
                 }
             }

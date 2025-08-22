@@ -1,6 +1,5 @@
-package com.javalent.curio.connectors.smithsonian;
+package com.javalent.curio.connectors.smithsonian.models;
 
-import com.javalent.curio.connectors.smithsonian.models.SmithsonianResponseItem;
 import lombok.Getter;
 import lombok.Setter;
 

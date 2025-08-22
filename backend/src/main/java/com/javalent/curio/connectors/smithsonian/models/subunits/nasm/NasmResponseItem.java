@@ -1,4 +1,4 @@
-package com.javalent.curio.connectors.smithsonian.nasm;
+package com.javalent.curio.connectors.smithsonian.models.subunits.nasm;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
+import generated.schemas.edan.OnlineMedia;
 import org.hibernate.search.engine.backend.types.ObjectStructure;
 import org.hibernate.search.mapper.pojo.mapping.definition.annotation.FullTextField;
 import org.hibernate.search.mapper.pojo.mapping.definition.annotation.Indexed;
@@ -72,7 +73,7 @@ public class Item {
     @Column(name = "long_description")
     public String longDescription;
 
-    @ManyToMany(cascade = { CascadeType.ALL }, fetch = FetchType.LAZY)
+    @ManyToMany(cascade = {CascadeType.ALL}, fetch = FetchType.LAZY)
     @JoinTable(name = "ITEMS_TAGS")
     private List<Tag> tags = new ArrayList<>();
 
@@ -93,12 +94,16 @@ public class Item {
     public Item(SmithsonianResponseItem smithsonianItem) {
         this.id = smithsonianItem.getId();
         this.title = smithsonianItem.getTitle();
-        this.museum = new Museum(smithsonianItem.getUnitCode().toString(), "Smithsonian Institute");
+        var unitCode = smithsonianItem.getUnitCode();
+        this.museum = new Museum(unitCode.toString(), "Smithsonian Institute");
 
-        if (smithsonianItem.getContent().getDescriptiveNonRepeating().getOnlineMedia() != null
-                && smithsonianItem.getContent().getDescriptiveNonRepeating().getOnlineMedia().getMedia() != null) {
-            this.thumbnail = "https://ids.si.edu/ids/deliveryService?id=" + smithsonianItem.getContent().getDescriptiveNonRepeating().getOnlineMedia().getMedia()
-                    .get(0).getIdsId();
+        if (smithsonianItem.getContent().getDescriptiveNonRepeating() != null) {
+            OnlineMedia onlineMedia = smithsonianItem.getContent().getDescriptiveNonRepeating().getOnlineMedia();
+            if (onlineMedia != null
+                    && onlineMedia.getMedia() != null && !onlineMedia.getMedia().isEmpty()) {
+                this.thumbnail = "https://ids.si.edu/ids/deliveryService?id=" + onlineMedia.getMedia()
+                        .getFirst().getIdsId();
+            }
         }
 
         if (smithsonianItem.getContent().getFreetext().getAdditionalProperties().containsKey("notes")) {

@@ -13,9 +13,9 @@ import { SafeHtmlPipe } from '../../../../../pipes/safe-html.pipe';
 export class NasmComponent {
   item = input.required<NasmItem>();
 
-  description = computed(() => this.item().description);
+  description = computed(() => this.item().getDescription());
 
-  freetext = computed(() => this.item().content.freetext ?? {});
+  freetext = computed(() => this.item().getContent().freetext ?? {});
 
   /** Common freetext properties. */
 
@@ -37,20 +37,23 @@ export class NasmComponent {
 
   longDescription = computed(
     () =>
-      this.item().content.freetext?.['notes']?.filter(
-        (note) => note.label === 'Long Description',
-      ) ?? [],
+      this.item()
+        .getContent()
+        .freetext?.['notes']?.filter(
+          (note) => note.label === 'Long Description',
+        ) ?? [],
   );
 
   onExhibit = computed(
     () =>
-      this.item().content.indexedStructured?.onPhysicalExhibit?.[0] === 'Yes',
+      this.item().getContent().indexedStructured?.onPhysicalExhibit?.[0] ===
+      'Yes',
   );
   exhibition = computed(() => {
     if (!this.onExhibit()) return 'This item is not on exhibit.';
-    const item = this.item();
-    if (!item.content.freetext?.['setName']?.length) return '';
-    const setName = item.content.freetext['setName'];
+    const content = this.item().getContent();
+    if (!content.freetext?.['setName']?.length) return '';
+    const setName = content.freetext['setName'];
     return `This object can be seen in ${setName[2].content!} at the ${setName[1].content!}.`;
   });
 

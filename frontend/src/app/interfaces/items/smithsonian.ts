@@ -6,6 +6,8 @@ export const Schema = {
 export type Schema = (typeof Schema)[keyof typeof Schema];
 export const UnitCode = {
   NASM: 'NASM',
+  CHNDM: 'CHNDM',
+  FSG: 'FSG'
 } as const;
 export type UnitCode = (typeof UnitCode)[keyof typeof UnitCode];
 

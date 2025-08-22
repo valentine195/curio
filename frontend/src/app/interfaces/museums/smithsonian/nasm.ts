@@ -1,8 +1,14 @@
 import { UnitCode } from '../../items/smithsonian';
-import { Museum } from '../response-item';
-import { SmithsonianItem } from './smithsonian';
+import { Museum } from '../base-item';
+import { SmithsonianItem, SmithsonianResponseItem } from './smithsonian';
 
-export interface NasmItem extends SmithsonianItem {
+export interface NasmResponseItem extends SmithsonianResponseItem {
   unitCode: typeof UnitCode.NASM;
   museum: typeof Museum.NASM;
+}
+
+export class NasmItem extends SmithsonianItem {
+  constructor(public override base: NasmResponseItem) {
+    super(base);
+  }
 }
