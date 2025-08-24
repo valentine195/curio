@@ -8,6 +8,7 @@ export const Museum = {
   CHNDM: 'Cooper Hewitt, Smithsonian Design Museum',
   FSG: 'Freer Gallery of Art and Arthur M. Sackler Gallery',
   NMAI: 'National Museum of the American Indian',
+  NMAH: 'National Museum of American History',
 } as const;
 export type Museum = (typeof Museum)[keyof typeof Museum];
 

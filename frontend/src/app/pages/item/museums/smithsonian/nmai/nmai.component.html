@@ -1,1 +1,67 @@
-<p>nmai works!</p>
+<div class="smithsonian-container">
+  <mat-tab-group>
+    <mat-tab label="Provenance & Culture">
+      <div class="mt-2">
+        @if (culture()) {
+          <p><strong>Culture/People: </strong>{{ culture() }}</p>
+        }
+
+        @if (previousOwners().length) {
+          <div class="mt-4">
+            <p><strong>Previous Owners:</strong></p>
+            @for (owner of previousOwners(); track owner) {
+              <li>{{ owner }}</li>
+            }
+          </div>
+        }
+
+        @if (place()) {
+          <p class="mt-4"><strong>Place: </strong>{{ place() }}</p>
+        }
+      </div>
+    </mat-tab>
+
+    <mat-tab label="Physical Description">
+      <div class="mt-2">
+        @if (objectType().length) {
+          <p>
+            <strong
+              >Object Type{{ objectType().length == 1 ? "" : "s" }}</strong
+            >
+          </p>
+          @for (value of objectType(); track value) {
+            <li>{{ value }}</li>
+          }
+        }
+        <div>
+          @for (entry of physicalDescription(); track entry[0]) {
+            <p>
+              <strong>{{ entry[0] }}</strong>
+            </p>
+            @for (value of entry[1]; track value) {
+              <li>{{ value }}</li>
+            }
+          }
+        </div>
+      </div>
+    </mat-tab>
+
+    @if (collectionHistory()) {
+      <mat-tab label="Collection History">
+        <div class="mt-2">
+          <p class="whitespace-pre-wrap">{{ collectionHistory() }}</p>
+        </div>
+      </mat-tab>
+    }
+
+    @if (additionalNotes().length) {
+      <mat-tab label="Additional Notes">
+        <div class="mt-2">
+          @for (note of additionalNotes(); track note) {
+            <p class="mb-2" [innerHTML]="note.content ?? '' | safeHtml"></p>
+          }
+        </div>
+      </mat-tab>
+    }
+  </mat-tab-group>
+</div>

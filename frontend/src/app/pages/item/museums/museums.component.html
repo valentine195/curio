@@ -5,6 +5,10 @@
     <app-chndm [item]="item"></app-chndm>
   } @else if (isFsgItem(item)) {
     <app-fsg [item]="item"></app-fsg>
+  } @else if (isNmaiItem(item)) {
+    <app-nmai [item]="item"></app-nmai>
+  } @else if (isNmahItem(item)) {
+    <app-nmah [item]="item"></app-nmah>
   } @else {
     <p>This museum page is still under construction.</p>
   }

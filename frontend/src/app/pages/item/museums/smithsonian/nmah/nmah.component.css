@@ -1,0 +1,12 @@
+.smithsonian-container {
+  padding: 1rem;
+}
+
+li {
+  margin-left: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+strong {
+  font-weight: 600;
+}

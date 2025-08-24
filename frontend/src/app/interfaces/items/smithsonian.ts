@@ -7,7 +7,9 @@ export type Schema = (typeof Schema)[keyof typeof Schema];
 export const UnitCode = {
   NASM: 'NASM',
   CHNDM: 'CHNDM',
-  FSG: 'FSG'
+  FSG: 'FSG',
+  NMAI: 'NMAI',
+  NMAH: 'NMAH',
 } as const;
 export type UnitCode = (typeof UnitCode)[keyof typeof UnitCode];
 

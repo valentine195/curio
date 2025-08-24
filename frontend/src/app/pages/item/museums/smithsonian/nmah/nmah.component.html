@@ -1,0 +1,51 @@
+<div class="smithsonian-container">
+  @if (description()) {
+    <p class="whitespace-pre-wrap text-lg">{{ description() }}</p>
+  }
+
+  <mat-tab-group>
+    <mat-tab label="Physical Details">
+      <div class="mt-2">
+        @if (maker()) {
+          <p><strong>Maker: </strong>{{ maker() }}</p>
+        }
+
+        @if (place()) {
+          <p class="mt-2"><strong>Place Made: </strong>{{ place() }}</p>
+        }
+
+        <div class="mt-4">
+          @for (entry of physicalDescription(); track entry[0]) {
+            <p><strong>{{ entry[0] }}</strong></p>
+            @for (value of entry[1]; track value) {
+              <li>{{ value }}</li>
+            }
+          }
+        </div>
+      </div>
+    </mat-tab>
+
+    @if (creditLine().length) {
+      <mat-tab label="Credit & Rights">
+        <div class="mt-2">
+          @for (entry of creditLine(); track entry[0]) {
+            <p><strong>{{ entry[0] }}</strong></p>
+            @for (value of entry[1]; track value) {
+              <li>{{ value }}</li>
+            }
+          }
+        </div>
+      </mat-tab>
+    }
+
+    @if (additionalNotes().length) {
+      <mat-tab label="Additional Notes">
+        <div class="mt-2">
+          @for (note of additionalNotes(); track note) {
+            <p class="mb-2" [innerHTML]="note.content ?? '' | safeHtml"></p>
+          }
+        </div>
+      </mat-tab>
+    }
+  </mat-tab-group>
+</div>
